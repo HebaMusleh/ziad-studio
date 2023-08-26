@@ -7,6 +7,8 @@ export const lightTheme = {
     paragraphColor: "#646464",
     titleColor: "#434343",
     serviceBg: "#76B4C3",
+    blackFonts:"#000",
+    whiteFonts:"#fff",
   },
 };
 

@@ -11,5 +11,7 @@ a{
 }
 body{
     background-color:${props=>props.theme.palette.background};
+    direction:rtl;
+    font-family: 'Baloo Bhaijaan 2', cursive;
 }
 `;

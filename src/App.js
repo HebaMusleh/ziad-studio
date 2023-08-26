@@ -5,6 +5,8 @@ import { themeContext } from "./context/themeContext";
 import { GlobalStyle } from "./global/style";
 import BtnTheme from "./components/BtnTheme";
 import Spinner from "./components/Spinner";
+import { Container } from "./global/component";
+import Home from "./pages/Home";
 
 export default function App() {
   const [theme, setTheme] = useState(darkTheme);
@@ -21,8 +23,7 @@ export default function App() {
       <themeContext.Provider value={[theme, setTheme]}>
         <GlobalStyle />
         <Suspense fallback={<Spinner/>}>
-          <BtnTheme />
-          <h1>Hello world!</h1>
+          <Home/>
         </Suspense>
       </themeContext.Provider>
     </ThemeProvider>
