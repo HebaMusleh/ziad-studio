@@ -5,6 +5,7 @@ import { themeContext } from "./context/themeContext";
 import { GlobalStyle } from "./global/style";
 import Spinner from "./components/Spinner";
 import Home from "./pages/Home";
+import SideMenu from "./components/SideMenu";
 
 export default function App() {
   const [theme, setTheme] = useState(darkTheme);
@@ -21,7 +22,8 @@ export default function App() {
       <themeContext.Provider value={[theme, setTheme]}>
         <GlobalStyle />
         <Suspense fallback={<Spinner/>}>
-          <Home/>
+          {/* <Home/> */}
+          <SideMenu/>
         </Suspense>
       </themeContext.Provider>
     </ThemeProvider>

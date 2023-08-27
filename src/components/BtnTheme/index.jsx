@@ -1,32 +1,31 @@
 import React, { useContext } from 'react';
-import styled from 'styled-components';
+
 import { themeContext } from '../../context/themeContext';
 import { darkTheme, lightTheme } from '../../global/theme';
-const ThemeBtn = styled.button`
-    position:absolute;
-    border:none;
-    cursor:pointer;
-    top:5px;
-    right:5%;
-    background:transparent;
-    img{
-        width:70px;
-        border-radius: 6px;
-    }
-`
+
+import './style.css'
+
+
 const BtnTheme = () => {
     const [theme, setTheme] = useContext(themeContext);
     const toggleTheme = () => {
         setTheme((theme) => (theme.theme === 'light' ? darkTheme : lightTheme));
         localStorage.setItem('theme', theme.theme === 'dark' ? 'light' : 'dark');
     };
+
     return (
-        <>
-            <ThemeBtn onClick={toggleTheme}>
-                button test
-            </ThemeBtn>
-        </>
-    )
+        <div className="theme-btn-wrapper">
+        <input type="checkbox" id="toggle_checkbox" onClick={toggleTheme} />
+  
+        <label htmlFor="toggle_checkbox">
+          <div id="star">
+            <div className="star" id="star-1">★</div>
+            <div className="star" id="star-2">★</div>
+          </div>
+          <div id="moon"></div>
+        </label>
+      </div>
+            );
 }
 
-export default BtnTheme
+            export default BtnTheme;

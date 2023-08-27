@@ -4,15 +4,17 @@ import Hero from './Hero'
 import Footer from '../../components/Footer'
 import Packages from './packages'
 import MoreService from './MoreService'
+import Supporter from './Supporter'
 
 const Home = () => {
   return (
     <div>
-        <Header/>
-        <Hero/>
-        <Packages/>
-        <MoreService />
-        <Footer/>
+      <Header />
+      <Hero />
+      <Packages />
+      <MoreService />
+      <Supporter />
+      <Footer />
     </div>
   )
 }
