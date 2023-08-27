@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Wrapper } from './style'
+import BtnOrder from '../../../../components/BtnOrder'
 
 const Card = ({img,title,desc,price}) => {
   return (
@@ -18,7 +19,7 @@ const Card = ({img,title,desc,price}) => {
       </div>
       <div className="price">
         <h4>{price}</h4>
-        <button>اطلب الأن </button>
+        <BtnOrder />
       </div>
     </Wrapper>
   )
