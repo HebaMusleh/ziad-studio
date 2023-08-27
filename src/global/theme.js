@@ -9,6 +9,7 @@ export const lightTheme = {
     serviceBg: "#76B4C3",
     blackFonts:"#000",
     whiteFonts:"#fff",
+    packagesBackground:"#F7F7F7E5",
   },
 };
 
