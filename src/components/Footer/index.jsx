@@ -28,9 +28,9 @@ const Footer = () => {
     return (
         <FooterStyle>
             <ul>
-                <li><a href="#"><img src={facebook} alt="facebook" /></a></li>
-                <li><a href="#"><img src={insta} alt="insta" /></a></li>
-                <li><a href="#"><img src={whats} alt="whats" /></a></li>
+                <li><a href="/#"><img src={facebook} alt="facebook" /></a></li>
+                <li><a href="/#"><img src={insta} alt="insta" /></a></li>
+                <li><a href="/#"><img src={whats} alt="whats" /></a></li>
             </ul>
         </FooterStyle>
     )

@@ -3,9 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./global/theme";
 import { themeContext } from "./context/themeContext";
 import { GlobalStyle } from "./global/style";
-import BtnTheme from "./components/BtnTheme";
 import Spinner from "./components/Spinner";
-import { Container } from "./global/component";
 import Home from "./pages/Home";
 
 export default function App() {
@@ -16,7 +14,7 @@ export default function App() {
       ? setTheme(darkTheme)
       : setTheme(lightTheme);
     console.log(theme);
-  }, []);
+  }, [theme]);
 
   return (
     <ThemeProvider theme={theme}>

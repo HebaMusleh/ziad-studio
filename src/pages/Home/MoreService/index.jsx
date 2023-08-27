@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Container } from '../../../global/component'
 import { ServiceStyle } from './style'
+
+
 import Card from './Card'
 
 const MoreService = () => {

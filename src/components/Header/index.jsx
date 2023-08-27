@@ -1,9 +1,13 @@
 import React from 'react'
+
 import logo from '../../assets/logo.png'
 
 import { RiMenu3Fill } from "react-icons/ri";
+
+
 import styled from 'styled-components';
 import { Container } from '../../global/component';
+
 
 const HeaderStyle = styled.div`
 display:flex;
