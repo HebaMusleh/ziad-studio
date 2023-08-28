@@ -1,6 +1,6 @@
 /* Your CSS rules go here */
-.theme-btn-wrapper{
-    position: relative;
+.theme-btn-wrapper {
+  position: relative;
 }
 .user-select-none {
   user-select: none;
@@ -16,15 +16,16 @@ label {
   top: 50%;
   right: 0;
   left: 0;
-  width: 116px;
-  height: 56px;
-  margin: 0 auto;
+  width: 100px;
+  height: 40px;
   background-color: #77b5fe;
   border-radius: 56px;
   transform: translateY(-50%);
   cursor: pointer;
   transition: 0.3s ease background-color;
   overflow: hidden;
+  margin: 0;
+  margin-right: 140px;
 }
 
 #star {

@@ -15,14 +15,16 @@ align-items:center;
 justify-content:space-between;
 .icons{
     font-size:32px;
+    cursor:pointer;
 }
 `
-const Header = () => {
+const Header = ({openClick}) => {
+    // console.log(openClick)
     return (
         <Container>
             <HeaderStyle>
                 <div className="sidebar">
-                    <RiMenu3Fill className='icons' />
+                    <RiMenu3Fill className='icons' onClick={openClick}/>
                 </div>
                 <div className="logo">
                     <img src={logo} alt="logo" />

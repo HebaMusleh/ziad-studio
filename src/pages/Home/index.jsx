@@ -9,7 +9,6 @@ import Supporter from './Supporter'
 const Home = () => {
   return (
     <div>
-      <Header />
       <Hero />
       <Packages />
       <MoreService />
