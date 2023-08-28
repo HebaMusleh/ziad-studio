@@ -4,7 +4,7 @@ import { SupporterStyle } from './style'
 const Supporter = () => {
   return (
     <SupporterStyle>
-        ابرز عملاؤنا 
+      ابرز عملاؤنا
     </SupporterStyle>
   )
 }

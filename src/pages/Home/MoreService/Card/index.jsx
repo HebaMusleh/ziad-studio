@@ -28,7 +28,7 @@ const Card = () => {
                     <p>تصميم تغليف منتج بمقاس واحد بـ 4800 ريال</p>
                 </div>
                 <div className="btn">
-                <BtnOrder />
+                    <BtnOrder />
                 </div>
             </div>
         </CardStyle>

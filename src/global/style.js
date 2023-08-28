@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -10,8 +10,8 @@ a{
     text-decoration:none;
 }
 body{
-    background-color:${props=>props.theme.palette.background};
-    direction:rtl;
+    background-color:${(props) => props.theme.palette.background};
+    direction:${(props) => props.dir};
     font-family: 'Baloo Bhaijaan 2', cursive;
 }
 `;

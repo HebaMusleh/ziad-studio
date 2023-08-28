@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ServiceStyle = styled.div`
   background: ${(props) => props.theme.palette.serviceBg};
   text-align: center;
-  padding-bottom:20%;
+  padding-bottom: 20%;
   h2 {
     font-size: 40px;
     font-weight: 500;
@@ -14,12 +14,12 @@ export const ServiceStyle = styled.div`
   }
   .cards {
     display: flex;
-    gap:10px;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     @media (max-width: 768px) {
-        justify-content: center;
-      }
+      justify-content: center;
+    }
   }
 `;

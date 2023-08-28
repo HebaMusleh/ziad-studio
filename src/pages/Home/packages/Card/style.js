@@ -4,9 +4,9 @@ export const Wrapper = styled.div`
   background: ${(props) => props.theme.palette.packagesBackground};
   border-radius: 48px;
   text-align: center;
-  flex-basis:30%;
+  flex-basis: 30%;
   padding: 30px;
-  height:fit-content;
+  height: fit-content;
   .image {
     background: ${(props) => props.theme.palette.whiteFonts};
     width: 160px;

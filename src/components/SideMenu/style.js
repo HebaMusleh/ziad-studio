@@ -4,12 +4,12 @@ export const SideStyle = styled.div`
   background: #00000047;
   position: fixed;
   width: 100%;
-  right: -2000px;
+  ${(props) => (props.dir == "rtl" ? "right: -2000px" : "left: -2000px")};
   z-index: 1000;
-  top:0;
-  transition: .5s;
-  &.show{
-    right:0;
+  top: 0;
+  transition: 0.5s;
+  &.show {
+    ${(props) => (props.dir == "rtl" ? "right: 0" : "left:0")};
   }
   aside {
     width: 25%;
@@ -156,20 +156,20 @@ export const SideStyle = styled.div`
   #toggle_checkbox:checked + label #moon:before {
     background-color: #000;
   }
-  .arabic-english{
-    button{
-        padding: 3px 20px;
-    border-radius: 28px;
-    border: 1px solid  #77b5fe;
-    outline: none;
-    background: #77b5fe;
-    font-size: 16px;
+  .arabic-english {
+    button {
+      padding: 3px 20px;
+      border-radius: 28px;
+      border: 1px solid #77b5fe;
+      outline: none;
+      background: #77b5fe;
+      font-size: 16px;
       font-weight: 800;
       line-height: 41px;
       letter-spacing: 0em;
       text-align: center;
       color: #fff;
-      cursor:pointer;
+      cursor: pointer;
     }
   }
 `;

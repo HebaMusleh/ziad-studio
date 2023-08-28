@@ -3,7 +3,7 @@ import React from 'react'
 import { Wrapper } from './style'
 import BtnOrder from '../../../../components/BtnOrder'
 
-const Card = ({img,title,desc,price}) => {
+const Card = ({ img, title, desc, price }) => {
   return (
     <Wrapper>
       <div className='image'>

@@ -13,10 +13,20 @@ import logo from '../../assets/logo.png';
 import { SideStyle } from './style';
 import BtnTheme from '../BtnTheme';
 
-const SideMenu = ({close,closeClick}) => {
-  
+import { useTranslation } from 'react-i18next';
+
+const SideMenu = ({ close, closeClick, dir }) => {
+
+  const { i18n } = useTranslation();
+  const ChangeLang = () => {
+    const newLang = i18n.language === "en" ? "ar" : "en";
+    localStorage.setItem('lang', newLang);
+    i18n.changeLanguage(newLang);
+  }
+  console.log(dir)
+
   return (
-    <SideStyle className={close ? "show" : ""}>
+    <SideStyle className={close ? "show" : ""} dir={dir}>
       <aside>
         <ul>
           <li className='head'>
@@ -41,7 +51,7 @@ const SideMenu = ({close,closeClick}) => {
                 <LiaLanguageSolid /> اللغة
               </div>
               <div className='arabic-english'>
-                <button>Arabic</button>
+                <button onClick={ChangeLang}>{i18n.language === "en" ? "العربية" : "English"}</button>
               </div>
             </li>
             <li className='theme-btns'>
@@ -49,7 +59,7 @@ const SideMenu = ({close,closeClick}) => {
                 <HiOutlineMoon /> الوضع المظلم
               </div>
               <div className='btn-theme'>
-                <BtnTheme />
+                <BtnTheme dir={dir} />
               </div>
             </li>
           </div>

@@ -7,9 +7,11 @@ import Spinner from "./components/Spinner";
 import Home from "./pages/Home";
 import SideMenu from "./components/SideMenu";
 import Header from "./components/Header";
+import { useTranslation } from "react-i18next";
 
 export default function App() {
   const [theme, setTheme] = useState(darkTheme);
+  const {i18n} = useTranslation()
 
   useEffect(() => {
     localStorage.getItem("theme") === darkTheme.theme
@@ -26,16 +28,19 @@ export default function App() {
   const openClick = () => {
     setClose(true);
   }
-  console.log(close)
+  const direction = i18n.language == 'en' ? 'ltr' : 'rtl';
 
   return (
     <ThemeProvider theme={theme}>
       <themeContext.Provider value={[theme, setTheme]}>
-        <GlobalStyle />
+        <GlobalStyle dir={direction}/>
         <Suspense fallback={<Spinner/>}>
-          <Header openClick={openClick}/>
+          <Header openClick={openClick} dir={direction}/>
           <Home/>
-          <SideMenu close={close} closeClick={closeClick}/>
+          <SideMenu 
+          close={close} 
+          closeClick={closeClick} 
+          dir={direction}/>
         </Suspense>
       </themeContext.Provider>
     </ThemeProvider>

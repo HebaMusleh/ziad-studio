@@ -2,7 +2,7 @@ import React from 'react'
 
 import logo from '../../assets/logo.png'
 
-import { RiMenu3Fill } from "react-icons/ri";
+import { RiMenu3Fill, RiMenu2Line } from "react-icons/ri";
 
 
 import styled from 'styled-components';
@@ -18,13 +18,16 @@ justify-content:space-between;
     cursor:pointer;
 }
 `
-const Header = ({openClick}) => {
-    // console.log(openClick)
+const Header = ({ openClick, dir }) => {
     return (
         <Container>
             <HeaderStyle>
                 <div className="sidebar">
-                    <RiMenu3Fill className='icons' onClick={openClick}/>
+                    {dir == "rtl" ?
+                        <RiMenu3Fill className='icons' onClick={openClick} /> :
+                        <RiMenu2Line className='icons' onClick={openClick} />
+                    }
+
                 </div>
                 <div className="logo">
                     <img src={logo} alt="logo" />

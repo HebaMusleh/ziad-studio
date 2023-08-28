@@ -1,5 +1,5 @@
 import React from 'react'
-import  styled  from 'styled-components'
+import styled from 'styled-components'
 
 const SpinnerStyle = styled.div`
 .splash-screen {
@@ -30,14 +30,14 @@ const SpinnerStyle = styled.div`
   }
 `
 const Spinner = () => {
-    return (
-        <SpinnerStyle>
-            <h1>loading</h1>
-            {/* <div className="splash-screen"> */}
-                {/* <img src={logo} alt='logo' loading='lazy' /> */}
-            {/* </div> */}
-        </SpinnerStyle>
-    )
+  return (
+    <SpinnerStyle>
+      <h1>loading</h1>
+      {/* <div className="splash-screen"> */}
+      {/* <img src={logo} alt='logo' loading='lazy' /> */}
+      {/* </div> */}
+    </SpinnerStyle>
+  )
 }
 
 export default Spinner
