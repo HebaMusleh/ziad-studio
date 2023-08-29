@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SideStyle = styled.div`
-  background: #00000047;
+  // background: #00000047;
   position: fixed;
   width: 100%;
   ${(props) => (props.dir === "rtl" ? "right: -2000px" : "left: -2000px")};

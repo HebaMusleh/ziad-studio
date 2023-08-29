@@ -29,11 +29,11 @@ export default function App() {
     setClose(true);
   }
   const direction = i18n.language === 'en' ? 'ltr' : 'rtl';
-
+  console.log(close)
   return (
     <ThemeProvider theme={theme}>
       <themeContext.Provider value={[theme, setTheme]}>
-        <GlobalStyle dir={direction}/>
+        <GlobalStyle dir={direction} close={close}/>
         <Suspense fallback={<Spinner/>}>
           <Header openClick={openClick} dir={direction}/>
           <Home/>
