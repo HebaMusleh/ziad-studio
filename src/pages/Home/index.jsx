@@ -6,11 +6,13 @@ import MoreService from './MoreService'
 import Supporter from './Supporter'
 import Work from './Work'
 import Ads from './Ads'
+import US from './US'
 
 const Home = () => {
   return (
     <div>
       <Hero />
+      <US />
       <Ads/>
       <Packages />
       <MoreService />
