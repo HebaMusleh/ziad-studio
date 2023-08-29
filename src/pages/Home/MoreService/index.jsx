@@ -10,7 +10,7 @@ const MoreService = () => {
     return (
         <ServiceStyle>
             <Container>
-                <h2>مزيد من الخدمات </h2>
+                <h2>مزيد من خدماتنا </h2>
                 <div className="cards">
                     <Card />
                     <Card />

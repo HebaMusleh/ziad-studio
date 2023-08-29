@@ -28,7 +28,7 @@ export default function App() {
   const openClick = () => {
     setClose(true);
   }
-  const direction = i18n.language == 'en' ? 'ltr' : 'rtl';
+  const direction = i18n.language === 'en' ? 'ltr' : 'rtl';
 
   return (
     <ThemeProvider theme={theme}>

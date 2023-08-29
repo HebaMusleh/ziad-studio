@@ -18,7 +18,7 @@ const BtnTheme = ({ dir }) => {
       <input type="checkbox" id="toggle_checkbox" onClick={toggleTheme} />
       <label htmlFor="toggle_checkbox">
         <div id="star">
-          <div className="star" id="star-1" style={dir === "rtl" ? { left: "7px" } : {}}>★</div>
+          <div className="star" id="star-1" style={dir === "rtl" ? { left: "7px" } : {left:" -10px"}}>★</div>
           <div className="star" id="star-2">★</div>
         </div>
         <div id="moon"></div>

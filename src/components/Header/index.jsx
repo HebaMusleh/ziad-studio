@@ -23,7 +23,7 @@ const Header = ({ openClick, dir }) => {
         <Container>
             <HeaderStyle>
                 <div className="sidebar">
-                    {dir == "rtl" ?
+                    {dir === "rtl" ?
                         <RiMenu3Fill className='icons' onClick={openClick} /> :
                         <RiMenu2Line className='icons' onClick={openClick} />
                     }

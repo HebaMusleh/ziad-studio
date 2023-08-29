@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 // icons 
-import { AiFillCaretDown, AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 import { HiOutlineDocumentReport, HiOutlineMoon } from "react-icons/hi";
-import { TbMessage2Question } from "react-icons/tb";
-import { BsPeople } from "react-icons/bs";
+import { BsLightbulb, BsPeople } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 import { LiaLanguageSolid } from "react-icons/lia";
 
@@ -40,8 +39,8 @@ const SideMenu = ({ close, closeClick, dir }) => {
           <hr />
           <div className='secondSection'>
             <li><AiOutlineHome /><a href="/#">الرئيسية</a></li>
-            <li><HiOutlineDocumentReport /><a href="/#">المدونات</a></li>
-            <li><TbMessage2Question /><a href="/#">الأسئلة الشائعة</a></li>
+            {/* <li><HiOutlineDocumentReport /><a href="/#">المدونات</a></li> */}
+            <li><BsLightbulb /><a href="/#">معلومات</a></li>
             <li><BsPeople /><a href="/#">أبرز عملائنا</a></li>
           </div>
           <hr />
@@ -58,7 +57,7 @@ const SideMenu = ({ close, closeClick, dir }) => {
               <div>
                 <HiOutlineMoon /> الوضع المظلم
               </div>
-              <div className='btn-theme'>
+              <div className='btn-theme' >
                 <BtnTheme dir={dir} />
               </div>
             </li>

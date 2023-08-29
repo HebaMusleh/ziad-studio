@@ -1,6 +1,9 @@
 /* Your CSS rules go here */
 .theme-btn-wrapper {
   position: relative;
+  display: flex;
+  align-items: center; /* Vertically center items */
+  gap: 10px; 
 }
 .user-select-none {
   user-select: none;
@@ -17,7 +20,7 @@ label {
   right: 0;
   left: 0;
   width: 100px;
-  height: 40px;
+  height: 50px;
   background-color: #77b5fe;
   border-radius: 56px;
   transform: translateY(-50%);
@@ -55,8 +58,6 @@ label {
 }
 
 .star {
-  /* top: 5px;
-  left: 7px; */
   font-size: 54px;
   line-height: 28px;
   color: #fafd0f;
@@ -91,18 +92,15 @@ label {
 }
 
 #toggle_checkbox:checked + label #star {
-  top: 3px;
-  left: 64px;
-  transform: scale(0.3);
-  background-color: yellow;
+  display: none;
 }
 
 #toggle_checkbox:checked + label .star {
-  color: yellow;
+  display: none;
 }
 
 #toggle_checkbox:checked + label #moon {
-  bottom: 8px;
+  bottom: 5px;
 }
 
 #toggle_checkbox:checked + label #moon:before {
