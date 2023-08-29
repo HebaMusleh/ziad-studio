@@ -4,6 +4,7 @@ import Footer from '../../components/Footer'
 import Packages from './packages'
 import MoreService from './MoreService'
 import Supporter from './Supporter'
+import Work from './Work'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Packages />
       <MoreService />
       <Supporter />
+      <Work />
       <Footer />
     </div>
   )

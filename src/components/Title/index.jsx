@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const TitleStyle = styled.div`
 text-align: center;
-margin:10% auto;
+margin:5% auto;
 
 h2{
     font-size: 40px;
