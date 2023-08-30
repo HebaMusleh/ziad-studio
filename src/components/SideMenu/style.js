@@ -24,9 +24,9 @@ export const SideStyle = styled.div`
     list-style: none;
   }
   li {
-    display:flex;
-    align-items:center;
-    gap:10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 24px;
     font-weight: 500;
     line-height: 41px;
@@ -41,12 +41,18 @@ export const SideStyle = styled.div`
       padding-right: 10px;
       color: #5f5f5f;
     }
+    &:hover {
+      background: #e3e3e3;
+    }
   }
   .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
+    &:hover{
+      background:transparent;
+    }
   }
   .closeIcon {
     font-size: 40px;
@@ -75,9 +81,30 @@ export const SideStyle = styled.div`
       cursor: pointer;
     }
   }
-  .theme-btns{
+  .theme-btns {
     display: flex;
     align-items: center;
-    // justify-content:space-between;
+    &:hover{
+      background:transparent;
+    }
+  }
+  .arabic-english-menu {
+    display: flex;
+  }
+  .head-languages {
+    flex-direction: column;
+    align-items: start;
+    ul {
+      display: block;
+      padding: 5px;
+      border-radius: 5px;
+      background: #eee;
+      width: 100%;
+      li {
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+      }
+    }
   }
 `;

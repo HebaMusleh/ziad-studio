@@ -6,7 +6,8 @@ import { Container } from '../../../global/component'
 import styled from 'styled-components'
 
 
-import heroImg from '../../../assets/hero.png'
+import heroCircle from '../../../assets/her1.png';
+import heroPincel from '../../../assets/her2.png';
 
 const HeroStyle = styled.div`
 background:${props => props.theme.palette.heroBackground};
@@ -26,6 +27,7 @@ padding:100px 0;
 
     .left-side{
         flex-basis:60%;
+        position:relative;
         img{
             width:100%;
             height:100%;
@@ -37,6 +39,16 @@ padding:100px 0;
           @media (max-width: 480px) {
             width:50%;
           }
+    }
+    .pincel{
+        position:absolute;
+        top:20px;
+        left:10%;
+        width:80%;
+        img{
+            width:100%;
+            height:100%;
+        }
     }
     .right-side{
        h1{
@@ -94,9 +106,12 @@ const Hero = () => {
         <HeroStyle>
             <Container>
                 <div className="container-hero">
-                    <motion.div className='left-side' style={{ rotate }}>
-                        <img src={heroImg} alt="hero img" />
+                    <div className='left-side'>
+                        <img src={heroCircle} alt="circle" />
+                    <motion.div  style={{ rotate }} className='pincel'>
+                        <img src={heroPincel} alt="hero img" />
                     </motion.div>
+                    </div>
                     <div className="right-side">
                         <h1>
                             نبتكر انطباع مميز <span> لعلامتك التجارية</span>

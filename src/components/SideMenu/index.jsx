@@ -1,28 +1,24 @@
-import React from 'react'
-
-// icons 
+import React, { useState } from 'react';
 import { AiOutlineHome } from "react-icons/ai";
-import { HiOutlineDocumentReport, HiOutlineMoon } from "react-icons/hi";
+import { HiOutlineMoon } from "react-icons/hi";
 import { BsLightbulb, BsPeople } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 import { LiaLanguageSolid } from "react-icons/lia";
-
+import { BiSolidDownArrow } from 'react-icons/bi';
 import logo from '../../assets/logo.png';
-
 import { SideStyle } from './style';
 import BtnTheme from '../BtnTheme';
-
 import { useTranslation } from 'react-i18next';
 
 const SideMenu = ({ close, closeClick, dir }) => {
-
   const { i18n } = useTranslation();
-  const ChangeLang = () => {
-    const newLang = i18n.language === "en" ? "ar" : "en";
-    localStorage.setItem('lang', newLang);
-    i18n.changeLanguage(newLang);
-  }
-  console.log(dir)
+  const [showLanguageMenu, setShowLanguageMenu] = useState(false);
+
+  const ChangeLang = (lang) => {
+    localStorage.setItem('lang', lang);
+    i18n.changeLanguage(lang);
+    setShowLanguageMenu(false);
+  };
 
   return (
     <SideStyle className={close ? "show" : ""} dir={dir}>
@@ -39,19 +35,25 @@ const SideMenu = ({ close, closeClick, dir }) => {
           <hr />
           <div className='secondSection'>
             <li><AiOutlineHome /><a href="/#">الرئيسية</a></li>
-            {/* <li><HiOutlineDocumentReport /><a href="/#">المدونات</a></li> */}
             <li><BsLightbulb /><a href="/#">معلومات</a></li>
             <li><BsPeople /><a href="/#">أبرز عملائنا</a></li>
           </div>
           <hr />
           <div className="thirdSection">
-            <li className='head'>
-              <div>
+            <li className='head-languages'>
+              <div className='languages-toggle'>
                 <LiaLanguageSolid /> اللغة
+                <BiSolidDownArrow
+                  style={{ fontSize: "10px", cursor: 'pointer' }}
+                  onClick={() => setShowLanguageMenu(!showLanguageMenu)}
+                />
               </div>
-              <div className='arabic-english'>
-                <button onClick={ChangeLang}>{i18n.language === "en" ? "العربية" : "English"}</button>
-              </div>
+              {showLanguageMenu && (
+                <ul className='arabic-english-menu'>
+                  <li onClick={() => ChangeLang("ar")}>العربية</li>
+                  <li onClick={() => ChangeLang("en")}>English</li>
+                </ul>
+              )}
             </li>
             <li className='theme-btns'>
               <div>
@@ -68,4 +70,4 @@ const SideMenu = ({ close, closeClick, dir }) => {
   )
 }
 
-export default SideMenu
+export default SideMenu;
