@@ -9,7 +9,7 @@ import { AdsStyle } from './style'
 import Card from './Card'
 
 import { motion } from 'framer-motion'
-import { staggerChildren } from "../../../utils/motion";
+import { fadeIn } from "../../../utils/motion";
 import { useTranslation } from 'react-i18next';
 
 const Ads = () => {
@@ -17,19 +17,13 @@ const Ads = () => {
     return (
         <AdsStyle>
             <Container>
-                <motion.section
-                    variants={staggerChildren}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: false, amount: 0.25 }}
-                    className={`paddings card-container`}>
-
+                <motion.div className="card-container" variants={fadeIn("right", "tween", 0.2, 1)}>
                     <Card icons={<SlCalender />} num="1760" title={t('day')} />
                     <Card icons={<CiCoffeeCup />} num="1360" title={t('cup')} />
                     <Card icons={<SiSlideshare />} num="18" title={t('customrs')} />
-                </motion.section>
+                </motion.div>
             </Container>
-        </AdsStyle>
+        </AdsStyle >
     )
 }
 

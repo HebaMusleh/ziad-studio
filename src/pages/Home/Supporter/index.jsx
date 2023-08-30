@@ -16,29 +16,37 @@ import { SupporterStyle } from './style'
 import Title from '../../../components/Title'
 import { Container } from '../../../global/component';
 
+import { motion } from 'framer-motion'
+import { staggerChildren, textVariant2 } from "../../../utils/motion";
+
 const Supporter = () => {
   return (
     <SupporterStyle>
       <Container>
-        <div className="wrapper">
+        <motion.section
+          variants={staggerChildren}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className={`paddings wrapper`}>
           <Title
             title="أبرز عملائنا "
             desc="أبرز عملائنا في عالم الإبداع، انا هنا لتحويل رؤيتك إلى واقع من خلال تصاميم جرافيكية تلهم وتبهر، دعونا نبني مستقبل مبهرج لعلامتك التجارية سويًا.
       "
           />
           <div className='scroll'>
-            <div className='imgBox'><img src={img1} alt="img1" /></div>
-            <div className='imgBox'><img src={img2} alt="img2" /></div>
-            <div className='imgBox'><img src={img3} alt="img3" /></div>
-            <div className='imgBox'><img src={img4} alt="img4" /></div>
+            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img1} alt="img" /></motion.div>
+            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img2} alt="img" /></motion.div>
+            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img3} alt="img" /></motion.div>
+            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img4} alt="img" /></motion.div>
           </div>
           <div className='scroll'>
-            <div className='imgBox'><img src={img5} alt="img5" /></div>
-            <div className='imgBox'><img src={img6} alt="img6" /></div>
-            <div className='imgBox'><img src={img7} alt="img7" /></div>
-            <div className='imgBox'><img src={img8} alt="img8" /></div>
+            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img5} alt="img" /></motion.div>
+            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img6} alt="img" /></motion.div>
+            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img7} alt="img" /></motion.div>
+            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img8} alt="img" /></motion.div>
           </div>
-        </div>
+        </motion.section>
       </Container>
     </SupporterStyle>
   )
