@@ -4,24 +4,24 @@ import logo from '../../assets/logo.png'
 
 import { RiMenu3Fill, RiMenu2Line } from "react-icons/ri";
 
-
-import styled from 'styled-components';
 import { Container } from '../../global/component';
+import { headerVariants } from "../../utils/motion";
+import { motion } from 'framer-motion'; 
+import { HeaderStyle } from './styled';
 
 
-const HeaderStyle = styled.div`
-display:flex;
-align-items:center;
-justify-content:space-between;
-.icons{
-    font-size:32px;
-    cursor:pointer;
-}
-`
+
 const Header = ({ openClick, dir }) => {
     return (
+        <HeaderStyle>
         <Container>
-            <HeaderStyle>
+            <motion.div
+                variants={headerVariants}
+                initial="hidden"
+                whileInView="show"
+                className={`bg-primary paddings headers-own-style`}
+                viewport={{ once: true, amount: 0.25 }}
+            >
                 <div className="sidebar">
                     {dir === "rtl" ?
                         <RiMenu3Fill className='icons' onClick={openClick} /> :
@@ -32,8 +32,9 @@ const Header = ({ openClick, dir }) => {
                 <div className="logo">
                     <img src={logo} alt="logo" />
                 </div>
-            </HeaderStyle>
+            </motion.div>
         </Container>
+        </HeaderStyle>
     )
 }
 

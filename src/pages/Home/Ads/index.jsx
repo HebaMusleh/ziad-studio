@@ -8,15 +8,26 @@ import { Container } from '../../../global/component'
 import { AdsStyle } from './style'
 import Card from './Card'
 
+import { motion } from 'framer-motion'
+import { staggerChildren } from "../../../utils/motion";
+import { useTranslation } from 'react-i18next';
+
 const Ads = () => {
+    const { t } = useTranslation();
     return (
         <AdsStyle>
             <Container>
-                <div className="card-container">
-                    <Card icons={<SlCalender />} num="1,760+" title="يوم" />
-                    <Card icons={<CiCoffeeCup />} num="1,360+" title="كوب من القهوة" />
-                    <Card icons={<SiSlideshare />} num="18+" title="عميل دائم" />
-                </div>
+                <motion.section
+                    variants={staggerChildren}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false, amount: 0.25 }}
+                    className={`paddings card-container`}>
+
+                    <Card icons={<SlCalender />} num="1760" title={t('day')} />
+                    <Card icons={<CiCoffeeCup />} num="1360" title={t('cup')} />
+                    <Card icons={<SiSlideshare />} num="18" title={t('customrs')} />
+                </motion.section>
             </Container>
         </AdsStyle>
     )

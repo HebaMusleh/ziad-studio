@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
+
+
 import { AiOutlineHome } from "react-icons/ai";
 import { HiOutlineMoon } from "react-icons/hi";
 import { BsLightbulb, BsPeople } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 import { LiaLanguageSolid } from "react-icons/lia";
 import { BiSolidDownArrow } from 'react-icons/bi';
-import logo from '../../assets/logo.png';
-import { SideStyle } from './style';
+
+
 import BtnTheme from '../BtnTheme';
 import { useTranslation } from 'react-i18next';
+
+
+import logo from '../../assets/logo.png';
+import { SideStyle } from './style';
+
 
 const SideMenu = ({ close, closeClick, dir }) => {
   const { i18n,t } = useTranslation();

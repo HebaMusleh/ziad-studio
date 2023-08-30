@@ -15,6 +15,7 @@ export const USStyle = styled.div`
     position: absolute;
     width: 150px;
     left: 2px;
+    animation: updown 3s linear infinite;
 
     img {
       width: 100%;
@@ -42,4 +43,16 @@ export const USStyle = styled.div`
       height: 100%;
     }
   }
+
+  @keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+        100% {
+            transform: translateY(-20px);
+        }
+    }
 `;
