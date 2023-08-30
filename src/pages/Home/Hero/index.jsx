@@ -9,6 +9,8 @@ import styled from 'styled-components'
 import heroCircle from '../../../assets/her1.png';
 import heroPincel from '../../../assets/her2.png';
 
+import { useTranslation } from 'react-i18next';
+
 const HeroStyle = styled.div`
 background:${props => props.theme.palette.heroBackground};
 padding:100px 0;
@@ -100,6 +102,7 @@ padding:100px 0;
 
 `
 const Hero = () => {
+    const { t } = useTranslation();
     const time = useTime();
     const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
     return (
@@ -114,11 +117,12 @@ const Hero = () => {
                     </div>
                     <div className="right-side">
                         <h1>
-                            نبتكر انطباع مميز <span> لعلامتك التجارية</span>
+                            {t('heroTitle')} <span>{t('heroSpan')}</span>
                         </h1>
-                        <p>درافت وكالة تصميم ابداعي نُساعد عملائنا على الوصل للمعنى الصحيح والنهائي للهوية التجارية مع تقديم أساليب تطويرية، مما يجعلها مميزة لا تُنسى وفريدة من نوعها وهدفنا هو الإبحار في العمق لمعرفة ادق التفاصيل نتعرف على عالمك وتطلعاتك، نستفيد من منظورك و آراءك ثُم نحولها لنموذج متكامل الأركان بلمسة إبداعية
+                        <p>
+                            {t('hero')}
                         </p>
-                        <button>تواصل معنا </button>
+                        <button>{t('contactUS')}</button>
                     </div>
                 </div>
             </Container>

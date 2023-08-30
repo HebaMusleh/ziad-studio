@@ -11,7 +11,7 @@ import BtnTheme from '../BtnTheme';
 import { useTranslation } from 'react-i18next';
 
 const SideMenu = ({ close, closeClick, dir }) => {
-  const { i18n } = useTranslation();
+  const { i18n,t } = useTranslation();
   const [showLanguageMenu, setShowLanguageMenu] = useState(false);
 
   const ChangeLang = (lang) => {
@@ -34,15 +34,15 @@ const SideMenu = ({ close, closeClick, dir }) => {
           </li>
           <hr />
           <div className='secondSection'>
-            <li><AiOutlineHome /><a href="/#">الرئيسية</a></li>
-            <li><BsLightbulb /><a href="/#">معلومات</a></li>
-            <li><BsPeople /><a href="/#">أبرز عملائنا</a></li>
+            <li><AiOutlineHome /><a href="/#">{t('Home')}</a></li>
+            <li><BsLightbulb /><a href="/#">{t('Information')}</a></li>
+            <li><BsPeople /><a href="/#">{t('customers')}</a></li>
           </div>
           <hr />
           <div className="thirdSection">
             <li className='head-languages'>
               <div className='languages-toggle'>
-                <LiaLanguageSolid /> اللغة
+                <LiaLanguageSolid /> {t('lang')}
                 <BiSolidDownArrow
                   style={{ fontSize: "10px", cursor: 'pointer' }}
                   onClick={() => setShowLanguageMenu(!showLanguageMenu)}
@@ -50,14 +50,14 @@ const SideMenu = ({ close, closeClick, dir }) => {
               </div>
               {showLanguageMenu && (
                 <ul className='arabic-english-menu'>
-                  <li onClick={() => ChangeLang("ar")}>العربية</li>
-                  <li onClick={() => ChangeLang("en")}>English</li>
+                  <li onClick={() => ChangeLang("ar")}>{t("Arabic")}</li>
+                  <li onClick={() => ChangeLang("en")}>{t("English")}</li>
                 </ul>
               )}
             </li>
             <li className='theme-btns'>
               <div>
-                <HiOutlineMoon /> الوضع المظلم
+                <HiOutlineMoon /> {t("Mode")}
               </div>
               <div className='btn-theme' >
                 <BtnTheme dir={dir} />

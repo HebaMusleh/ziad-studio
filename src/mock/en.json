@@ -1,8 +1,17 @@
 {
-    "ar": {
-      "translation": {
-        "Welcome to React": "مرحبا في التفاعل والتفاعل في ١٨ التالي",
-        "name question": "ما اسمك ايها الوحش؟"
-      }
+  "en": {
+    "translation": {
+      "hero": "Ziad Creative Design Studio We help our clients reach the right and ultimate meaning of visual identity while offering developmental methods, making it an unforgettable and unique characteristic. Our goal is to navigate in depth to know the finest details and learn about your world and your aspirations.",
+      "heroTitle":"We create a special impression",
+      "heroSpan":"for your brand",
+      "contactUS":"contact us",
+      "Home":"Home",
+      "Information":"Information",
+      "customers":"Our Leading Customers",
+      "lang":"Languages",
+      "Arabic":"Arabic",
+      "English":"English",
+      "Mode":"Dark Mode"
     }
   }
+}
