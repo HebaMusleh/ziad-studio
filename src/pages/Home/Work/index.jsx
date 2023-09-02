@@ -11,24 +11,44 @@ import img6 from '../../../assets/work6.png';
 import { WorkStyle } from './style';
 import { Container } from '../../../global/component';
 
+import { motion } from 'framer-motion'
+import { staggerChildren, textVariant2 } from "../../../utils/motion";
+import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+
 const Work = () => {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
   return (
     <WorkStyle>
-        <Title title="أعمالنا" desc="أضف لمسة سحرية إلى عالم علامتنا التجارية مع مصمم جرافيك مبدع، لنرتقي معًا بتصاميمنا إلى مستوى جديد من الإبداع والإبهار.
-"/>
-       <Container>
-       <div className='images'>
-            <div className='singleImg'><img src={img1} alt="img1" /></div>
-            <div className='singleImg'><img src={img2} alt="img1" /></div>
-            <div className='singleImg'><img src={img3} alt="img1" /></div>
-            <div className='singleImg'><img src={img4} alt="img1" /></div>
-            <div className='singleImg'><img src={img5} alt="img1" /></div>
-            <div className='singleImg'><img src={img6} alt="img1" /></div>
-        </div>
-        <div className='moreBtn'>
-        <button> عرض المزيد +</button>
-        </div>
-       </Container>
+      <Title
+        title={t('work')}
+        desc={t('workDesc')} />
+      <Container>
+        <motion.section
+          variants={staggerChildren}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className={`paddings images`}>
+          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img1} alt="img1" /></motion.div>
+          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img2} alt="img1" /></motion.div>
+          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img3} alt="img1" /></motion.div>
+          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img4} alt="img1" /></motion.div>
+          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img5} alt="img1" /></motion.div>
+          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img6} alt="img1" /></motion.div>
+        </motion.section>
+        <motion.section
+          variants={staggerChildren}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className={`paddings moreBtn`}>
+          <motion.div variants={textVariant2} className={`flexCenter singleImg`}>
+            <button onClick={() => navigate('/work')}> عرض المزيد +</button>
+          </motion.div>
+        </motion.section>
+      </Container>
     </WorkStyle>
   )
 }

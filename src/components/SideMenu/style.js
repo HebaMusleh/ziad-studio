@@ -27,13 +27,15 @@ export const SideStyle = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 41px;
     letter-spacing: 0em;
     color: #5f5f5f;
+    padding:10px;
+    cursor:pointer;
     a {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 500;
       line-height: 41px;
       letter-spacing: 0em;
@@ -43,6 +45,7 @@ export const SideStyle = styled.div`
     }
     &:hover {
       background: #e3e3e3;
+      border-radius:5px;
     }
   }
   .head {
@@ -65,22 +68,6 @@ export const SideStyle = styled.div`
   .thirdSection {
     padding: 20px 0;
   }
-  .arabic-english {
-    button {
-      padding: 3px 20px;
-      border-radius: 28px;
-      border: 1px solid #77b5fe;
-      outline: none;
-      background: #77b5fe;
-      font-size: 16px;
-      font-weight: 800;
-      line-height: 41px;
-      letter-spacing: 0em;
-      text-align: center;
-      color: #fff;
-      cursor: pointer;
-    }
-  }
   .theme-btns {
     display: flex;
     align-items: center;
@@ -101,10 +88,17 @@ export const SideStyle = styled.div`
       background: #eee;
       width: 100%;
       li {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
         cursor: pointer;
       }
     }
+  }
+  .arabic-english-menu{
+    padding:10px;
+    margin-bottom:30px;
+  }
+  .head-languages{
+    cursor:pointer;
   }
 `;

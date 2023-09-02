@@ -6,7 +6,7 @@ import { HiOutlineMoon } from "react-icons/hi";
 import { BsLightbulb, BsPeople } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 import { LiaLanguageSolid } from "react-icons/lia";
-import { BiSolidDownArrow } from 'react-icons/bi';
+import { BiSolidDownArrow ,BiSolidUpArrow } from 'react-icons/bi';
 
 
 import BtnTheme from '../BtnTheme';
@@ -47,13 +47,11 @@ const SideMenu = ({ close, closeClick, dir }) => {
           </div>
           <hr />
           <div className="thirdSection">
-            <li className='head-languages'>
+            <li className='head-languages' onClick={() => setShowLanguageMenu(!showLanguageMenu)}>
               <div className='languages-toggle'>
                 <LiaLanguageSolid /> {t('lang')}
-                <BiSolidDownArrow
-                  style={{ fontSize: "10px", cursor: 'pointer' }}
-                  onClick={() => setShowLanguageMenu(!showLanguageMenu)}
-                />
+                {showLanguageMenu?<BiSolidUpArrow style={{ fontSize: "10px"}}/>:<BiSolidDownArrow style={{ fontSize: "10px"}}/>}
+                
               </div>
               {showLanguageMenu && (
                 <ul className='arabic-english-menu'>

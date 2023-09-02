@@ -2,21 +2,29 @@
   "en": {
     "translation": {
       "hero": "Ziad Creative Design Studio We help our clients reach the right and ultimate meaning of visual identity while offering developmental methods, making it an unforgettable and unique characteristic. Our goal is to navigate in depth to know the finest details and learn about your world and your aspirations.",
-      "heroTitle":"We create a special impression",
-      "heroSpan":"for your brand",
-      "contactUS":"contact us",
-      "Home":"Home",
-      "Information":"Information",
-      "customers":"Our Leading Customers",
-      "lang":"Languages",
-      "Arabic":"Arabic",
-      "English":"English",
-      "Mode":"Dark Mode",
-      "About":"We are Ziad Studio Creative Design specialized in designing visual identities for commercial activities and companies. We have a long experience in our field and strive to be one of the pillars of your business. Because we have different strategic touches, we will produce designs that reflect the nature of your business after studying and analyzing it thoroughly to reach your audience and reflect what your business aims and distinguish you from compeaters. We will be with you step by step until you reach the top of the pyramid of success. We are part of this impressive success.",
-      "AboutTitle":"About",
-      "day":"day",
-      "cup":"cup of coffee",
-      "customrs":"regular customer"
+      "heroTitle": "We create a special impression",
+      "heroSpan": "for your brand",
+      "contactUS": "contact us",
+      "Home": "Home",
+      "Information": "Information",
+      "customers": "Our Leading Customers",
+      "lang": "Languages",
+      "Arabic": "Arabic",
+      "English": "English",
+      "Mode": "Dark Mode",
+      "About": "We are Ziad Studio Creative Design specialized in designing visual identities for commercial activities and companies. We have a long experience in our field and strive to be one of the pillars of your business. Because we have different strategic touches, we will produce designs that reflect the nature of your business after studying and analyzing it thoroughly to reach your audience and reflect what your business aims and distinguish you from compeaters. We will be with you step by step until you reach the top of the pyramid of success. We are part of this impressive success.",
+      "AboutTitle": "About",
+      "day": "day",
+      "cup": "cup of coffee",
+      "customrs": "regular customer",
+      "leadingCustomer": "Our Leading Customers",
+      "descLeading": "Our most outstanding customers in the world of creativity, I am here to turn your vision into reality through graphic designs that inspire and dazzle, let's build a showy future for your brand together.",
+      
+      "work":"our work",
+      "workDesc":"Add a magical touch to our brand world with an iconic graphic designer, bringing our designs together to a new level of creativity and dazzlement.",
+
+      "workTitle":"We create a distinctive impression of your brand",
+      "workpageDescription":"Ziad Creative Design Studio specializing in logo design and visual identity, packaging design and production of motion graphic videos, strategically and creatively designed; To communicate your message to your audience and reflect what your business aims to do and distinguish you from competitors and have a special appearance"
     }
   }
 }

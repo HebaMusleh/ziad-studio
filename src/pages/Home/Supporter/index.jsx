@@ -15,38 +15,36 @@ import { SupporterStyle } from './style'
 
 import Title from '../../../components/Title'
 import { Container } from '../../../global/component';
+import ImgBox from './ImgBox/index';
 
-import { motion } from 'framer-motion'
-import { staggerChildren, textVariant2 } from "../../../utils/motion";
+import { useTranslation } from 'react-i18next';
 
 const Supporter = () => {
+  const { t } = useTranslation();
+
   return (
     <SupporterStyle>
       <Container>
-        <motion.section
-          variants={staggerChildren}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
-          className={`paddings wrapper`}>
+        <div className='wrapper'>
           <Title
-            title="أبرز عملائنا "
-            desc="أبرز عملائنا في عالم الإبداع، انا هنا لتحويل رؤيتك إلى واقع من خلال تصاميم جرافيكية تلهم وتبهر، دعونا نبني مستقبل مبهرج لعلامتك التجارية سويًا.
-      "
+            title={t('leadingCustomer')}
+            desc={t('descLeading')}
           />
-          <div className='scroll'>
-            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img1} alt="img" /></motion.div>
-            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img2} alt="img" /></motion.div>
-            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img3} alt="img" /></motion.div>
-            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img4} alt="img" /></motion.div>
+          {/* <ImgBox baseVelocity={-5} images={[img1, img2, img3, img4]} /> */}
+          {/* <ImgBox baseVelocity={5} images={[img5, img6, img7, img8]} /> */}
+          <div className="scroll">
+            <div className="imgBox"><img src={img1} alt="" /></div>
+            <div className="imgBox"><img src={img2} alt="" /></div>
+            <div className="imgBox"><img src={img3} alt="" /></div>
+            <div className="imgBox"><img src={img4} alt="" /></div>
           </div>
-          <div className='scroll'>
-            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img5} alt="img" /></motion.div>
-            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img6} alt="img" /></motion.div>
-            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img7} alt="img" /></motion.div>
-            <motion.div variants={textVariant2} className={`flexCenter imgBox`}><img src={img8} alt="img" /></motion.div>
+          <div className="scroll">
+            <div className="imgBox"><img src={img5} alt="" /></div>
+            <div className="imgBox"><img src={img6} alt="" /></div>
+            <div className="imgBox"><img src={img7} alt="" /></div>
+            <div className="imgBox"><img src={img8} alt="" /></div>
           </div>
-        </motion.section>
+        </div>
       </Container>
     </SupporterStyle>
   )

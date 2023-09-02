@@ -33,8 +33,8 @@ const Hero = () => {
                         <motion.div style={{ rotate }} className='pincel'>
                             <img src={heroPincel} alt="hero img" />
                         </motion.div>
-                        </motion.span>
-                        <motion.span className="right-side"variants={fadeIn("left", "tween", 0.4, 1)}>
+                    </motion.span>
+                    <motion.span className="right-side" variants={fadeIn("left", "tween", 0.4, 1)}>
                         <h1>
                             {t('heroTitle')} <span>{t('heroSpan')}</span>
                         </h1>
@@ -42,7 +42,7 @@ const Hero = () => {
                             {t('hero')}
                         </p>
                         <button>{t('contactUS')}</button>
-                        </motion.span>
+                    </motion.span>
                 </motion.div>
             </Container>
         </HeroStyle>

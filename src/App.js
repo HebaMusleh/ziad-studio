@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import SideMenu from "./components/SideMenu";
 import Header from "./components/Header";
 import { useTranslation } from "react-i18next";
+import Router from "./Router";
 
 export default function App() {
   const [theme, setTheme] = useState(darkTheme);
@@ -36,7 +37,7 @@ export default function App() {
         <GlobalStyle dir={direction} close={close}/>
         <Suspense fallback={<Spinner/>}>
           <Header openClick={openClick} dir={direction}/>
-          <Home/>
+          <Router />
           <SideMenu 
           close={close} 
           closeClick={closeClick} 
