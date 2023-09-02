@@ -13,7 +13,7 @@
   display: none;
 }
 
-label {
+.theme {
   display: block;
   position: absolute;
   top: 50%;

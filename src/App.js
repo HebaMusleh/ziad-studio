@@ -37,13 +37,13 @@ export default function App() {
       <themeContext.Provider value={[theme, setTheme]}>
         <GlobalStyle dir={direction} close={close}/>
         <Suspense fallback={<Spinner/>}>
-          <Header openClick={openClick} dir={direction}/>
+          {/* <Header openClick={openClick} dir={direction}/> */}
           <Router />
-          <SideMenu 
-          close={close} 
+          {/* <SideMenu  */}
+          {/* close={close} 
           closeClick={closeClick} 
-          dir={direction}/>
-          <Footer />
+          dir={direction}/> */}
+          {/* <Footer /> */}
         </Suspense>
       </themeContext.Provider>
     </ThemeProvider>

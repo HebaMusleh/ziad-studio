@@ -16,7 +16,7 @@ const BtnTheme = ({ dir }) => {
   return (
     <div className="theme-btn-wrapper">
       <input type="checkbox" id="toggle_checkbox" onClick={toggleTheme} />
-      <label htmlFor="toggle_checkbox">
+      <label htmlFor="toggle_checkbox" className='theme'>
         <div id="star">
           <div className="star" id="star-1" style={dir === "rtl" ? { left: "7px" } : {left:" -10px"}}>★</div>
           <div className="star" id="star-2">★</div>
