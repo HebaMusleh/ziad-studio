@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   const [theme, setTheme] = useState(darkTheme);
-  const {i18n} = useTranslation()
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     localStorage.getItem("theme") === darkTheme.theme
@@ -26,24 +26,21 @@ export default function App() {
 
   const closeClick = () => {
     setClose(false);
-  }
+  };
   const openClick = () => {
     setClose(true);
-  }
-  const direction = i18n.language === 'en' ? 'ltr' : 'rtl';
-  console.log(close)
+  };
+  const direction = i18n.language === "en" ? "ltr" : "rtl";
+  console.log(close);
   return (
     <ThemeProvider theme={theme}>
       <themeContext.Provider value={[theme, setTheme]}>
-        <GlobalStyle dir={direction} close={close}/>
-        <Suspense fallback={<Spinner/>}>
-          {/* <Header openClick={openClick} dir={direction}/> */}
+        <GlobalStyle dir={direction} close={close} />
+        <Suspense fallback={<Spinner />}>
+          <Header openClick={openClick} dir={direction} />
           <Router />
-          {/* <SideMenu  */}
-          {/* close={close} 
-          closeClick={closeClick} 
-          dir={direction}/> */}
-          {/* <Footer /> */}
+          <SideMenu close={close} closeClick={closeClick} dir={direction} />
+          <Footer />
         </Suspense>
       </themeContext.Provider>
     </ThemeProvider>

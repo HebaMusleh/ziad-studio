@@ -1,12 +1,11 @@
 import React from 'react'
-import { Container } from '../../global/component'
 import Hero from './Hero'
 import Card from './Card'
-import Modal from '../Modal'
+import { Container } from '../../global/component'
 
-const Work = () => {
+const Information = () => {
     return (
-        <>
+        <div>
             <Container>
                 <Hero />
                 <Card />
@@ -14,10 +13,10 @@ const Work = () => {
                 <Card />
                 <Card />
                 <Card />
-                {/* <Modal/> */}
+                <Card />
             </Container>
-        </>
+        </div>
     )
 }
 
-export default Work
+export default Information
