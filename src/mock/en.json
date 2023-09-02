@@ -19,12 +19,11 @@
       "customrs": "regular customer",
       "leadingCustomer": "Our Leading Customers",
       "descLeading": "Our most outstanding customers in the world of creativity, I am here to turn your vision into reality through graphic designs that inspire and dazzle, let's build a showy future for your brand together.",
-      
-      "work":"our work",
-      "workDesc":"Add a magical touch to our brand world with an iconic graphic designer, bringing our designs together to a new level of creativity and dazzlement.",
-
-      "workTitle":"We create a distinctive impression of your brand",
-      "workpageDescription":"Ziad Creative Design Studio specializing in logo design and visual identity, packaging design and production of motion graphic videos, strategically and creatively designed; To communicate your message to your audience and reflect what your business aims to do and distinguish you from competitors and have a special appearance"
+      "work": "our work",
+      "workDesc": "Add a magical touch to our brand world with an iconic graphic designer, bringing our designs together to a new level of creativity and dazzlement.",
+      "workTitle": "We create a distinctive impression of your brand",
+      "workpageDescription": "Ziad Creative Design Studio specializing in logo design and visual identity, packaging design and production of motion graphic videos, strategically and creatively designed; To communicate your message to your audience and reflect what your business aims to do and distinguish you from competitors and have a special appearance",
+      "footer": "Made with love by "
     }
   }
 }

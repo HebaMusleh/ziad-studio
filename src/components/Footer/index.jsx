@@ -1,37 +1,42 @@
 import React from 'react'
 
-import facebook from '../../assets/facebook.png'
-import insta from '../../assets/instegram.png'
-import whats from '../../assets/whats.png'
 import styled from 'styled-components'
 
+import img from '../../assets/logofooter.png';
+import { useTranslation } from 'react-i18next';
 
 const FooterStyle = styled.div`
 text-align:center;
-background-color:${props => props.theme.palette.fontColor};
+background: #1F81B0;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:20px;
 margin:auto;
-
-
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1%;
-    padding: 5px;
+padding:20px;
+p{
+font-size: 24px;
+font-weight: 500;
+line-height: 41px;
+letter-spacing: 0em;
+text-align: center;
+.images{
     img{
-        width:30px;
+    }
+        width:100%;
+        height:100%;
     }
 }
+
 `
 
 const Footer = () => {
+    const {t} = useTranslation();
     return (
         <FooterStyle>
-            <ul>
-                <li><a href="/#"><img src={facebook} alt="facebook" /></a></li>
-                <li><a href="/#"><img src={insta} alt="insta" /></a></li>
-                <li><a href="/#"><img src={whats} alt="whats" /></a></li>
-            </ul>
+            <div><p>{t('footer')}</p></div>
+            <div className='images'><img src={img} alt="footerImg" /></div>
         </FooterStyle>
     )
 }

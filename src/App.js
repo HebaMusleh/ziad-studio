@@ -9,6 +9,7 @@ import SideMenu from "./components/SideMenu";
 import Header from "./components/Header";
 import { useTranslation } from "react-i18next";
 import Router from "./Router";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [theme, setTheme] = useState(darkTheme);
@@ -42,6 +43,7 @@ export default function App() {
           close={close} 
           closeClick={closeClick} 
           dir={direction}/>
+          <Footer />
         </Suspense>
       </themeContext.Provider>
     </ThemeProvider>
