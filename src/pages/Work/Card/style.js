@@ -8,21 +8,18 @@ export const CardStyle = styled.div`
   background: #f9f9f9;
   border-radius: 8px;
   padding: 10px;
-  /* Media Queries for Responsiveness */
   @media (max-width: 768px) {
     flex-direction: column;
   }
   .description-section {
     flex-basis: 50%;
     text-align: center;
-    /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    flex-basis: 100%;
-    display:none;
-  }
+    @media (max-width: 768px) {
+      flex-basis: 100%;
+      display: none;
+    }
     h1 {
       color: #002b47;
-      font-family: Baloo Bhaijaan 2;
       font-size: 2rem;
       font-weight: 600;
       line-height: 55px;
@@ -40,8 +37,8 @@ export const CardStyle = styled.div`
   .image-section {
     flex-basis: 50%;
     @media (max-width: 768px) {
-        flex-basis: 100%;
-      }
+      flex-basis: 100%;
+    }
     img {
       width: 100%;
       height: 100%;
