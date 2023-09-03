@@ -63,7 +63,15 @@
       "packagingDesign": "Packaging Design",
       "SAR": "SAR",
       "order": "order now",
-      "more": "More Services"
+      "more": "More Services",
+      "project": "How to work on your current project",
+      "show": "Show More",
+      "step1": "Meeting and gathering more information about your business activity and your competitive advantage.",
+      "step2": "Analyzing competitors accurately.",
+      "step3": "Collecting ideas and information.",
+      "step4": "Sketching and converting ideas into drawings.",
+      "step5": "Transforming drawings into creative designs.",
+      "step6": "Delivering the project on time."
     }
   }
 }

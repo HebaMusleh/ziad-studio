@@ -45,7 +45,7 @@ const Work = () => {
           viewport={{ once: false, amount: 0.25 }}
           className={`paddings moreBtn`}>
           <motion.div variants={textVariant2} className={`flexCenter singleImg`}>
-            <button onClick={() => navigate('/work')}> عرض المزيد +</button>
+            <button onClick={() => navigate('/work')}> {t('show')} +</button>
           </motion.div>
         </motion.section>
       </Container>

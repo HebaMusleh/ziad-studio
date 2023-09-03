@@ -6,7 +6,7 @@ export const lightTheme = {
     primaryHeroColor: "#252525",
     TitleColor: " #1F81B0",
     secondaryColor: "#646464",
-    white:"#FFF",
+    white: "#FFF",
 
     primarySecondSection: "#000000",
     secondarySecondSection: "#848484",
@@ -15,11 +15,11 @@ export const lightTheme = {
     iconColor: "#1F81B0",
     primaryAds: "#515151",
     secondaryAds: "#5F5F5F",
-    adsCardBG:"#EEF8F9",
+    adsCardBG: "#EEF8F9",
 
     primaryCustomerColor: "#4D4D4D",
     secondaryCustomerColor: "#5F5F5F",
-    shadow:"#1F81B01A",
+    shadow: "#1F81B01A",
 
     // الباقات
 
@@ -34,6 +34,16 @@ export const lightTheme = {
     secondaryServiceColor: "#525252",
     BgService: "#76B4C3",
     iconServiceBG: "#EEF8F9",
+
+    //icons
+    icon6Bg: "#E03131",
+    icon5Bg: "#FFDB77",
+    icon4Bg: "#649D54",
+    icon3Bg: "#6BBFF6",
+    icon2Bg: "#D0558F",
+    icon1Bg: "#FD8758",
+
+    BGStep:"#eee"
   },
 };
 
@@ -45,7 +55,7 @@ export const darkTheme = {
     primaryHeroColor: "#fff",
     TitleColor: " #1F81B0",
     secondaryColor: "#A6A6A6",
-    white:"#FFF",
+    white: "#FFF",
 
     primarySecondSection: "#fff",
     secondarySecondSection: "#B5B5B5",
@@ -54,11 +64,11 @@ export const darkTheme = {
     iconColor: "#fff",
     primaryAds: "#fff",
     secondaryAds: "#B5B5B5",
-    adsCardBG:"#001924",
+    adsCardBG: "#001924",
 
     primaryCustomerColor: "#fff",
     secondaryCustomerColor: "#B5B5B5",
-    shadow:"#FFFFFF26",
+    shadow: "#FFFFFF26",
 
     secondaryTitle: "#fff",
     firstText: "#BBBBBB",
@@ -71,5 +81,16 @@ export const darkTheme = {
     secondaryServiceColor: "#A2A2A2",
     BgService: "#00141E",
     iconServiceBG: "#181818",
+
+    //icons
+    icon6Bg: "#E44747",
+    icon5Bg: "#FFDB77",
+    icon4Bg: "#70AA60",
+    icon3Bg: "#83C9F7",
+    icon2Bg: "#D6699C",
+    icon1Bg: "#FD9971",
+
+    BGStep:"#000"
+
   },
 };
