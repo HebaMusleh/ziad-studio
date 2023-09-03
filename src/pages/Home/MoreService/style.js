@@ -17,7 +17,6 @@ export const ServiceStyle = styled.div`
     gap: 10px;
     align-items: center;
     justify-content: space-between;
-    height: 700px;
     flex-wrap: wrap;
     @media (max-width: 768px) {
       justify-content: center;

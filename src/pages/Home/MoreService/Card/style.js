@@ -7,8 +7,8 @@ export const CardStyle = styled.div`
   flex-basis: 48%;
   background: ${(props) => props.theme.palette.background};
   border-radius: 16px;
-  height: 100%;
   padding: 5%;
+  height:700px;
   @media (max-width: 768px) {
     flex-basis: 85%;
   }
