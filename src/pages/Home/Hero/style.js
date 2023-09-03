@@ -47,9 +47,9 @@ export const HeroStyle = styled.div`
         font-weight: 500;
         line-height: 82px;
         letter-spacing: 0em;
-        color: ${(props) => props.theme.palette.blackFonts};
+        color: ${(props) => props.theme.palette.TitleColor};
         span {
-          color: ${(props) => props.theme.palette.fontColor};
+          color: ${(props) => props.theme.palette.primaryHeroColor};
           @media (max-width: 768px) {
             font-size: 38px;
           }
@@ -63,23 +63,24 @@ export const HeroStyle = styled.div`
         font-weight: 400;
         line-height: 27px;
         letter-spacing: 0em;
+        color: ${(props) => props.theme.palette.secondaryColor};
       }
       button {
         width: 282px;
         height: 56px;
         border-radius: 8px;
-        background: ${(props) => props.theme.palette.fontColor};
+        background: ${(props) => props.theme.palette.TitleColor};
         font-size: 24px;
         font-weight: 600;
         line-height: 41px;
         letter-spacing: 0em;
         text-align: center;
-        color: ${(props) => props.theme.palette.whiteFonts};
+        color: ${(props) => props.theme.palette.white};
         cursor: pointer;
-        border: 1px solid ${(props) => props.theme.palette.fontColor};
+        border: 1px solid ${(props) => props.theme.palette.TitleColor};
         margin-top: 5%;
         &:hover {
-          background: ${(props) => props.theme.palette.serviceBg};
+          background: ${(props) => props.theme.palette.BgService};
           border: none;
           outline: none;
         }

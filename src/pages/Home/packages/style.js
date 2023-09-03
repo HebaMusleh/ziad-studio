@@ -6,7 +6,7 @@ export const H3 = styled.h3`
   line-height: 68px;
   letter-spacing: 0em;
   text-align: center;
-  color: ${(props) => props.theme.palette.fontColor};
+  color: ${(props) => props.theme.palette.TitleColor};
 `;
 export const AllCard = styled.div`
   display: flex;

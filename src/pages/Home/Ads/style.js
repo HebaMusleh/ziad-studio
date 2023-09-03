@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AdsStyle = styled.div`
-  background: #acdbe380;
+  background:${props => props.theme.palette.adsBg};
   padding:20px 0;
   .card-container{
     display:flex;

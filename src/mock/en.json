@@ -28,7 +28,11 @@
       "contactDescription1": "Do you ponder on your project and operation? Are you intrigued by design and how it presents itself to the customer?",
       "contactTitle": "Let's talk about your project details",
       "infoTitle": "Information",
-      "infoDesc": "Explore the mentality of a graphic designer through the information section, offering you a deep look at the world of design and creativity. Discover work details, inspiration and unique design insights, as well as practical tips and articles highlighting the graphic designer's experiences and creative journey. Immerse yourself in the world of colors, shapes and stripes through publications that highlight the aesthetic and artistic details of the graphic design process, enriching your understanding and increasing your inspiration as a creator."
+      "infoDesc": "Explore the mentality of a graphic designer through the information section, offering you a deep look at the world of design and creativity. Discover work details, inspiration and unique design insights, as well as practical tips and articles highlighting the graphic designer's experiences and creative journey. Immerse yourself in the world of colors, shapes and stripes through publications that highlight the aesthetic and artistic details of the graphic design process, enriching your understanding and increasing your inspiration as a creator.",
+      "package1": "Diamond Package",
+      "package2": "Gold Package",
+      "package3": "Silver Package",
+      "edit":"Number of possible amendments"
     }
   }
 }

@@ -10,7 +10,7 @@ h2{
     font-weight: 600;
     line-height: 68px;
     letter-spacing: 0em;
-    color:${props => props.theme.palette.titleColor};
+    color:${props => props.theme.palette.primarySecondSection};
 }
 p{
     font-family: Inter;
@@ -19,7 +19,7 @@ p{
     line-height: 24px;
     letter-spacing: 0em;
     text-align: center;
-    color:${props => props.theme.palette.paragraphColor};
+    color:${props => props.theme.palette.secondarySecondSection};
     width:60%;
     margin: auto;
 }

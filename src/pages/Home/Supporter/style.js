@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const SupporterStyle = styled.div`
+margin:10% 0;
 .wrapper{
     box-shadow: 0px 4px 50px 0px #1F81B01A;
     padding:10px 50px 50px;

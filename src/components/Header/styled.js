@@ -12,5 +12,6 @@ background: ${(props) => props.theme.palette.heroBackground};
   .icons {
     font-size: 32px;
     cursor: pointer;
+    color: ${(props) => props.theme.palette.primaryHeroColor};
   }
 `;
