@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const SideStyle = styled.div`
-  background: #00000047;
   position: fixed;
   width: 100%;
   ${(props) => (props.dir === "rtl" ? "right: -2000px" : "left: -2000px")};
@@ -13,7 +12,7 @@ export const SideStyle = styled.div`
   }
   aside {
     width: 25%;
-    background: #fff;
+    background:${(props) => props.theme.palette.background};
     padding: 20px;
     height: 100vh;
     @media (max-width: 768px) {
@@ -31,7 +30,7 @@ export const SideStyle = styled.div`
     font-weight: 500;
     line-height: 41px;
     letter-spacing: 0em;
-    color: #5f5f5f;
+    color: ${(props) => props.theme.palette.colorMenu};
     padding: 10px;
     cursor: pointer;
     a {
@@ -41,10 +40,10 @@ export const SideStyle = styled.div`
       letter-spacing: 0em;
       text-align: center;
       padding-right: 10px;
-      color: #5f5f5f;
+      color: ${(props) => props.theme.palette.colorMenu};
     }
     &:hover {
-      background: #e3e3e3;
+      background: ${(props) => props.theme.palette.hover};
       border-radius: 5px;
     }
   }
@@ -59,7 +58,7 @@ export const SideStyle = styled.div`
   }
   .closeIcon {
     font-size: 40px;
-    color: #545454;
+    color: ${props=>props.theme.palette.closeIcon};
     cursor: pointer;
   }
   .secondSection {
@@ -85,7 +84,7 @@ export const SideStyle = styled.div`
       display: block;
       padding: 5px;
       border-radius: 5px;
-      background: #eee;
+      background: ${props=>props.theme.palette.ulBg};
       width: 100%;
       li {
         font-size: 16px;

@@ -40,7 +40,7 @@ export default function App() {
         <Suspense fallback={<Spinner />}>
           <Header openClick={openClick} dir={direction} theme={theme.theme}/>
           <Router />
-          <SideMenu close={close} closeClick={closeClick} dir={direction} />
+          <SideMenu close={close} closeClick={closeClick} dir={direction} theme={theme.theme}/>
           <Footer />
         </Suspense>
       </themeContext.Provider>

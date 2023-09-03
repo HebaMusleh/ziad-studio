@@ -43,7 +43,11 @@ export const lightTheme = {
     icon2Bg: "#D0558F",
     icon1Bg: "#FD8758",
 
-    BGStep:"#eee"
+    BGStep:"#eee",
+    closeIcon:"#545454",
+    colorMenu:"#5f5f5f",
+    hover:"#e3e3e3",
+    ulBg:"#eee"
   },
 };
 
@@ -90,7 +94,11 @@ export const darkTheme = {
     icon2Bg: "#D6699C",
     icon1Bg: "#FD9971",
 
-    BGStep:"#000"
+    BGStep:"#000",
+    closeIcon:"#fff",
+    colorMenu:"#eee",
+    hover:"#2a2a2ade",
+    ulBg:"#3a3939c2"
 
   },
 };

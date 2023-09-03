@@ -14,10 +14,11 @@ import { useTranslation } from 'react-i18next';
 
 
 import logo from '../../assets/logo.png';
+import darkLogo from '../../assets/darklogo.png'
 import { SideStyle } from './style';
 
 
-const SideMenu = ({ close, closeClick, dir }) => {
+const SideMenu = ({ close, closeClick, dir ,theme}) => {
   const { i18n, t } = useTranslation();
   const [showLanguageMenu, setShowLanguageMenu] = useState(false);
 
@@ -33,7 +34,11 @@ const SideMenu = ({ close, closeClick, dir }) => {
         <ul>
           <li className='head'>
             <div>
+              {theme ==="dark"?
+              <img src={darkLogo} alt="logo"/>
+              :
               <img src={logo} alt="logo" />
+              }
             </div>
             <div>
               <IoClose className='closeIcon' onClick={closeClick} />
