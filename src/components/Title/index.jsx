@@ -22,6 +22,9 @@ p{
     color:${props => props.theme.palette.secondarySecondSection};
     width:60%;
     margin: auto;
+    @media (max-width: 480px) {
+        width:100%;
+      }
 }
 `
 const Title = ({ title, desc }) => {
