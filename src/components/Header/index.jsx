@@ -12,7 +12,7 @@ import { HeaderStyle } from './styled';
 
 
 
-const Header = ({ openClick, dir,theme }) => {
+const Header = ({ openClick, dir, theme }) => {
     return (
         <HeaderStyle>
             <Container>
@@ -31,11 +31,11 @@ const Header = ({ openClick, dir,theme }) => {
 
                     </div>
                     <div className="logo">
-                        {theme ==='dark'?
-                        <img src={darkLogo} alt="logo" />
-                        :
-                        <img src={logo} alt="logo" />
-                    }
+                        {theme === 'dark' ?
+                            <img src={darkLogo} alt="logo" />
+                            :
+                            <img src={logo} alt="logo" />
+                        }
                     </div>
                 </motion.div>
             </Container>

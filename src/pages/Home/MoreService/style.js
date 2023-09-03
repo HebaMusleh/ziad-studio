@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ServiceStyle = styled.div`
   background: ${(props) => props.theme.palette.BgService};
   text-align: center;
-  padding-bottom: 20%;
+  padding-bottom: 5%;
   h2 {
     font-size: 40px;
     font-weight: 500;
