@@ -66,6 +66,7 @@ export const Wrapper = styled.div`
       letter-spacing: 0em;
       width: fit-content;
       color: #636363;
+      text-align: start;
     }
   }
   .edits {

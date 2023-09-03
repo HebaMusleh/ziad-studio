@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 
 
@@ -20,9 +21,10 @@ const BtnStyle = styled.button`
     }
 `
 const BtnOrder = () => {
+    const {t} = useTranslation();
     return (
         <BtnStyle>
-            اطلب الان
+            {t("order")}
         </BtnStyle>
     )
 }

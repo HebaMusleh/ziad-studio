@@ -40,7 +40,27 @@
       "desc2Service1": "تصميم تغليف منتج بثلاث مقاسات مختلفه 6300 ريال",
       "titleService2": "تصميم بروفايل لشركاتك ",
       "desc1Service2": "تصميم بروفايل خاص للطباعه من 12 الى 24 صفحه بـ 4300 ريال",
-      "desc2Service2": "تصميم بروفايل خاص للطباعة واخر تفاعلي من 12 الى 24 صفحه ب 6700 ريال"
+      "desc2Service2": "تصميم بروفايل خاص للطباعة واخر تفاعلي من 12 الى 24 صفحه ب 6700 ريال",
+      "stampDesign": "تصميم الختم",
+      "patternDesign": "تصميم الباترن",
+      "logoDesign": "تصميم الشعار",
+      "envelopeDesign": "تصميم الأظرف",
+      "vehicleDesign": "تصميم المركبات",
+      "uniformDesign": "تصميم الزي الموحد",
+      "signageDesign": "تصميم اللوح الارشادية",
+      "deskSignDesign": "تصميم اللوح المكتبية",
+      "businessCardDesign": "تصميم البزنس كارد",
+      "letterheadDesign": "تصميم ورق المراسلات",
+      "employeeCardDesign": "تصميم بطاقات الموظفين",
+      "socialMediaTemplateDesign": "تصميم قوالب السوشال ميديا",
+      "logoAnimation": "تحريك الشعار بالموشن جرافيك",
+      "posterDesign": "تصميم الملصقات والبروشور",
+      "brandIdentityGuide": "تسليم دليل استخدام الهوية البصرية",
+      "menuDesign": "تصميم المنيو",
+      "externalSignDesign": "تصميم اللوحة الخارجية",
+      "packagingDesign": "تصميم التغليف والأكياس",
+      "SAR": "ريال",
+      "order":"اطلب الآن"
     }
   }
 }

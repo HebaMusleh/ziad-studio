@@ -8,7 +8,7 @@ export const CardStyle = styled.div`
   background: ${(props) => props.theme.palette.background};
   border-radius: 16px;
   padding: 5%;
-  height:700px;
+  height: 700px;
   @media (max-width: 768px) {
     flex-basis: 85%;
   }
@@ -38,8 +38,7 @@ export const CardStyle = styled.div`
   .desc {
     .line {
       display: flex;
-      align-items: center;
-      gap: 2%;
+      gap: 10px;
       margin-bottom: 2%;
       p {
         font-size: 20px;
@@ -47,17 +46,15 @@ export const CardStyle = styled.div`
         line-height: 34px;
         letter-spacing: 0em;
         color: ${(props) => props.theme.palette.secondaryServiceColor};
+        text-align: start;
       }
     }
   }
-  .check-box {
-    width: 20px;
-    height: 20px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
+
+.icons{
+  color:#62D181;
+  font-size:20px;
+}
   .btn {
     margin-bottom: 12%;
   }

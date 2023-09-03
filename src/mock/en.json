@@ -42,7 +42,27 @@
       "desc2Service1": "Product packaging design in three different sizes 6300 SAR",
       "titleService2": "Profile design for your companies",
       "desc1Service2": "Special profile design for printing from 12 to 24 pages for 4300 SAR",
-      "desc2Service2": "Special profile design for printing and last interactive from 12 to 24 pages in SAR 6700"
+      "desc2Service2": "Special profile design for printing and last interactive from 12 to 24 pages in SAR 6700",
+      "stampDesign": "Stamp Design",
+      "patternDesign": "Pattern Design",
+      "logoDesign": "Logo Design",
+      "envelopeDesign": "Envelope Design",
+      "vehicleDesign": "Vehicle Design",
+      "uniformDesign": "Uniform Design",
+      "signageDesign": "Signage Design",
+      "deskSignDesign": "Desk Sign Design",
+      "businessCardDesign": "Business Card Design",
+      "letterheadDesign": "Letterhead Design",
+      "employeeCardDesign": "Employee Card Design",
+      "socialMediaTemplateDesign": "Social Media Template Design",
+      "logoAnimation": "Logo Animation",
+      "posterDesign": "Poster Design",
+      "brandIdentityGuide": "Brand Identity Guide",
+      "menuDesign": "Menu Design",
+      "externalSignDesign": "External Sign Design",
+      "packagingDesign": "Packaging Design",
+      "SAR":"SAR",
+      "order":"order now"
     }
   }
 }
