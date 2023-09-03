@@ -21,7 +21,7 @@ const BtnStyle = styled.button`
     }
 `
 const BtnOrder = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
         <BtnStyle>
             {t("order")}

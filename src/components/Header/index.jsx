@@ -1,6 +1,7 @@
 import React from 'react'
 
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.png';
+import darkLogo from '../../assets/darklogo.png';
 
 import { RiMenu3Fill, RiMenu2Line } from "react-icons/ri";
 
@@ -11,7 +12,7 @@ import { HeaderStyle } from './styled';
 
 
 
-const Header = ({ openClick, dir }) => {
+const Header = ({ openClick, dir,theme }) => {
     return (
         <HeaderStyle>
             <Container>
@@ -30,7 +31,11 @@ const Header = ({ openClick, dir }) => {
 
                     </div>
                     <div className="logo">
+                        {theme ==='dark'?
+                        <img src={darkLogo} alt="logo" />
+                        :
                         <img src={logo} alt="logo" />
+                    }
                     </div>
                 </motion.div>
             </Container>

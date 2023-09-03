@@ -30,6 +30,7 @@ export default function App() {
   const openClick = () => {
     setClose(true);
   };
+  console.log(theme.theme)
   const direction = i18n.language === "en" ? "ltr" : "rtl";
   console.log(close);
   return (
@@ -37,7 +38,7 @@ export default function App() {
       <themeContext.Provider value={[theme, setTheme]}>
         <GlobalStyle dir={direction} close={close} />
         <Suspense fallback={<Spinner />}>
-          <Header openClick={openClick} dir={direction} />
+          <Header openClick={openClick} dir={direction} theme={theme.theme}/>
           <Router />
           <SideMenu close={close} closeClick={closeClick} dir={direction} />
           <Footer />

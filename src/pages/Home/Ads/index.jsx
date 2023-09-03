@@ -1,19 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
+import { Container } from '../../../global/component';
+import { AdsStyle } from './style';
+import Card from './Card';
+
+import { fadeIn } from '../../../utils/motion';
 
 import { CiCoffeeCup } from 'react-icons/ci';
-import { SlCalender } from 'react-icons/sl'
-import { SiSlideshare } from 'react-icons/si'
-
-import { Container } from '../../../global/component'
-import { AdsStyle } from './style'
-import Card from './Card'
-
-import { motion } from 'framer-motion'
-import { fadeIn } from "../../../utils/motion";
-import { useTranslation } from 'react-i18next';
+import { SlCalender } from 'react-icons/sl';
+import { SiSlideshare } from 'react-icons/si';
 
 const Ads = () => {
     const { t } = useTranslation();
+
     return (
         <AdsStyle>
             <Container>
@@ -23,8 +24,8 @@ const Ads = () => {
                     <Card icons={<SiSlideshare />} num="18" title={t('customrs')} />
                 </motion.div>
             </Container>
-        </AdsStyle >
-    )
-}
+        </AdsStyle>
+    );
+};
 
-export default Ads
+export default Ads;
