@@ -4,7 +4,7 @@ export const CardStyle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 48%;
+  flex-basis: 50%;
   background: ${(props) => props.theme.palette.background};
   border-radius: 16px;
   padding: 5%;

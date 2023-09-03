@@ -22,4 +22,7 @@ export const ServiceStyle = styled.div`
       justify-content: center;
     }
   }
+  .singleCard{
+    flex-basis:48%;
+  }
 `;
