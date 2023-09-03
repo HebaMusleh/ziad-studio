@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SideStyle = styled.div`
-  // background: #00000047;
+  background: #00000047;
   position: fixed;
   width: 100%;
   ${(props) => (props.dir === "rtl" ? "right: -2000px" : "left: -2000px")};
@@ -32,8 +32,8 @@ export const SideStyle = styled.div`
     line-height: 41px;
     letter-spacing: 0em;
     color: #5f5f5f;
-    padding:10px;
-    cursor:pointer;
+    padding: 10px;
+    cursor: pointer;
     a {
       font-size: 20px;
       font-weight: 500;
@@ -45,7 +45,7 @@ export const SideStyle = styled.div`
     }
     &:hover {
       background: #e3e3e3;
-      border-radius:5px;
+      border-radius: 5px;
     }
   }
   .head {
@@ -53,8 +53,8 @@ export const SideStyle = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    &:hover{
-      background:transparent;
+    &:hover {
+      background: transparent;
     }
   }
   .closeIcon {
@@ -71,8 +71,8 @@ export const SideStyle = styled.div`
   .theme-btns {
     display: flex;
     align-items: center;
-    &:hover{
-      background:transparent;
+    &:hover {
+      background: transparent;
     }
   }
   .arabic-english-menu {
@@ -94,11 +94,11 @@ export const SideStyle = styled.div`
       }
     }
   }
-  .arabic-english-menu{
-    padding:10px;
-    margin-bottom:30px;
+  .arabic-english-menu {
+    padding: 10px;
+    margin-bottom: 30px;
   }
-  .head-languages{
-    cursor:pointer;
+  .head-languages {
+    cursor: pointer;
   }
 `;
