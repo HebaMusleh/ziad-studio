@@ -7,6 +7,20 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
   }
+  .myComponent {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 0;
+    padding: 1.25rem 0.375rem;
+    @media (min-width: 640px) {
+      padding: 4rem 1rem;
+    }
+  }
+  .vertical-timeline-element{
+    direction:ltr;
+  }
 `;
 const VerticalWrapper = styled.div`
   display: flex;
@@ -30,6 +44,6 @@ const H2 = styled.h2`
   font-weight: 500;
   line-height: 68px;
   letter-spacing: 0em;
-  color:${(props) => props.theme.palette.primarySecondSection};
+  color: ${(props) => props.theme.palette.primarySecondSection};
 `;
 export { Wrapper, VerticalWrapper, Title, H2 };

@@ -11,7 +11,7 @@ import Data from "../../../mock/data";
 
 import { textVariant3, staggerContainer } from "../../../utils/motion";
 
-import { Wrapper, VerticalWrapper, Title,H2 } from './style'
+import { Wrapper, VerticalWrapper, Title, H2 } from './style'
 import { Container } from "../../../global/component";
 import { useTranslation } from "react-i18next";
 
@@ -49,7 +49,7 @@ const Steps = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.25 }}
-                    className={`max-w-7xl mx-auto relative z-0`}>
+                    className={'myComponent'}>
                     <span className="hash-span">
                         &nbsp;
                     </span>
