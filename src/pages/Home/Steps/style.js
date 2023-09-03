@@ -18,8 +18,8 @@ const Wrapper = styled.div`
       padding: 4rem 1rem;
     }
   }
-  .vertical-timeline-element{
-    direction:ltr;
+  .vertical-timeline-element {
+    direction: ltr;
   }
 `;
 const VerticalWrapper = styled.div`
