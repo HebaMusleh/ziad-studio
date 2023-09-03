@@ -32,7 +32,17 @@
       "package1": "Diamond Package",
       "package2": "Gold Package",
       "package3": "Silver Package",
-      "edit":"Number of possible amendments"
+      "edit": "Number of possible amendments",
+      "descPackages": "Design three logos and choose one of the designs",
+      "design": "Visual Identity Design",
+      "services": "our services",
+      "descServices": "Add a touch of creativity to your brand with our graphic designer services, turning ideas into eye-catching and heartfelt visual designs.",
+      "titleService1": "Packaging & Packaging Design",
+      "desc1Service1": "One Size Product Packaging Design for SAR 4,800",
+      "desc2Service1": "Product packaging design in three different sizes 6300 SAR",
+      "titleService2": "Profile design for your companies",
+      "desc1Service2": "Special profile design for printing from 12 to 24 pages for 4300 SAR",
+      "desc2Service2": "Special profile design for printing and last interactive from 12 to 24 pages in SAR 6700"
     }
   }
 }

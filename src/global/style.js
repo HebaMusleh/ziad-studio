@@ -14,6 +14,6 @@ body{
     direction:${(props) => props.dir};
     font-family: 'Baloo Bhaijaan 2', cursive;
     transition:.8s;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 `;

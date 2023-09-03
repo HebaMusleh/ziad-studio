@@ -19,6 +19,7 @@ export const lightTheme = {
 
     primaryCustomerColor: "#4D4D4D",
     secondaryCustomerColor: "#5F5F5F",
+    shadow:"#1F81B01A",
 
     // الباقات
 
@@ -49,7 +50,7 @@ export const darkTheme = {
     primarySecondSection: "#fff",
     secondarySecondSection: "#B5B5B5",
 
-    adsBg: "#001721",
+    adsBg: "#001721B2",
     iconColor: "#fff",
     primaryAds: "#fff",
     secondaryAds: "#B5B5B5",
@@ -57,6 +58,7 @@ export const darkTheme = {
 
     primaryCustomerColor: "#fff",
     secondaryCustomerColor: "#B5B5B5",
+    shadow:"#FFFFFF26",
 
     secondaryTitle: "#fff",
     firstText: "#BBBBBB",

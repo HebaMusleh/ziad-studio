@@ -4,7 +4,7 @@ export const USStyle = styled.div`
   padding: 10% 0;
   .us-content {
     position: relative;
-    box-shadow: 0px 4px 50px 0px #1f81b01a;
+    box-shadow: 0px 4px 50px 0px ${(props) => props.theme.palette.shadow};
     width: 95%;
     border-radius: 16px;
     padding: 10px 20px;

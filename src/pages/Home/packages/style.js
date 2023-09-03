@@ -12,7 +12,10 @@ export const AllCard = styled.div`
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 10%;
+  @media (max-width: 820px) {
+    justify-content: center;
+  }
 `;

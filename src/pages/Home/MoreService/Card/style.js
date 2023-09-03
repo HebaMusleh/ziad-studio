@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const CardStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 48%;
-  background: ${(props) => props.theme.palette.whiteFonts};
+  background: ${(props) => props.theme.palette.background};
   border-radius: 16px;
+  height: 100%;
   padding: 5%;
   @media (max-width: 768px) {
     flex-basis: 85%;
@@ -15,7 +19,7 @@ export const CardStyle = styled.div`
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    background: ${(props) => props.theme.palette.moreService};
+    background: ${(props) => props.theme.palette.iconServiceBG};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +46,7 @@ export const CardStyle = styled.div`
         font-weight: 400;
         line-height: 34px;
         letter-spacing: 0em;
-        color: #525252;
+        color: ${(props) => props.theme.palette.secondaryServiceColor};
       }
     }
   }
@@ -55,6 +59,6 @@ export const CardStyle = styled.div`
     }
   }
   .btn {
-    margin: 12% 0;
+    margin-bottom: 12%;
   }
 `;

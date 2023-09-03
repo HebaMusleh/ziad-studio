@@ -1,43 +1,36 @@
-import React from 'react'
+import React from 'react';
+import { Wrapper } from './style';
+import BtnOrder from '../../../../components/BtnOrder';
+import { useTranslation } from 'react-i18next';
 
-import { Wrapper } from './style'
-import BtnOrder from '../../../../components/BtnOrder'
-import { useTranslation } from 'react-i18next'
+const Card = ({ img, title, desc, price, num = 1, options }) => {
+  const { t } = useTranslation();
 
-const Card = ({ img, title, desc, price,num=1 }) => {
-  const {t} = useTranslation();
   return (
     <Wrapper>
       <div className='image'>
-        <img src={img} alt="" />
+        <img src={img} alt='' />
       </div>
-      <div className="title">
+      <div className='title'>
         <h3>{title}</h3>
       </div>
-      <div className="description">
+      <div className='description'>
         <h5>{desc}</h5>
-        <p>
-          <ul>
-            <li>تصميم باترن</li>
-            <li>تصميم باترن</li>
-            <li>تصميم باترن</li>
-            <li>تصميم باترن</li>
-            <li>تصميم باترن</li>
-            <li>تصميم باترن</li>
-            <li>تصميم باترن</li>
-            <li>تصميم باترن</li>
-            <li>تصميم باترن</li>
-            <li>تصميم باترن</li>
-            <li className='edits'>{t('edit')} {num}</li>
-          </ul>
-        </p>
+        <ul>
+          {options.map((opt, index) => (
+            <li key={index}>{opt}</li>
+          ))}
+        </ul>
+        <li className='edits'>
+          {t('edit')} {num}
+        </li>
       </div>
-      <div className="price">
+      <div className='price'>
         <h4>{price}</h4>
         <BtnOrder />
       </div>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
