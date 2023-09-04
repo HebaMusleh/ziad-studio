@@ -11,7 +11,10 @@
 
 .switch[data-isOn="true"] {
   justify-content: flex-end;
-  background-color:#c4c4c46b;
+  background:#014360;
+}
+.switch[data-isOn="false"] {
+  background:#1f81b0;
 }
 
 .handle {
