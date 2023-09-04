@@ -37,6 +37,9 @@ const VerticalWrapper = styled.div`
 const Title = styled.div`
   color: white;
   font-size: 1rem;
+  @media (max-width: 768px) {
+    font-size: .8rem;
+  }
 `;
 const H2 = styled.h2`
   text-align: center;
@@ -45,5 +48,8 @@ const H2 = styled.h2`
   line-height: 68px;
   letter-spacing: 0em;
   color: ${(props) => props.theme.palette.primarySecondSection};
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 export { Wrapper, VerticalWrapper, Title, H2 };
