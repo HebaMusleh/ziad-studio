@@ -78,7 +78,7 @@ export const Wrapper = styled.div`
       color: #636363;
       text-align: start;
       @media (max-width: 768px) {
-        font-size: .7rem;
+        font-size: .9rem;
       }
     }
   }
@@ -89,6 +89,9 @@ export const Wrapper = styled.div`
     font-weight: 500;
     line-height: 41.09px;
     text-align:center;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
   .brand{
     color: ${(props) => props.theme.palette.icon6Bg};
