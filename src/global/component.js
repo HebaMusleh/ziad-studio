@@ -5,7 +5,7 @@ export const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-
+  overflow-x:hidden;
   /* Media Queries for Responsiveness */
   @media (max-width: 768px) {
     /* Adjust properties for screens up to 768px */
