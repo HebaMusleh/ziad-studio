@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import { CardStyle } from './style';
 
 const Card = ({ icons, num, title }) => {
