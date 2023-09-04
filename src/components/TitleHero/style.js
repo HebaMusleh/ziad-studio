@@ -16,7 +16,7 @@ text-align:center;
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 0em;
-    color: #4a4a4a;
+    color: ${props=>props.theme.palette.workTitle};
     width:70%;
     margin:0 auto;
   }

@@ -47,7 +47,11 @@ export const lightTheme = {
     closeIcon:"#545454",
     colorMenu:"#5f5f5f",
     hover:"#e3e3e3",
-    ulBg:"#eee"
+    ulBg:"#eee",
+    cardWork:"#F9F9F9",
+    cardTitle:"#002B47",
+    cardDesc:"#646464",
+    workTitle:"#4A4A4A"
   },
 };
 
@@ -98,7 +102,12 @@ export const darkTheme = {
     closeIcon:"#fff",
     colorMenu:"#eee",
     hover:"#2a2a2ade",
-    ulBg:"#3a3939c2"
+    ulBg:"#3a3939c2",
+    cardWork:"#121212",
+
+    cardTitle:"#1F81B0",
+    cardDesc:"#ccc",
+    workTitle:"#D3D3D3"
 
   },
 };

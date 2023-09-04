@@ -13,6 +13,7 @@ export const SideStyle = styled.div`
   aside {
     width: 25%;
     background:${(props) => props.theme.palette.background};
+    transition:.8s;
     padding: 20px;
     height: 100vh;
     @media (max-width: 768px) {

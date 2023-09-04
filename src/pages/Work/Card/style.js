@@ -5,9 +5,10 @@ export const CardStyle = styled.div`
   margin-bottom: 50px;
   align-items: center;
   gap: 50px;
-  background: #f9f9f9;
+  background: ${props=>props.theme.palette.cardWork};
   border-radius: 8px;
   padding: 10px;
+  transition:.8s;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -19,7 +20,7 @@ export const CardStyle = styled.div`
       display: none;
     }
     h1 {
-      color: #002b47;
+      color: ${props=>props.theme.palette.cardTitle};
       font-size: 2rem;
       font-weight: 600;
       line-height: 55px;
@@ -31,7 +32,7 @@ export const CardStyle = styled.div`
       line-height: 27px;
       letter-spacing: 0em;
       text-align: center;
-      color: #646464;
+      color: ${props=>props.theme.palette.cardDesc};;
     }
   }
   .image-section {
