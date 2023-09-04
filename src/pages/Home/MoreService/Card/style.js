@@ -33,6 +33,9 @@ export const CardStyle = styled.div`
       letter-spacing: 0em;
       color: ${(props) => props.theme.palette.moreServiceTitle};
       margin-bottom: 2%;
+      @media (max-width: 480px) {
+        font-size: 20px;
+      }
     }
   }
   .desc {
@@ -47,6 +50,9 @@ export const CardStyle = styled.div`
         letter-spacing: 0em;
         color: ${(props) => props.theme.palette.secondaryServiceColor};
         text-align: start;
+        @media (max-width: 480px) {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -54,6 +60,9 @@ export const CardStyle = styled.div`
   .icons {
     color: #62d181;
     font-size: 20px;
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
   }
   .btn {
     margin-bottom: 12%;
