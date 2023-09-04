@@ -35,7 +35,7 @@ text-align: center;
 `
 
 const Footer = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
         <FooterStyle>
             <div><p>{t('footer')}</p></div>
