@@ -73,6 +73,9 @@ const Btn = styled.button`
   cursor: pointer;
   font-weight: 500;
   font-size: 1.25rem;
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 export { ModalWrapper, Btn };
