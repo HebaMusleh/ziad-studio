@@ -3,8 +3,6 @@ import { Container } from '../../../global/component';
 import { H3, AllCard } from './style';
 import Title from '../../../components/Title';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import {staggerContainer} from '../../../utils/motion'
 
 import G1 from '../../../assets/G1.png';
 import G2 from '../../../assets/G2.png';
@@ -76,13 +74,6 @@ const Packages = () => {
 
     return (
         <Container>
-            <motion.div
-                variants={staggerContainer}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, amount: 0.25 }}
-                className={`innerWidth `}
-            >
                 <Title title={t('services')} desc={t('descServices')} />
                 <H3>{t('design')}</H3>
                 <AllCard>
@@ -90,7 +81,6 @@ const Packages = () => {
                         <Card key={index} {...card} />
                     ))}
                 </AllCard>
-            </motion.div>
         </Container>
     );
 };

@@ -1,8 +1,5 @@
 import React from 'react';
 
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../../../utils/motion'
-
 import { Wrapper } from './style';
 
 import BtnOrder from '../../../../components/BtnOrder';
@@ -16,7 +13,6 @@ const Card = ({ img, title, desc, price, num = 1, options,brand }) => {
 
   return (
     <Wrapper>
-      <motion.span variants={fadeIn("right", "tween", 0.2, 1)}>
         <div className='image'>
           <img src={img} alt='' />
         </div>
@@ -39,7 +35,6 @@ const Card = ({ img, title, desc, price, num = 1, options,brand }) => {
           <h4>{price}</h4>
           <BtnOrder />
         </div>
-      </motion.span>
     </Wrapper>
   );
 };
