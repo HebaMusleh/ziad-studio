@@ -43,15 +43,16 @@ export const lightTheme = {
     icon2Bg: "#D0558F",
     icon1Bg: "#FD8758",
 
-    BGStep:"#eee",
-    closeIcon:"#545454",
-    colorMenu:"#5f5f5f",
-    hover:"#e3e3e3",
-    ulBg:"#eee",
-    cardWork:"#F9F9F9",
-    cardTitle:"#002B47",
-    cardDesc:"#646464",
-    workTitle:"#4A4A4A"
+    BGStep: "#eee",
+    closeIcon: "#545454",
+    colorMenu: "#5f5f5f",
+    hover: "#e3e3e3",
+    ulBg: "#eee",
+    cardWork: "#F9F9F9",
+    cardTitle: "#002B47",
+    cardDesc: "#646464",
+    workTitle: "#4A4A4A",
+    singleWorkTitle: "#002B47",
   },
 };
 
@@ -98,16 +99,16 @@ export const darkTheme = {
     icon2Bg: "#D6699C",
     icon1Bg: "#FD9971",
 
-    BGStep:"#000",
-    closeIcon:"#fff",
-    colorMenu:"#eee",
-    hover:"#2a2a2ade",
-    ulBg:"#3a3939c2",
-    cardWork:"#121212",
+    BGStep: "#000",
+    closeIcon: "#fff",
+    colorMenu: "#eee",
+    hover: "#2a2a2ade",
+    ulBg: "#3a3939c2",
+    cardWork: "#121212",
 
-    cardTitle:"#1F81B0",
-    cardDesc:"#ccc",
-    workTitle:"#D3D3D3"
-
+    cardTitle: "#1F81B0",
+    cardDesc: "#ccc",
+    workTitle: "#D3D3D3",
+    singleWorkTitle: "#1F81B0",
   },
 };

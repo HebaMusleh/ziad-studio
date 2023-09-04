@@ -5,10 +5,12 @@ import { CardStyle } from './style';
 import insta from '../../../assets/insta.png';
 import facebook from '../../../assets/face.png';
 import whats from '../../../assets/whats.png';
+import { useNavigate } from 'react-router-dom';
 
-const Card = ({ title, description, img }) => {
+const Card = ({ title, description, img,id }) => {
+    const navigate = useNavigate();
     return (
-        <CardStyle>
+        <CardStyle onClick={()=>navigate(`/work/${id}`)}>
             <div className="description-section">
                 <h1>{title}</h1>
                 <p>

@@ -12,7 +12,12 @@ const Work = () => {
             <Container>
                 <Hero />
                 {data.map((item, index) => (
-                    <Card key={index} title={item.title} description={item.description} img={item.img1} />
+                    <Card 
+                    key={index} 
+                    title={item.title} 
+                    description={item.description} 
+                    img={item.img1}
+                    id={index+1} />
                 ))}
                 {/* <Modal/> */}
             </Container>
