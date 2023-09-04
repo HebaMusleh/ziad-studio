@@ -5,6 +5,10 @@ import WorkData from '../../mock/workData';
 import styled from 'styled-components';
 
 const Style = styled.div`
+padding-top:7%;
+@media (max-width: 768px) {
+  padding-top:13%;
+}
 h1{
   margin:20px auto;
   font-size: 2rem;

@@ -4,11 +4,18 @@ import Hero from './Hero';
 import Card from './Card';
 import Modal from '../Modal';
 import WorkData from '../../mock/workData';
+import  styled  from 'styled-components';
 
+const Style = styled.div`
+padding-top:7%;
+@media (max-width: 768px) {
+    padding-top:13%;
+  }
+`
 const Work = () => {
     const data = WorkData();
     return (
-        <>
+        <Style>
             <Container>
                 <Hero />
                 {data.map((item, index) => (
@@ -21,7 +28,7 @@ const Work = () => {
                 ))}
                 {/* <Modal/> */}
             </Container>
-        </>
+        </Style>
     );
 };
 

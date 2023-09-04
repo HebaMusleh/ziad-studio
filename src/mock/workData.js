@@ -38,6 +38,7 @@ import img47 from "../assets/3basi1.png";
 
 //Fayyah
 import img51 from "../assets/dabah.png";
+import cover5 from '../assets/fayyahCover.jpg';
 
 const WorkData = () => {
   const { t } = useTranslation();
@@ -79,8 +80,8 @@ const WorkData = () => {
     },
     {
       id: 4,
-      title: t("lukka"),
-      description: t("lukkaDesc"),
+      title: t("3basi"),
+      description: t("3basiDesc"),
       img1: img41,
       cover: cover4,
       img2:img42,
@@ -88,13 +89,14 @@ const WorkData = () => {
       img4:img44,
       img5:img45,
       img6:img46,
+      img7:img47
     },
     {
       id: 5,
-      title: t("lukka"),
-      description: t("lukkaDesc"),
+      title: t("fayyah"),
+      description: t("fayyahDesc"),
       img1: img51,
-      cover: cover2,
+      cover: cover5,
     },
   ];
   return data;

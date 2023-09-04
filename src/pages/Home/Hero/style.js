@@ -12,7 +12,6 @@ export const HeroStyle = styled.div`
     }
 
     @media (max-width: 480px) {
-      /* Adjust properties for screens up to 480px */
       padding: 5px;
     }
 

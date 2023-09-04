@@ -24,7 +24,7 @@ export default function Supporter() {
   const { t } = useTranslation();
 
   return (
-    <SupporterStyle>
+    <SupporterStyle id="customers">
       <Container>
         <div className="wrapper">
           <Title

@@ -1,16 +1,23 @@
-import React from 'react'
-import {CardStyle} from './style'
+import React from 'react';
+import { CardStyle } from './style';
 
-const Card = () => {
+const Card = ({ question, answer, BG }) => {
+    const bgImage = `linear-gradient(180deg, rgba(16, 20, 24, 0) 0%, #101418 100%), url(${BG})`;
+
+    const cardStyle = {
+        background: bgImage,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+    };
     return (
-        <CardStyle>
+        <CardStyle style={cardStyle}>
             <div className='content'>
-            <h4>ماهو البراند</h4>
-            <p>في فكره مغلوطه عن كثير من الناس ان البراند هو الشعار او اللوقو والاصح هي الصوره الذهنيه العامه المرتبطه باذهان الناس تجاه الشركة او المنتج او حتى علامتك التجاريه وميزتك التنافسيه وهي تعتبر الجزء العاطفي .. على سبيل المثال شركة ابل استطاعت رسم خريطه ذهنيه بعقولنا ان مالكي منتجاتها اذكياء ومتفردين واثرياء ماديا فغالبا نقتني اجهزه ابل للاسباب المذكوره ..
-                وما ننسى اكيد الجوده المستخدمه في الاجهزه والتصاميم ونظام التشغيل ios وسهوله الاستخدام .</p>
+                <h4>{question}</h4>
+                <p>{answer}</p>
             </div>
         </CardStyle>
-    )
-}
+    );
+};
 
-export default Card
+export default Card;

@@ -8,10 +8,17 @@ import Work from './Work'
 import Ads from './Ads'
 import US from './US'
 import Steps from './Steps'
+import  styled  from 'styled-components'
 
+const Style = styled.div`
+padding-top:7%;
+@media (max-width: 768px) {
+  padding-top:13%;
+}
+`
 const Home = () => {
   return (
-    <div>
+    <Style>
       <Hero />
       <US />
       <Ads />
@@ -20,7 +27,7 @@ const Home = () => {
       <Steps />
       <MoreService />
       <Work />
-    </div>
+    </Style>
   )
 }
 

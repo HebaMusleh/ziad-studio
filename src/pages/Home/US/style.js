@@ -9,7 +9,7 @@ export const USStyle = styled.div`
     border-radius: 16px;
     padding: 10px 20px;
     margin: 10% auto;
-    z-index: 1000;
+    z-index: 9;
   }
   .images {
     position: absolute;

@@ -16,11 +16,13 @@ import { useTranslation } from 'react-i18next';
 import logo from '../../assets/logo.png';
 import darkLogo from '../../assets/darklogo.png'
 import { SideStyle } from './style';
+import { useNavigate } from 'react-router-dom';
 
 
 const SideMenu = ({ close, closeClick, dir ,theme}) => {
   const { i18n, t } = useTranslation();
   const [showLanguageMenu, setShowLanguageMenu] = useState(false);
+  const navigate = useNavigate();
 
   const ChangeLang = (lang) => {
     localStorage.setItem('lang', lang);
@@ -46,9 +48,9 @@ const SideMenu = ({ close, closeClick, dir ,theme}) => {
           </li>
           <hr />
           <div className='secondSection'>
-            <li><AiOutlineHome /><a href="/#">{t('Home')}</a></li>
-            <li><BsLightbulb /><a href="/#">{t('Information')}</a></li>
-            <li><BsPeople /><a href="/#">{t('customers')}</a></li>
+            <li><AiOutlineHome /><div onClick={()=>navigate('/')}>{t('Home')}</div></li>
+            <li><BsLightbulb /><div onClick={()=>navigate('/info')}>{t('Information')}</div></li>
+            <li><BsPeople /><a href="/#customers">{t('customers')}</a></li>
           </div>
           <hr />
           <div className="thirdSection">

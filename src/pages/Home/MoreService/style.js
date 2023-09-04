@@ -24,5 +24,8 @@ export const ServiceStyle = styled.div`
   }
   .singleCard{
     flex-basis:48%;
+    @media (max-width: 768px) {
+      flex-basis:95%;
+    }
   }
 `;
