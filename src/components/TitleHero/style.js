@@ -10,6 +10,9 @@ export const StyleTitle = styled.div`
     letter-spacing: 0em;
     color: #1f81b0;
     text-align: center;
+    @media (max-width: 480px) {
+      font-size: 1.5rem;
+    }
   }
   .desc {
     font-size: 1.25rem;
@@ -20,6 +23,9 @@ export const StyleTitle = styled.div`
     width: 70%;
     margin: 0 auto;
     text-align: center;
+    @media (max-width: 480px) {
+      font-size: .9rem;
+    }
   }
   .contactBtn {
     padding: 5px 30px;
@@ -36,5 +42,8 @@ export const StyleTitle = styled.div`
     align-items: center;
     gap: 10px;
     margin: 50px auto;
+    @media (max-width: 480px) {
+      font-size: .9rem;
+    }
   }
 `;
