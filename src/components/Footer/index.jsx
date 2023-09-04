@@ -21,8 +21,11 @@ font-weight: 500;
 line-height: 41px;
 letter-spacing: 0em;
 text-align: center;
-@media (max-width: 480px) {
+@media (max-width: 780px) {
     font-size: 18px;
+  }
+  @media (max-width: 480px) {
+    font-size: 10px;
   }
 .images{
     img{
