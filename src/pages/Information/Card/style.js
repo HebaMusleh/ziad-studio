@@ -6,8 +6,9 @@ export const CardStyle = styled.div`
   height: 500px;
   margin: 30px auto;
   position: relative;
+
   @media (max-width: 480px) {
-    height: 900px;
+    height: 550px;
   }
   .content {
     position: absolute;
@@ -16,6 +17,7 @@ export const CardStyle = styled.div`
     padding: 50px;
     @media (max-width: 480px) {
       padding: 5px;
+      bottom: 35px;
     }
     h4 {
       font-size: 2rem;
@@ -23,6 +25,9 @@ export const CardStyle = styled.div`
       line-height: 55px;
       letter-spacing: 0em;
       color: #ffffff;
+      @media (max-width: 480px) {
+        font-size: 1rem;
+      }
     }
     p {
       font-family: Baloo Bhaijaan 2;
