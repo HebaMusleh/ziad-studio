@@ -12,8 +12,8 @@ export const SideStyle = styled.div`
   }
   aside {
     width: 25%;
-    background:${(props) => props.theme.palette.background};
-    transition:.8s;
+    background: ${(props) => props.theme.palette.background};
+    transition: 0.8s;
     padding: 20px;
     height: 100vh;
     @media (max-width: 768px) {
@@ -34,6 +34,10 @@ export const SideStyle = styled.div`
     color: ${(props) => props.theme.palette.colorMenu};
     padding: 10px;
     cursor: pointer;
+    @media (max-width: 480px) {
+      font-size: 16px;
+      line-height: 1;
+    }
     a {
       font-size: 20px;
       font-weight: 500;
@@ -41,6 +45,10 @@ export const SideStyle = styled.div`
       letter-spacing: 0em;
       text-align: center;
       color: ${(props) => props.theme.palette.colorMenu};
+      @media (max-width: 480px) {
+        font-size: 16px;
+        line-height: 1;
+      }
     }
     &:hover {
       background: ${(props) => props.theme.palette.hover};
@@ -58,7 +66,7 @@ export const SideStyle = styled.div`
   }
   .closeIcon {
     font-size: 40px;
-    color: ${props=>props.theme.palette.closeIcon};
+    color: ${(props) => props.theme.palette.closeIcon};
     cursor: pointer;
   }
   .secondSection {
@@ -84,7 +92,7 @@ export const SideStyle = styled.div`
       display: block;
       padding: 5px;
       border-radius: 5px;
-      background: ${props=>props.theme.palette.ulBg};
+      background: ${(props) => props.theme.palette.ulBg};
       width: 100%;
       li {
         font-size: 16px;
@@ -96,11 +104,14 @@ export const SideStyle = styled.div`
   .arabic-english-menu {
     padding: 10px;
     margin-bottom: 30px;
+    @media (max-width: 480px) {
+      font-size: 13px;
+    }
   }
   .head-languages {
     cursor: pointer;
   }
-  .theme-btns{
+  .theme-btns {
     justify-content: space-between;
   }
 `;
