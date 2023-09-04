@@ -26,6 +26,13 @@ export const Wrapper = styled.div`
       letter-spacing: 0em;
       color: ${(props) => props.theme.palette.TitleColor};
       margin-bottom: 20px;
+      text-align:center;
+      @media (max-width: 768px) {
+        font-size: 27px;
+      }
+      @media (max-width: 480px) {
+        font-size:20px;
+      }
     }
   }
   .description {
@@ -55,6 +62,9 @@ export const Wrapper = styled.div`
       color: ${(props) => props.theme.palette.priceColor};
       margin: 30px 0;
       text-align:center;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
   }
   ul {
@@ -67,6 +77,9 @@ export const Wrapper = styled.div`
       width: fit-content;
       color: #636363;
       text-align: start;
+      @media (max-width: 768px) {
+        font-size: .7rem;
+      }
     }
   }
   .edits {
@@ -75,6 +88,7 @@ export const Wrapper = styled.div`
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 41.09px;
+    text-align:center;
   }
   .brand{
     color: ${(props) => props.theme.palette.icon6Bg};
