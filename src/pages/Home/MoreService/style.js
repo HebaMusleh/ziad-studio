@@ -11,6 +11,9 @@ export const ServiceStyle = styled.div`
     letter-spacing: 0em;
     color: ${(props) => props.theme.palette.primarySecondSection};
     margin: 30px 0;
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
   .cards {
     display: flex;
