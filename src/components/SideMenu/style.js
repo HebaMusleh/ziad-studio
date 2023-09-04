@@ -100,4 +100,7 @@ export const SideStyle = styled.div`
   .head-languages {
     cursor: pointer;
   }
+  .theme-btns{
+    justify-content: space-between;
+  }
 `;

@@ -72,7 +72,7 @@ const SideMenu = ({ close, closeClick, dir ,theme}) => {
                 <HiOutlineMoon /> {t("Mode")}
               </div>
               <div className='btn-theme' >
-                <BtnTheme dir={dir} />
+                <BtnTheme/>
               </div>
             </li>
           </div>
