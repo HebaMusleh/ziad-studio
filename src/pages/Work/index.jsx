@@ -32,7 +32,7 @@ const Work = () => {
             setData(fetchedData);
             setLoading(false);
         }, 1000);
-    }, []);
+    }, [fetchedData]);
 
     return (
         <>

@@ -28,7 +28,7 @@ const Information = () => {
       setData(infoData);
       setLoading(false);
     }, 1000);
-  }, []);
+  }, [infoData]);
 
   return (
     <>

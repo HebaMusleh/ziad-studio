@@ -49,7 +49,7 @@ const SingleWork = () => {
       setMyData(selectedData);
       setLoading(false);
     }, 1000);
-  }, [id]);
+  }, [id,data]);
 
   return (
     <>
