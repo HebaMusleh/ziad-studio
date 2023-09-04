@@ -28,4 +28,9 @@ export const CardStyle = styled.div`
       color: #fff;
     }
   }
+  .download {
+    color: #00f;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 `;

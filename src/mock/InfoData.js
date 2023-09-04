@@ -21,7 +21,8 @@ const InfoData = () => {
             id:2,
             question:t('q2'),
             answer:t('a2'),
-            BG:BG2
+            BG:BG2,
+            link:'true'
         },
         {
             id:3,

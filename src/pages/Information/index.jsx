@@ -25,6 +25,7 @@ const Information = () => {
             BG={singleData.BG}
             question={singleData.question}
             answer={singleData.answer}
+            link={singleData.link}
           />
         ))}
       </Container>
