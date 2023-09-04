@@ -40,5 +40,8 @@ export const WorkStyle = styled.div`
         background:#b9b9b9;
         color:#fff;
     }
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
   }
 `;
