@@ -10,7 +10,7 @@ const Card = ({ img, title, desc, price, num = 1, options }) => {
 
   return (
     <Wrapper>
-        <motion.span className="primaryText" variants={fadeIn("right", "tween", 0.2, 1)}>
+        {/* <motion.span className="primaryText" variants={fadeIn("right", "tween", 0.2, 1)}> */}
         <div className='image'>
           <img src={img} alt='' />
         </div>
@@ -32,7 +32,7 @@ const Card = ({ img, title, desc, price, num = 1, options }) => {
           <h4>{price}</h4>
           <BtnOrder />
         </div>
-    </motion.span>
+    {/* </motion.span> */}
       </Wrapper>
   );
 };

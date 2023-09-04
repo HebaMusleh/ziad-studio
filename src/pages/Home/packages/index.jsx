@@ -77,13 +77,13 @@ const Packages = () => {
 
     return (
         <Container>
-            <motion.div
+            {/* <motion.div
                 variants={staggerContainer}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: false, amount: 0.25 }}
                 className={`innerWidth `}
-            >
+            > */}
                 <Title title={t('services')} desc={t('descServices')} />
                 <H3>{t('design')}</H3>
                 <AllCard>
@@ -91,7 +91,7 @@ const Packages = () => {
                         <Card key={index} {...card} />
                     ))}
                 </AllCard>
-            </motion.div>
+            {/* </motion.div> */}
         </Container>
     );
 };
