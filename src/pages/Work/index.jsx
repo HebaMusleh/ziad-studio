@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
 import { Container } from '../../global/component';
+import styled from 'styled-components';
+
+
 import Hero from './Hero';
 import Card from './Card';
 import Spinner from './../../components/Spinner/index';
+import FullHeight from '../../components/FullHeight';
 
 import WorkData from '../../mock/workData';
-import styled from 'styled-components';
 
 const Style = styled.div`
   padding-top: 7%;
@@ -34,7 +37,9 @@ const Work = () => {
     return (
         <>
             {loading ? (
-                <Spinner />
+                <FullHeight>
+                    <Spinner />
+                </FullHeight>
             ) : (
                 <Style>
                     <Container>

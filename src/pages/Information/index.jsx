@@ -5,6 +5,7 @@ import { Container } from '../../global/component';
 import styled from 'styled-components';
 import InfoData from '../../mock/InfoData';
 import Spinner from '../../components/Spinner';
+import FullHeight from '../../components/FullHeight';
 
 const Style = styled.div`
   padding-top: 7%;
@@ -32,7 +33,9 @@ const Information = () => {
   return (
     <>
       {loading ? (
-        <Spinner/>
+        <FullHeight>
+          <Spinner/>
+        </FullHeight>
       ) : (
         <Style>
           <Container>

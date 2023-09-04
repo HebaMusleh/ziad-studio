@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Container } from '../../global/component';
 import { useParams } from 'react-router-dom';
-import WorkData from '../../mock/workData';
+
+import { Container } from '../../global/component';
 import styled from 'styled-components';
+
+
+import WorkData from '../../mock/workData';
+
+
 import Spinner from '../../components/Spinner';
+import FullHeight from '../../components/FullHeight';
 
 const Style = styled.div`
   padding-top: 7%;
@@ -48,7 +54,9 @@ const SingleWork = () => {
   return (
     <>
       {loading ? (
-        <Spinner />
+        <FullHeight>
+          <Spinner />
+        </FullHeight>
       ) : (
         <Style>
           <Container>
