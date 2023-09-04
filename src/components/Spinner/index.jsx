@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import logo from '../../assets/logo.png'
 
 const SpinnerStyle = styled.div`
 .splash-screen {
@@ -17,7 +18,7 @@ const SpinnerStyle = styled.div`
     z-index: 9999;
   }
   
-  &@keyframes splashAnimation {
+  @keyframes splashAnimation {
     0% {
       transform: translate(-50%, -50%) scale(0.1) rotate(0deg);
       opacity: 0;
@@ -32,11 +33,10 @@ const SpinnerStyle = styled.div`
 const Spinner = () => {
   return (
     <SpinnerStyle>
-      <h1>loading</h1>
-      {/* <div className="splash-screen"> */}
-      {/* <img src={logo} alt='logo' loading='lazy' /> */}
-      {/* </div> */}
-    </SpinnerStyle>
+      <div className="splash-screen">
+        <img src={logo} alt='logo' loading='lazy' />
+      </div>
+    </SpinnerStyle >
   )
 }
 
