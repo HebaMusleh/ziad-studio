@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 
 
 
-const Card = ({ img, title, desc, price, num = 1, options }) => {
+const Card = ({ img, title, desc, price, num = 1, options,brand }) => {
   const { t } = useTranslation();
 
   return (
@@ -29,6 +29,7 @@ const Card = ({ img, title, desc, price, num = 1, options }) => {
             {options.map((opt, index) => (
               <li key={index}>{opt}</li>
             ))}
+            {brand?<li className='brand'>{ t('brandIdentityGuide')}</li>:""}
           </ul>
           <li className='edits'>
             {t('edit')} {num}

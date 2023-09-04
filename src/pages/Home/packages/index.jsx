@@ -37,9 +37,8 @@ const Packages = () => {
                 t('socialMediaTemplateDesign'),
                 t('logoAnimation'),
                 t('posterDesign'),
-                t('brandIdentityGuide')
-
             ],
+            brand:"true"
         },
         {
             img: G3,
@@ -57,8 +56,8 @@ const Packages = () => {
                 t('externalSignDesign'),
                 t('packagingDesign'),
                 t('posterDesign'),
-                t('brandIdentityGuide')
             ],
+            brand:"true"
         },
         {
             img: G2,

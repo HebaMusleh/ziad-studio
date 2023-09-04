@@ -15,7 +15,7 @@ export const AllCard = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10%;
-  @media (max-width: 820px) {
+  @media (max-width: 1000px) {
     justify-content: center;
   }
 `;
