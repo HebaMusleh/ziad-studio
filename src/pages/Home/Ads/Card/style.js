@@ -22,6 +22,10 @@ export const CardStyle = styled.div`
       line-height: 62px;
       letter-spacing: 0em;
       color: ${(props) => props.theme.palette.primaryAds};
+      @media (max-width: 480px) {
+        font-size: 25px;
+        line-height: 1;
+      }
     }
   }
   .word {
@@ -31,6 +35,10 @@ export const CardStyle = styled.div`
       line-height: 41px;
       letter-spacing: 0em;
       color: ${(props) => props.theme.palette.secondaryAds};
+      @media (max-width: 480px) {
+        font-size: 20px;
+        line-height: 1;
+      }
     }
   }
 `;
