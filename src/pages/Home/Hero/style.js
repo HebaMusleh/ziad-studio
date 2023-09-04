@@ -42,19 +42,24 @@ export const HeroStyle = styled.div`
     }
     .right-side {
       h1 {
-        font-size: 48px;
+        font-size: 	3rem;
         font-weight: 500;
         line-height: 82px;
         letter-spacing: 0em;
         color: ${(props) => props.theme.palette.TitleColor};
+        @media (max-width: 480px) {
+          text-align:center;
+          font-size: 30px;
+          line-height: 1.6;
+        }
         span {
           color: ${(props) => props.theme.palette.primaryHeroColor};
           @media (max-width: 768px) {
-            font-size: 38px;
-          }
-          @media (max-width: 480px) {
             font-size: 28px;
           }
+        }
+        @media (max-width: 480px) {
+          text-align:center;
         }
       }
       p {
@@ -82,6 +87,13 @@ export const HeroStyle = styled.div`
           background: ${(props) => props.theme.palette.BgService};
           border: none;
           outline: none;
+        }
+        @media (max-width: 480px) {
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
         }
       }
     }

@@ -24,6 +24,7 @@ p{
     margin: auto;
     @media (max-width: 480px) {
         width:100%;
+        font-size:16px;
       }
 }
 `
