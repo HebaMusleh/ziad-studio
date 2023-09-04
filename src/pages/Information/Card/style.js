@@ -6,6 +6,9 @@ export const CardStyle = styled.div`
   height: 500px;
   margin: 30px auto;
   position: relative;
+  @media (max-width: 480px) {
+    height: 900px;
+  }
   .content {
     position: absolute;
     bottom: 0;
