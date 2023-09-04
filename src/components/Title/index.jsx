@@ -11,6 +11,10 @@ h2{
     line-height: 68px;
     letter-spacing: 0em;
     color:${props => props.theme.palette.primarySecondSection};
+    @media (max-width: 480px) {
+        font-size: 30px;
+        line-height: 1.6;
+      }
 }
 p{
     font-family: Inter;
