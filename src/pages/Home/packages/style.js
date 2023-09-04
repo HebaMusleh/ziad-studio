@@ -7,6 +7,9 @@ export const H3 = styled.h3`
   letter-spacing: 0em;
   text-align: center;
   color: ${(props) => props.theme.palette.TitleColor};
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 export const AllCard = styled.div`
   display: flex;
