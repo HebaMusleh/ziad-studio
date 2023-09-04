@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Btn, ModalWrapper } from './style';
 import contactImg from '../../assets/contact.png'
@@ -8,22 +8,21 @@ import { Container } from '../../global/component';
 
 
 const ContactModal = ({ isOpen, closeModal }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
     closeModal();
   };
 

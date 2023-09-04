@@ -4,7 +4,6 @@ import { lightTheme, darkTheme } from "./global/theme";
 import { themeContext } from "./context/themeContext";
 import { GlobalStyle } from "./global/style";
 import Spinner from "./components/Spinner";
-import Home from "./pages/Home";
 import SideMenu from "./components/SideMenu";
 import Header from "./components/Header";
 import { useTranslation } from "react-i18next";
