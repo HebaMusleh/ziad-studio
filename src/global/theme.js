@@ -54,7 +54,9 @@ export const lightTheme = {
     workTitle: "#4A4A4A",
     singleWorkTitle: "#002B47",
 
-    contactDesc:"#646464"
+    contactDesc:"#646464",
+    labelColor:"#353535",
+    inputBG:"#F7F7F7"
   },
 };
 
@@ -113,6 +115,8 @@ export const darkTheme = {
     workTitle: "#D3D3D3",
     singleWorkTitle: "#1F81B0",
 
-    contactDesc:"#d0d0d0"
+    contactDesc:"#d0d0d0",
+    labelColor:"#939292",
+    inputBG:"#151515"
   },
 };

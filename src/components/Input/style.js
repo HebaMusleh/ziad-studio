@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Style = styled.div`
   label {
-    color: #353535;
+    color: ${props=>props.theme.palette.labelColor};
     font-size: 1rem;
     font-weight: 500;
     line-height: 27px;
@@ -12,9 +12,9 @@ export const Style = styled.div`
     width: 100%;
     margin-top: 10px;
     margin-bottom: 25px;
-    background: #f7f7f7;
+    background: ${props=>props.theme.palette.inputBG};
     border-radius: 8px;
-    border: 1px solid #f7f7f7;
+    border: 1px solid ${props=>props.theme.palette.inputBG};
     padding: 15px;
     outline: none;
     font-size: 1rem;
@@ -25,9 +25,9 @@ export const Style = styled.div`
   textarea {
     width: 100%;
     margin-top: 20px;
-    background: #f7f7f7;
+    background: ${props=>props.theme.palette.inputBG};
     border-radius: 8px;
-    border: 1px solid #f7f7f7;
+    border: 1px solid ${props=>props.theme.palette.inputBG};
     resize: none;
     outline: none;
     font-size: 1rem;

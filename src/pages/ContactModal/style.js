@@ -16,7 +16,7 @@ const ModalWrapper = styled.div`
     width: 80%;
     display: flex;
     gap: 20px;
-    background: #fff;
+    background: ${props=>props.theme.palette.background};
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
