@@ -22,6 +22,7 @@ export const SupporterStyle = styled.div`
     padding: 60px 0;
     white-space: nowrap;
     position: relative;
+    direction:ltr;
   }
   
   .logos:before,
@@ -51,6 +52,7 @@ export const SupporterStyle = styled.div`
   .logos-slide {
     display: inline-block;
     animation: 35s slide infinite linear;
+    direction:ltr;
   }
   
   .logos-slide img {

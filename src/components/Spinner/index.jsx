@@ -10,7 +10,7 @@ const SpinnerStyle = styled.div`
     transform: translate(-50%, -50%);
     width: 20%;
     height: 20%;
-    background-color: #fff;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
