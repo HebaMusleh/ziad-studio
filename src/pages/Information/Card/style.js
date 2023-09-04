@@ -39,9 +39,10 @@ export const CardStyle = styled.div`
       color: #fff;
     }
   }
-  .download {
-    color: #00f;
-    text-decoration: underline;
-    cursor: pointer;
+  .download{
+    a{
+      text-decoration:underline;
+      color:#3099ca;
+    }
   }
 `;

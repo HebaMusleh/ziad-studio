@@ -1,6 +1,7 @@
 import React from 'react';
 import { CardStyle } from './style';
 import { useTranslation } from 'react-i18next';
+import pdf from '../../../assets/download.pdf'
 
 const Card = ({ question, answer, BG, link }) => {
 
@@ -15,25 +16,21 @@ const Card = ({ question, answer, BG, link }) => {
         backgroundSize: 'cover',
     };
 
-    const pdfFilePath = '../../../assets/download.pdf';
-
-    const handleDownloadClick = () => {
-        const a = document.createElement('a');
-        a.href = pdfFilePath;
-        a.download = 'otom-brand-identity-.pdf';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-    };
-
     return (
         <CardStyle style={cardStyle}>
             <div className='content'>
                 <h4>{question}</h4>
                 <p>{answer}</p>
                 {link ? (
-                    <span onClick={handleDownloadClick} className='download'>
-                        {t('download')}
+                    <span className='download'>
+                        <a
+                            href={pdf}
+                            download="Brand-identity"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            {t('download')}
+                        </a>
                     </span>
                 ) : (
                     ''
