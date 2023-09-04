@@ -25,6 +25,9 @@ export const CardStyle = styled.div`
       font-weight: 600;
       line-height: 55px;
       letter-spacing: 0em;
+      @media (max-width: 480px) {
+        font-size: 1rem;
+      }
     }
     p {
       font-size: 1rem;
@@ -32,7 +35,10 @@ export const CardStyle = styled.div`
       line-height: 27px;
       letter-spacing: 0em;
       text-align: center;
-      color: ${props=>props.theme.palette.cardDesc};;
+      color: ${props=>props.theme.palette.cardDesc};
+      @media (max-width: 480px) {
+        font-size: .8rem;
+      }
     }
   }
   .image-section {
