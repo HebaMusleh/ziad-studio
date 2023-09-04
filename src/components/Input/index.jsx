@@ -1,19 +1,21 @@
 import React from 'react'
 import { Style } from './style'
+import { useTranslation } from 'react-i18next'
 
-const Input = ({ textarea }) => {
+const Input = ({ textarea,Label,Type }) => {
+    const {t} = useTranslation();
     return (
         <>
             {
                 textarea ?
                     <Style>
-                        <label htmlFor="">الرسالة</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <label htmlFor="">{t('msg')}</label>
+                        <textarea name="" id="" cols="30" rows="5"></textarea>
                     </Style>
                     :
                     <Style>
-                        <label htmlFor="">الاسم الكامل</label>
-                        <input type="text" />
+                        <label htmlFor="">{t(Label)}</label>
+                        <input type={Type} />
                     </Style>
             }
         </>

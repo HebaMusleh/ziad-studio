@@ -98,7 +98,12 @@
       "a7": "It refers to the competitive advantage that sets you apart from your competitors. For instance, if we focus on Apple as a company, their iOS system is the cornerstone of their differentiation from other companies like Samsung or BlackBerry. What distinguishes this system is its user-friendliness, high privacy standards, simplicity, and speed. So, every company or restaurant must focus on its Point of Differentiation (POD) to stand out from competitors in steps and gain a larger market share.",
       "download":"Brand Usage Guide",
       "send":"Send",
-      "close":"Close"
+      "close":"Close",
+      "msg":"Project Details",
+      "FullName":"Full Name",
+      "Email":"Email",
+      "phone":"Phone Number"
+
     }
   }
 }

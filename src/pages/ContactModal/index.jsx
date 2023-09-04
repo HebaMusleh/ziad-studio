@@ -55,10 +55,10 @@ const ContactModal = ({ isOpen, closeModal }) => {
               </div>
               <div className='form'>
                 <form onSubmit={handleSubmit}>
-                  <Input />
-                  <Input />
-                  <Input />
-                  <Input />
+                  <Input Label="FullName" Type="text"/>
+                  <Input Label="Email" Type="email" />
+                  <Input Label="phone" Type="tel"/>
+                  <Input textarea/>
                   <div className='btns'>
                     <div><Btn onClick={closeModal} type='button'>{t('close')}</Btn></div>
                     <div><Btn type="submit">{t('send')}</Btn></div>

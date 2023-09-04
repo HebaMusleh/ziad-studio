@@ -27,13 +27,13 @@ const ModalWrapper = styled.div`
       justify-content: space-between;
       gap: 20px;
       text-align: center;
-      @media (max-width: 480px) {
+      @media (max-width: 699px) {
         display: none;
       }
     }
     .form {
       flex-basis: 50%;
-      @media (max-width: 480px) {
+      @media (max-width: 699px) {
         flex-basis: 100%;
       }
     }
