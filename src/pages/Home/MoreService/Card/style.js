@@ -51,11 +51,12 @@ export const CardStyle = styled.div`
     }
   }
 
-.icons{
-  color:#62D181;
-  font-size:20px;
-}
+  .icons {
+    color: #62d181;
+    font-size: 20px;
+  }
   .btn {
     margin-bottom: 12%;
+    text-align: start;
   }
 `;

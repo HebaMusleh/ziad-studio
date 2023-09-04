@@ -1,10 +1,14 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 import ContactModal from '../../pages/ContactModal'
 
 
 const BtnStyle = styled.button`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: auto;
     font-size: 24px;
     font-weight: 500;
     line-height: 41px;
@@ -22,24 +26,24 @@ const BtnStyle = styled.button`
     }
 `
 const BtnOrder = () => {
-    const { t } = useTranslation();
-    const [isModalOpen, setIsModalOpen] = useState(false);
+  const { t } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const openModal = () => {
-      setIsModalOpen(true);
-    };
-  
-    const closeModal = () => {
-      setIsModalOpen(false);
-    };
-    return (
-            <>
-        <BtnStyle onClick={()=>openModal()}>
-            {t("order")}
-        </BtnStyle>
-        <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
-            </>
-    )
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+  return (
+    <>
+      <BtnStyle onClick={() => openModal()}>
+        {t("order")}
+      </BtnStyle>
+      <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
+    </>
+  )
 }
 
 export default BtnOrder

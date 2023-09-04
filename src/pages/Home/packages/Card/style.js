@@ -4,7 +4,6 @@ export const Wrapper = styled.div`
   background: ${(props) => props.theme.palette.packagesBackground};
   box-shadow: 0px 4px 25px 0px #82C8DC66;
   border-radius: 48px;
-  text-align: center;
   flex-basis: 30%;
   padding: 40px;
   height: fit-content;
@@ -55,6 +54,7 @@ export const Wrapper = styled.div`
       letter-spacing: 0em;
       color: ${(props) => props.theme.palette.priceColor};
       margin: 30px 0;
+      text-align:center;
     }
   }
   ul {
