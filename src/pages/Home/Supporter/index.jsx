@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Title from '../../../components/Title';
 import { Container } from '../../../global/component';
@@ -15,17 +15,11 @@ import img9 from '../../../assets/Support9.png';
 
 export default function Supporter() {
   const { t } = useTranslation();
-  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Adjust the interval as needed
-
-    return () => {
-      clearInterval(interval);
-    };
+    const logosSlide = document.querySelector(".logos-slide");
+    const copy = logosSlide.cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
   }, []);
 
   return (
@@ -33,18 +27,15 @@ export default function Supporter() {
       <Container>
         <div className="wrapper">
           <Title title={t('leadingCustomer')} desc={t('descLeading')} />
-          <div className="mySwiper">
-            {images.map((img, index) => (
-              <div
-                key={index}
-                className="imgBox"
-                style={{
-                  transform: `translateX(${index - currentIndex}00%)`,
-                }}
-              >
-                <div><img src={img} alt="" /></div>
-              </div>
-            ))}
+          <div className="logos">
+            <div className="logos-slide">
+              {[img1, img2, img3, img4, img5, img6, img7, img8, img9].map((img, index) => (
+                <img src={img} alt={`Logo ${index + 1}`} key={index} />
+              ))}
+              {[img1, img2, img3, img4, img5, img6, img7, img8, img9].map((img, index) => (
+                <img src={img} alt={`Logo ${index + 10}`} key={index + 10} />
+              ))}
+            </div>
           </div>
         </div>
       </Container>
