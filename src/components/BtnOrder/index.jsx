@@ -20,6 +20,9 @@ const BtnStyle = styled.button`
     width: 228px;
     height: 56px;
     cursor: pointer;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
     &:hover {
       background: ${(props) => props.theme.palette.TitleColor};
       color: ${(props) => props.theme.palette.background};
