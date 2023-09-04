@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const USStyle = styled.div`
   padding: 10% 0;
+  
   .us-content {
     position: relative;
     box-shadow: 0px 4px 50px 0px ${(props) => props.theme.palette.shadow};
@@ -10,16 +11,22 @@ export const USStyle = styled.div`
     padding: 10px 20px;
     margin: 10% auto;
     z-index: 9;
+    @media (max-width: 768px) {
+      overflow: hidden;
+    }
   }
   .images {
     position: absolute;
     width: 150px;
     left: 2px;
     animation: updown 3s linear infinite;
-
     img {
       width: 100%;
       height: 100%;
+    }
+    @media (max-width: 768px) {
+      left: -30px;
+      top: -20px;
     }
   }
 
@@ -32,6 +39,9 @@ export const USStyle = styled.div`
       width: 100%;
       height: 100%;
     }
+    @media (max-width: 768px) {
+      display:none;
+    }
   }
   .left-wrapper {
     position: absolute;
@@ -41,6 +51,9 @@ export const USStyle = styled.div`
     img {
       width: 100%;
       height: 100%;
+    }
+    @media (max-width: 768px) {
+      display:none;
     }
   }
 

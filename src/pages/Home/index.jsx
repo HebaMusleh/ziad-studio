@@ -13,7 +13,7 @@ import  styled  from 'styled-components'
 const Style = styled.div`
 padding-top:7%;
 @media (max-width: 768px) {
-  padding-top:13%;
+  padding-top:10%;
 }
 @media (max-width: 480px) {
   padding-top:0;
