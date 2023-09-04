@@ -4,13 +4,13 @@ import FullHeight from '../../components/FullHeight';
 import { Container } from '../../global/component';
 
 const NotFound = () => {
-  return (
-    <FullHeight>
-        <Container>
-        <img src={img} alt="img" width={"100%"}/>
-        </Container>
-    </FullHeight>
-  )
+    return (
+        <div>
+            <Container>
+                <img src={img} alt="img" width={"100%"} />
+            </Container>
+        </div>
+    )
 }
 
 export default NotFound
