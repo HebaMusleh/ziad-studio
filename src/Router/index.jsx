@@ -1,5 +1,6 @@
 import React, { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import NotFound from '../pages/NotFound';
 
 const Home = lazy(() => import('../pages/Home'));
 const Work = lazy(() => import('../pages/Work'));
@@ -14,6 +15,7 @@ const Router = () => {
       <Route path="/work" element={<Work />} />
       <Route path="/work/:id" element={<SingleWork />} />
       <Route path="/info" element={<Information />} />
+      <Route path="*" element={<NotFound/>} />
     </Routes>
   )
 }

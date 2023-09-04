@@ -21,6 +21,9 @@ font-weight: 500;
 line-height: 41px;
 letter-spacing: 0em;
 text-align: center;
+@media (max-width: 480px) {
+    font-size: 18px;
+  }
 .images{
     img{
     }
