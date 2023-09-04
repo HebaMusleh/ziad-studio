@@ -19,7 +19,7 @@ import { SideStyle } from './style';
 import { useNavigate } from 'react-router-dom';
 
 
-const SideMenu = ({ close, closeClick, dir ,theme}) => {
+const SideMenu = ({ close, closeClick, dir, theme }) => {
   const { i18n, t } = useTranslation();
   const [showLanguageMenu, setShowLanguageMenu] = useState(false);
   const navigate = useNavigate();
@@ -36,10 +36,10 @@ const SideMenu = ({ close, closeClick, dir ,theme}) => {
         <ul>
           <li className='head'>
             <div>
-              {theme ==="dark"?
-              <img src={darkLogo} alt="logo"/>
-              :
-              <img src={logo} alt="logo" />
+              {theme === "dark" ?
+                <img src={darkLogo} alt="logo" />
+                :
+                <img src={logo} alt="logo" />
               }
             </div>
             <div>
@@ -48,9 +48,9 @@ const SideMenu = ({ close, closeClick, dir ,theme}) => {
           </li>
           <hr />
           <div className='secondSection'>
-            <li><AiOutlineHome /><div onClick={()=>navigate('/')}>{t('Home')}</div></li>
-            <li><BsLightbulb /><div onClick={()=>navigate('/info')}>{t('Information')}</div></li>
-            <li><BsPeople /><a href="/#customers">{t('customers')}</a></li>
+            <li onClick={() => navigate('/')}><AiOutlineHome /><div>{t('Home')}</div></li>
+            <li onClick={() => navigate('/info')}><BsLightbulb /><div>{t('Information')}</div></li>
+            <li onClick={() => navigate('/#customers')}><BsPeople /><a href="/#customers">{t('customers')}</a></li>
           </div>
           <hr />
           <div className="thirdSection">
@@ -72,7 +72,7 @@ const SideMenu = ({ close, closeClick, dir ,theme}) => {
                 <HiOutlineMoon /> {t("Mode")}
               </div>
               <div className='btn-theme' >
-                <BtnTheme/>
+                <BtnTheme />
               </div>
             </li>
           </div>
