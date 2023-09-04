@@ -1,38 +1,57 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Container } from '../../global/component';
 import Hero from './Hero';
 import Card from './Card';
+import Spinner from './../../components/Spinner/index';
 
 import WorkData from '../../mock/workData';
-
-import  styled  from 'styled-components';
+import styled from 'styled-components';
 
 const Style = styled.div`
-padding-top:7%;
-@media (max-width: 768px) {
-    padding-top:13%;
+  padding-top: 7%;
+
+  @media (max-width: 768px) {
+    padding-top: 13%;
   }
   @media (max-width: 480px) {
-    padding-top:0;
+    padding-top: 0;
   }
-`
+`;
+
 const Work = () => {
-    const data = WorkData();
+    const [loading, setLoading] = useState(true);
+    const [data, setData] = useState([]);
+    const fetchedData = WorkData();
+
+    useEffect(() => {
+        setTimeout(() => {
+            setData(fetchedData);
+            setLoading(false);
+        }, 1000);
+    }, []);
+
     return (
-        <Style>
-            <Container>
-                <Hero />
-                {data.map((item, index) => (
-                    <Card 
-                    key={index} 
-                    title={item.title} 
-                    description={item.description} 
-                    img={item.img1}
-                    id={index+1} />
-                ))}
-            </Container>
-        </Style>
+        <>
+            {loading ? (
+                <Spinner />
+            ) : (
+                <Style>
+                    <Container>
+                        <Hero />
+                        {data.map((item, index) => (
+                            <Card
+                                key={index}
+                                title={item.title}
+                                description={item.description}
+                                img={item.img1}
+                                id={index + 1} />
+                        ))}
+                    </Container>
+                </Style>
+            )}
+        </>
+
     );
 };
 

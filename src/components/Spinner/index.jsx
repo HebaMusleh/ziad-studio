@@ -15,7 +15,7 @@ const SpinnerStyle = styled.div`
     justify-content: center;
     align-items: center;
     animation: splashAnimation 2s ease-in-out forwards;
-    z-index: 9999;
+    z-index: 10000000000000;
   }
   
   @keyframes splashAnimation {
