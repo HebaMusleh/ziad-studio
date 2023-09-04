@@ -4,7 +4,7 @@ import BG1 from '../assets/q1.png';
 import BG2 from '../assets/q2.png';
 import BG3 from '../assets/q3.png';
 import BG4 from '../assets/q4.png';
-import BG5 from '../assets/q5.png';
+import BG5 from '../assets/BG5.jpg';
 import BG6 from '../assets/q6.png';
 import BG7 from '../assets/q7.png';
 

@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
+import ContactModal from '../../pages/ContactModal'
 
 
 const BtnStyle = styled.button`
@@ -22,10 +23,22 @@ const BtnStyle = styled.button`
 `
 const BtnOrder = () => {
     const { t } = useTranslation();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
     return (
-        <BtnStyle>
+            <>
+        <BtnStyle onClick={()=>openModal()}>
             {t("order")}
         </BtnStyle>
+        <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
+            </>
     )
 }
 

@@ -1,6 +1,5 @@
 import React, { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Modal from '../pages/Modal';
 
 const Home = lazy(()=>import('../pages/Home'));
 const Work = lazy(()=>import('../pages/Work'));

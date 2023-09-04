@@ -1,7 +1,7 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 import { motion, useTime, useTransform } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer } from "../../../utils/motion";
+import { fadeIn, staggerContainer } from "../../../utils/motion";
 import { useTranslation } from 'react-i18next';
 
 
@@ -11,6 +11,7 @@ import { HeroStyle } from './style';
 
 import heroCircle from '../../../assets/her1.png';
 import heroPincel from '../../../assets/her2.png';
+import ContactModal from '../../ContactModal';
 
 
 
@@ -18,6 +19,15 @@ const Hero = () => {
     const { t } = useTranslation();
     const time = useTime();
     const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
     return (
         <HeroStyle>
             <Container>
@@ -41,9 +51,10 @@ const Hero = () => {
                         <p>
                             {t('hero')}
                         </p>
-                        <button>{t('contactUS')}</button>
+                        <button onClick={openModal}>{t('contactUS')}</button>
                     </motion.span>
                 </motion.div>
+                <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
             </Container>
         </HeroStyle>
     )

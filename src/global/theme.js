@@ -53,6 +53,8 @@ export const lightTheme = {
     cardDesc: "#646464",
     workTitle: "#4A4A4A",
     singleWorkTitle: "#002B47",
+
+    contactDesc:"#646464"
   },
 };
 
@@ -110,5 +112,7 @@ export const darkTheme = {
     cardDesc: "#ccc",
     workTitle: "#D3D3D3",
     singleWorkTitle: "#1F81B0",
+
+    contactDesc:"#d0d0d0"
   },
 };
