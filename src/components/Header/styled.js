@@ -7,6 +7,9 @@ transition:.8s;
 position:fixed;
 width:100%;
 z-index:10;
+@media (max-width: 480px) {
+  position: relative;
+}
   .headers-own-style {
     display: flex;
     align-items: center;

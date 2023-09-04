@@ -9,6 +9,9 @@ padding-top:7%;
 @media (max-width: 768px) {
   padding-top:13%;
 }
+@media (max-width: 480px) {
+  padding-top:0;
+}
 h1{
   margin:20px auto;
   font-size: 2rem;

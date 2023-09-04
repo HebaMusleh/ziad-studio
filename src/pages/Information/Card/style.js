@@ -14,6 +14,9 @@ export const CardStyle = styled.div`
     bottom: 0;
     text-align: center;
     padding: 50px;
+    @media (max-width: 480px) {
+      padding: 5px;
+    }
     h4 {
       font-size: 2rem;
       font-weight: 600;

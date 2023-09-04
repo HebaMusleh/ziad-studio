@@ -10,6 +10,9 @@ const Style = styled.div`
   @media (max-width: 768px) {
     padding-top: 13%;
   }
+  @media (max-width: 480px) {
+    padding-top:0;
+  }
 `;
 
 const Information = () => {

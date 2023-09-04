@@ -15,6 +15,9 @@ padding-top:7%;
 @media (max-width: 768px) {
   padding-top:13%;
 }
+@media (max-width: 480px) {
+  padding-top:0;
+}
 `
 const Home = () => {
   return (

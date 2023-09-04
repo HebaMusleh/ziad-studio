@@ -40,7 +40,6 @@ export const SideStyle = styled.div`
       line-height: 41px;
       letter-spacing: 0em;
       text-align: center;
-      padding-right: 10px;
       color: ${(props) => props.theme.palette.colorMenu};
     }
     &:hover {
