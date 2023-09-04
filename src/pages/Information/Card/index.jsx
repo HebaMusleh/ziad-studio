@@ -1,7 +1,11 @@
 import React from 'react';
 import { CardStyle } from './style';
+import { useTranslation } from 'react-i18next';
 
 const Card = ({ question, answer, BG, link }) => {
+
+    const {t} = useTranslation();
+
     const bgImage = `linear-gradient(180deg, rgba(16, 20, 24, 0) 0%, #101418 100%), url(${BG})`;
 
     const cardStyle = {
@@ -11,7 +15,7 @@ const Card = ({ question, answer, BG, link }) => {
         backgroundSize: 'cover',
     };
 
-    const pdfFilePath = '../../../assets/otom-brand-identity-.pdf';
+    const pdfFilePath = '../../../assets/download.pdf';
 
     const handleDownloadClick = () => {
         const a = document.createElement('a');
@@ -29,7 +33,7 @@ const Card = ({ question, answer, BG, link }) => {
                 <p>{answer}</p>
                 {link ? (
                     <span onClick={handleDownloadClick} className='download'>
-                        دليل استخدام العلامة التجارية
+                        {t('download')}
                     </span>
                 ) : (
                     ''
