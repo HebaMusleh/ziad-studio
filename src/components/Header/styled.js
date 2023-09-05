@@ -20,13 +20,13 @@ export const HeaderStyle = styled.div`
     cursor: pointer;
     color: ${(props) => props.theme.palette.primaryHeroColor};
   }
-  .logo {
-    @media (max-width: 480px) {
-      width: 30px;
-    }
-    img {
-      width: 100%;
-      height: 100%;
-    }
+  // .logo {
+  //   @media (max-width: 480px) {
+  //     width: 30px;
+  //   }
+  //   img {
+  //     width: 100%;
+  //     height: 100%;
+  //   }
   }
 `;
