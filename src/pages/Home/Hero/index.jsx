@@ -14,6 +14,7 @@ import heroPincel from '../../../assets/her2.png';
 import ContactModal from '../../ContactModal';
 
 import cloud from '../../../assets/cloud.png';
+import { useLanguage } from '../../../context/directionContext';
 
 
 
@@ -22,6 +23,7 @@ const Hero = () => {
     const time = useTime();
     const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const { direction } = useLanguage();
 
     const openModal = () => {
         setIsModalOpen(true);
@@ -40,9 +42,9 @@ const Hero = () => {
                     viewport={{ once: false, amount: 0.25 }}
                     className={`innerWidth container-hero`}
                 >
-                    <div className="cloud">
-                            <img src={cloud} alt="cloud" />
-                        </div>
+                    <div className="cloud" style={{left:'0'}}>
+                        <img src={cloud} alt="cloud" />
+                    </div>
                     <motion.span className="left-side" variants={fadeIn("right", "tween", 0.2, 1)}>
                         <img src={heroCircle} alt="circle" />
                         <motion.div style={{ rotate }} className='pincel'>

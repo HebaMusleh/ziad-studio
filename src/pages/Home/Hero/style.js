@@ -4,6 +4,7 @@ export const HeroStyle = styled.div`
   background: ${(props) => props.theme.palette.heroBackground};
   padding: 100px 0;
   position:relative;
+  overflow-x:hidden;
   .container-hero {
     display: flex;
     align-items: center;
@@ -105,8 +106,8 @@ export const HeroStyle = styled.div`
   .cloud {
     position: absolute;
     top: 0;
-    left: 0;
     animation: moveCloud 10s linear infinite; /* Adjust duration and timing function as needed */
+    overflow-x:hidden;
   }
   
   @keyframes moveCloud {
