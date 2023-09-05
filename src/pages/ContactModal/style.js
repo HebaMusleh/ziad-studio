@@ -13,10 +13,11 @@ const ModalWrapper = styled.div`
   align-items: center;
   z-index: 100000;
   .content {
+    position:relative;
     width: 80%;
     display: flex;
     gap: 20px;
-    background: ${props=>props.theme.palette.background};
+    background: ${(props) => props.theme.palette.background};
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -36,6 +37,14 @@ const ModalWrapper = styled.div`
       @media (max-width: 699px) {
         flex-basis: 100%;
       }
+    }
+    .closeIcon {
+      position: absolute;
+      font-size: 30px;
+      color: ${(props) => props.theme.palette.closeIcon};
+      cursor: pointer;
+      top:0;
+      right:0;
     }
     h1 {
       font-size: 28px;

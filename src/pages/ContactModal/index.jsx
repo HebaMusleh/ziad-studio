@@ -5,6 +5,8 @@ import contactImg from '../../assets/contact.png'
 import Input from '../../components/Input';
 import { useTranslation } from 'react-i18next';
 import { Container } from '../../global/component';
+import { IoClose } from 'react-icons/io5';
+import { useLanguage } from '../../context/directionContext';
 
 
 const ContactModal = ({ isOpen, closeModal }) => {
@@ -33,6 +35,8 @@ const ContactModal = ({ isOpen, closeModal }) => {
   };
 
   const { t } = useTranslation();
+  const { direction } = useLanguage();
+  console.log(direction);
 
   return (
     <>
@@ -53,13 +57,15 @@ const ContactModal = ({ isOpen, closeModal }) => {
                 <div className='images'><img src={contactImg} alt="contact" /></div>
               </div>
               <div className='form'>
+                <div className="closeIcon" dir={direction}>
+                  <IoClose onClick={closeModal} />
+                </div>
                 <form onSubmit={handleSubmit}>
-                  <Input Label="FullName" Type="text"/>
+                  <Input Label="FullName" Type="text" />
                   <Input Label="Email" Type="email" />
-                  <Input Label="phone" Type="tel"/>
-                  <Input textarea/>
+                  <Input Label="phone" Type="tel" />
+                  <Input textarea />
                   <div className='btns'>
-                    {/* <div><Btn onClick={closeModal} type='button'>{t('close')}</Btn></div> */}
                     <div><Btn type="submit">{t('send')}</Btn></div>
                   </div>
                 </form>

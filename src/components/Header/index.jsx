@@ -9,10 +9,12 @@ import { Container } from '../../global/component';
 import { headerVariants } from "../../utils/motion";
 import { motion } from 'framer-motion';
 import { HeaderStyle } from './styled';
+import { useLanguage } from '../../context/directionContext';
 
 
 
-const Header = ({ openClick, dir, theme }) => {
+const Header = ({ openClick, theme }) => {
+    const { direction } = useLanguage();
     return (
         <HeaderStyle>
             <Container>
@@ -24,7 +26,7 @@ const Header = ({ openClick, dir, theme }) => {
                     viewport={{ once: true, amount: 0.25 }}
                 >
                     <div className="sidebar">
-                        {dir === "rtl" ?
+                        {direction === "rtl" ?
                             <RiMenu3Fill className='icons' onClick={openClick} /> :
                             <RiMenu2Line className='icons' onClick={openClick} />
                         }
