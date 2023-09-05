@@ -19,8 +19,8 @@ const Card = ({ title, description, img, id }) => {
                 <div className="socials">
                     <ul>
                         <li><a href="https://www.instagram.com/_ziadstudio/"><img src={insta} alt="" /></a></li>
-                        <li><a href="/#"><img src={facebook} alt="" /></a></li>
-                        <li><a href="/#"><img src={whats} alt="" /></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100088223005602&mibextid=ZbWKwL"><img src={facebook} alt="" /></a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=%2B966568117840"><img src={whats} alt="" /></a></li>
                     </ul>
                 </div>
             </div>
