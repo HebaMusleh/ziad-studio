@@ -11,7 +11,7 @@ export const CardStyle = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  @media (max-width: 480px) {
+  @media (max-width: 536px) {
     background:transparent;
     border:1px solid transparent;
     height: 100px;
@@ -20,8 +20,8 @@ export const CardStyle = styled.div`
   .singleIcon {
     color: ${(props) => props.theme.palette.iconColor};
     font-size: 35px;
-    @media (max-width: 480px) {
-      font-size: 25px;
+    @media (max-width: 536px) {
+      font-size: 20px;
     }
   }
   .num {
@@ -31,7 +31,7 @@ export const CardStyle = styled.div`
       line-height: 62px;
       letter-spacing: 0em;
       color: ${(props) => props.theme.palette.primaryAds};
-      @media (max-width: 480px) {
+      @media (max-width: 536px) {
         font-size: 20px;
         line-height: 1;
       }
@@ -44,7 +44,7 @@ export const CardStyle = styled.div`
       line-height: 41px;
       letter-spacing: 0em;
       color: ${(props) => props.theme.palette.secondaryAds};
-      @media (max-width: 480px) {
+      @media (max-width: 536px) {
         font-size: 13px;
         line-height: 1;
       }

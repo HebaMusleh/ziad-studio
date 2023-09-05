@@ -5,6 +5,9 @@ export const HeroStyle = styled.div`
   padding: 100px 0;
   position:relative;
   overflow-x:hidden;
+  @media (max-width: 570px) {
+    padding: 130px 0 30px;
+  }
   .container-hero {
     display: flex;
     align-items: center;
