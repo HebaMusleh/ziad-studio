@@ -7,6 +7,9 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
   }
+  .vertical-timeline-element-date{
+    color:${props=>props.theme.palette.step};
+  }
   .myComponent {
     max-width: 80rem;
     margin-left: auto;
