@@ -20,6 +20,9 @@ export const SideStyle = styled.div`
     @media (max-width: 768px) {
       width: 65%;
     }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
   ul {
     list-style: none;
