@@ -68,6 +68,9 @@ export const HeroStyle = styled.div`
         line-height: 27px;
         letter-spacing: 0em;
         color: ${(props) => props.theme.palette.secondaryColor};
+        @media (max-width: 480px) {
+          text-align:center;
+        }
       }
       button {
         width: 282px;
