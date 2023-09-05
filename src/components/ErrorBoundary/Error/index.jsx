@@ -1,8 +1,19 @@
 import React from 'react'
+import { Container } from '../../../global/component'
+import FullHeight from '../../FullHeight'
 
 const Error = () => {
   return (
-    <div>Sth went wrong</div>
+    <>
+      <Container>
+        <FullHeight>
+          <p style={{
+            color: "#000", marginTop: "150px",
+            textAlign: "center"
+          }}>Sth went wrong ,refresh page</p>
+        </FullHeight>
+      </Container>
+    </>
   )
 }
 
