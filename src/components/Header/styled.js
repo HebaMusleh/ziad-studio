@@ -30,7 +30,7 @@ export const HeaderStyle = styled.div`
       height:100%;
     }
     @media (max-width: 480px) {
-      width: 25px;
+      width: 30px;
     }
   }
 `;
