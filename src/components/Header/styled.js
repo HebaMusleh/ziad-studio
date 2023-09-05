@@ -28,8 +28,8 @@ export const HeaderStyle = styled.div`
       width:100%;
       height:100%;
     }
-    @media (max-width: 480px) {
-      width: 30px;
-    }
+    // @media (max-width: 480px) {
+    //   width: 30px;
+    // }
   }
 `;
