@@ -25,6 +25,7 @@ export const StyleTitle = styled.div`
     text-align: center;
     @media (max-width: 480px) {
       font-size: .9rem;
+      width:100%;
     }
   }
   .contactBtn {

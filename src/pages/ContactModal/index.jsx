@@ -59,7 +59,7 @@ const ContactModal = ({ isOpen, closeModal }) => {
                   <Input Label="phone" Type="tel"/>
                   <Input textarea/>
                   <div className='btns'>
-                    <div><Btn onClick={closeModal} type='button'>{t('close')}</Btn></div>
+                    {/* <div><Btn onClick={closeModal} type='button'>{t('close')}</Btn></div> */}
                     <div><Btn type="submit">{t('send')}</Btn></div>
                   </div>
                 </form>

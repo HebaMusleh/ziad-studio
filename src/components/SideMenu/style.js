@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SideStyle = styled.div`
   position: fixed;
   width: 100%;
+  // background: rgba(0, 0, 0, 0.5);
   ${(props) => (props.dir === "rtl" ? "right: -2000px" : "left: -2000px")};
   z-index: 1000;
   top: 0;
@@ -115,3 +116,18 @@ export const SideStyle = styled.div`
     justify-content: space-between;
   }
 `;
+
+// export const Overlay = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background-color: rgba(0, 0, 0, 0.7);
+//   opacity: 0;
+//   transition: 1s all ease-in-out;
+  
+//   &.show {
+//     opacity: 1;
+//   }
+// ` 

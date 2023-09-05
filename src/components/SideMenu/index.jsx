@@ -31,6 +31,7 @@ const SideMenu = ({ close, closeClick, dir, theme }) => {
   };
 
   return (
+    <>
     <SideStyle className={close ? "show" : ""} dir={dir}>
       <aside>
         <ul>
@@ -79,6 +80,8 @@ const SideMenu = ({ close, closeClick, dir, theme }) => {
         </ul>
       </aside>
     </SideStyle>
+      {/* <Overlay className={close ? "show" : ""} onClick={closeClick} ></Overlay> */}
+    </>
   )
 }
 

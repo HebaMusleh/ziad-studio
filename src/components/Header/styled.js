@@ -6,7 +6,7 @@ background: ${(props) => props.theme.palette.heroBackground};
 transition:.8s;
 position:fixed;
 width:100%;
-z-index:10;
+z-index:1;
 @media (max-width: 480px) {
   position: relative;
 }
