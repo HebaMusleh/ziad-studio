@@ -21,6 +21,9 @@ const Wrapper = styled.div`
   .vertical-timeline-element {
     direction: ltr;
   }
+  .vertical-timeline-element-date{
+    color:${props=>props.theme.palette.step};
+  }
 `;
 const VerticalWrapper = styled.div`
   display: flex;
