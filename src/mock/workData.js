@@ -61,6 +61,13 @@ import cover9 from "../assets/work101.jpg";
 import img92 from "../assets/work102.jpg";
 import img93 from "../assets/work103.jpg";
 
+import img101 from '../assets/work11.jpg';
+import cover10 from '../assets/work116.jpg';
+import img102 from '../assets/work115.jpg';
+import img103 from '../assets/work114.jpg';
+import img104 from '../assets/work113.jpg';
+import img105 from '../assets/work112.jpg';
+
 const WorkData = () => {
   const { t } = useTranslation();
 
@@ -157,6 +164,17 @@ const WorkData = () => {
       cover: cover9,
       img2: img92,
       img3: img93,
+    },
+    {
+      id: 10,
+      title: t("work10"),
+      description: t("work10Desc"),
+      img1: img101,
+      cover: cover10,
+      img2: img102,
+      img3: img103,
+      img4: img104,
+      img5: img105,
     },
   ];
   return data;
