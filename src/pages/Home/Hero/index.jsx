@@ -54,7 +54,7 @@ const Hero = () => {
                             {t('heroTitle')} <span>{t('heroSpan')}</span>
                         </h1>
                         <p>
-                            {t('hero')}
+                            {t('About')}
                         </p>
                         <button onClick={openModal}>{t('contactUS')}</button>
                     </motion.span>
