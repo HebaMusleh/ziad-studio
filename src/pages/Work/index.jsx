@@ -36,7 +36,6 @@ const Work = () => {
 
     return (
         <>
-            <Hero />
             {loading ? (
                 <FullHeight>
                     <Spinner />
@@ -44,6 +43,7 @@ const Work = () => {
             ) : (
                 <Style>
                     <Container>
+                        <Hero />
                         {data.map((item, index) => (
                             <Card
                                 key={index}
@@ -55,8 +55,8 @@ const Work = () => {
                     </Container>
                 </Style>
             )}
-        </>
 
+        </>
     );
 };
 
