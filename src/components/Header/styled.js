@@ -8,6 +8,7 @@ export const HeaderStyle = styled.div`
   z-index: 1;
   @media (max-width: 480px) {
     position: relative;
+    padding:10px;
   }
   .headers-own-style {
     display: flex;
@@ -19,14 +20,17 @@ export const HeaderStyle = styled.div`
     font-size: 32px;
     cursor: pointer;
     color: ${(props) => props.theme.palette.primaryHeroColor};
+    @media (max-width: 480px) {
+      font-size: 25px;
+    }
   }
-  // .logo {
-  //   @media (max-width: 480px) {
-  //     width: 30px;
-  //   }
-  //   img {
-  //     width: 100%;
-  //     height: 100%;
-  //   }
+  .logo {
+    img{
+      width:100%;
+      height:100%;
+    }
+    @media (max-width: 480px) {
+      width: 30px;
+    }
   }
 `;
