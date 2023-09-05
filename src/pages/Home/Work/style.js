@@ -30,7 +30,7 @@ export const WorkStyle = styled.div`
     border-radius: 16px;
     border: 1px solid #b9b9b9;
     color: #6c6c6c;
-    background: #fff;
+    background: transparent;
     font-size: 24px;
     font-weight: 800;
     line-height: 41px;
