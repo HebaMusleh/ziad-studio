@@ -52,14 +52,14 @@ const SingleWork = () => {
   }, [id, data]);
 
   return (
-    <Style>
-      <Container>
-        {loading ? (
-          <FullHeight>
-            <Spinner />
-          </FullHeight>
-        ) : (
-          <>
+    <>
+      {loading ? (
+        <FullHeight>
+          <Spinner />
+        </FullHeight>
+      ) : (
+        <Style>
+          <Container>
             <h1>{myData?.title}</h1>
             <img className='myImg' src={myData?.cover} alt="" />
             {myData?.img2 ? <img className='myImg' src={myData?.img2} alt="" /> : ''}
@@ -70,10 +70,10 @@ const SingleWork = () => {
             {myData?.img7 ? <img className='myImg' src={myData?.img7} alt="" /> : ''}
             {myData?.img8 ? <img className='myImg' src={myData?.img8} alt="" /> : ''}
             {myData?.img9 ? <img className='myImg' src={myData?.img9} alt="" /> : ''}
-          </>
-        )}
-      </Container>
-    </Style>
+          </Container>
+        </Style>
+      )}
+    </>
 
   );
 };
