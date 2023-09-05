@@ -14,7 +14,6 @@ import heroPincel from '../../../assets/her2.png';
 import ContactModal from '../../ContactModal';
 
 import cloud from '../../../assets/cloud.png';
-import { useLanguage } from '../../../context/directionContext';
 
 
 
@@ -23,7 +22,6 @@ const Hero = () => {
     const time = useTime();
     const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const { direction } = useLanguage();
 
     const openModal = () => {
         setIsModalOpen(true);
