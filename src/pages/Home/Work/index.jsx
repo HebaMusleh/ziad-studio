@@ -1,43 +1,28 @@
-import React from 'react'
-import Title from '../../../components/Title'
-
-import img1 from '../../../assets/work1.png';
-import img2 from '../../../assets/work2.png';
-import img3 from '../../../assets/work3.png';
-import img4 from '../../../assets/work4.png';
-import img5 from '../../../assets/work5.png';
-import img6 from '../../../assets/work6.png';
-
+import React from 'react';
+import Title from '../../../components/Title';
 import { WorkStyle } from './style';
 import { Container } from '../../../global/component';
-
-import { motion } from 'framer-motion'
-import { staggerChildren, textVariant2 } from "../../../utils/motion";
+import { motion } from 'framer-motion';
+import { staggerChildren, textVariant2 } from '../../../utils/motion';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import Card from './Card';
+import MockWork from '../../../mock/mockWork';
 
 const Work = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const data = MockWork();
+
   return (
     <WorkStyle>
-      <Title
-        title={t('work')}
-        desc={t('workDesc')} />
+      <Title title={t('work')} desc={t('workDesc')} />
       <Container>
-        <motion.section
-          variants={staggerChildren}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
-          className={`paddings images`}>
-          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img1} alt="img1" /></motion.div>
-          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img2} alt="img1" /></motion.div>
-          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img3} alt="img1" /></motion.div>
-          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img4} alt="img1" /></motion.div>
-          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img5} alt="img1" /></motion.div>
-          <motion.div variants={textVariant2} className={`flexCenter singleImg`}><img src={img6} alt="img1" /></motion.div>
-        </motion.section>
+        <div className="images">
+          {data.map((item) => (
+            <Card img={item.img1} id={item.id} />
+          ))}
+        </div>
         <motion.section
           variants={staggerChildren}
           initial="hidden"
@@ -50,7 +35,7 @@ const Work = () => {
         </motion.section>
       </Container>
     </WorkStyle>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;

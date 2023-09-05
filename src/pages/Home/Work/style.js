@@ -13,6 +13,7 @@ export const WorkStyle = styled.div`
   .singleImg {
     flex-basis: 350px;
     margin-bottom: 30px;
+    cursor: pointer;
     img {
       width: 100%;
       height: 100%;
@@ -22,7 +23,7 @@ export const WorkStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:85px;
+    margin-top: 85px;
   }
   button {
     width: 383px;
@@ -36,9 +37,9 @@ export const WorkStyle = styled.div`
     line-height: 41px;
     letter-spacing: 0em;
     cursor: pointer;
-    &:hover{
-        background:#b9b9b9;
-        color:#fff;
+    &:hover {
+      background: #b9b9b9;
+      color: #fff;
     }
     @media (max-width: 480px) {
       font-size: 20px;
