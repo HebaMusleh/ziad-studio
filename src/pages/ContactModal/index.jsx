@@ -1,4 +1,4 @@
-import React, { useRef,useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { Btn, ModalWrapper } from './style';
@@ -25,6 +25,7 @@ const ContactModal = ({ isOpen, closeModal }) => {
     user_phone: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -41,6 +42,7 @@ const ContactModal = ({ isOpen, closeModal }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
     emailjs.sendForm('service_5no24mx', 'template_z4hh3dt', form.current, 'b3vb2TN3nJiYxxSyE')
       .then((result) => {
         console.log(result.text);
@@ -51,9 +53,13 @@ const ContactModal = ({ isOpen, closeModal }) => {
           message: ''
         });
         notify();
-      }, (error) => {
+      })
+      .catch((error) => {
         console.log(error.text);
         toast.error('Something went wrong');
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
 
@@ -91,12 +97,12 @@ const ContactModal = ({ isOpen, closeModal }) => {
                   <IoClose onClick={closeModal} />
                 </div>
                 <form onSubmit={handleSubmit} ref={form}>
-                  <Input Label="FullName" Type="text" name="user_name" onChange={handleChange} value={formData.user_name}/>
-                  <Input Label="Email" Type="email" name="user_email" onChange={handleChange} value={formData.user_email}/>
-                  <Input Label="phone" Type="tel" name="user_phone" onChange={handleChange} value={formData.user_phone}/>
-                  <Input textarea name="message" value={formData.message} onChange={handleChange}/>
+                  <Input Label="FullName" Type="text" name="user_name" onChange={handleChange} value={formData.user_name} />
+                  <Input Label="Email" Type="email" name="user_email" onChange={handleChange} value={formData.user_email} />
+                  <Input Label="phone" Type="tel" name="user_phone" onChange={handleChange} value={formData.user_phone} />
+                  <Input textarea name="message" value={formData.message} onChange={handleChange} />
                   <div className='btns'>
-                    <div><Btn type="submit">{t('send')}</Btn></div>
+                    <div><Btn type="submit">{loading?" Loading ...":t('send')}</Btn></div>
                   </div>
                 </form>
               </div>
