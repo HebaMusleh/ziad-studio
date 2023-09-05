@@ -34,19 +34,21 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <LanguageProvider>
-      <themeContext.Provider value={[theme, setTheme]}>
-        <GlobalStyle dir={direction} close={close} />
-        <Header openClick={openClick} theme={theme.theme} />
-        <Suspense fallback={<Spinner />}>
-          <Router />
-        </Suspense>
-        <SideMenu
-          close={close}
-          closeClick={closeClick}
-          theme={theme.theme}
-        />
-        <Footer />
-      </themeContext.Provider>
+        <themeContext.Provider value={[theme, setTheme]}>
+          <GlobalStyle dir={direction} close={close} />
+          <Suspense fallback={<Spinner />}>
+            <Header openClick={openClick} theme={theme.theme} />
+            <Suspense fallback={<Spinner />}>
+              <Router />
+            </Suspense>
+            <SideMenu
+              close={close}
+              closeClick={closeClick}
+              theme={theme.theme}
+            />
+            <Footer />
+          </Suspense>
+        </themeContext.Provider>
       </LanguageProvider>
     </ThemeProvider>
   );
