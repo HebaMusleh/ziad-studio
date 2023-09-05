@@ -9,6 +9,7 @@ width:100%;
 z-index:1;
 @media (max-width: 480px) {
   position: relative;
+  padding:20px;
 }
   .headers-own-style {
     display: flex;
@@ -20,5 +21,15 @@ z-index:1;
     font-size: 32px;
     cursor: pointer;
     color: ${(props) => props.theme.palette.primaryHeroColor};
+  }
+
+  .logo{
+    @media (max-width: 480px) {
+      width:30px;
+    }
+    img{
+      width:100%;
+      height:100%;
+    }
   }
 `;

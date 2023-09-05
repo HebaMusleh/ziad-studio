@@ -38,7 +38,7 @@ const SideMenu = ({ close, closeClick, theme }) => {
       <aside>
         <ul>
           <li className='head'>
-            <div>
+            <div className='logos'>
               {theme === "dark" ?
                 <img src={darkLogo} alt="logo" />
                 :

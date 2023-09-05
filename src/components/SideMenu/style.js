@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const SideStyle = styled.div`
   position: fixed;
   width: 100%;
-  // background: rgba(0, 0, 0, 0.5);
   ${(props) => (props.dir === "rtl" ? "right: -2000px" : "left: -2000px")};
   z-index: 1000;
   top: 0;
@@ -67,11 +66,23 @@ export const SideStyle = styled.div`
     &:hover {
       background: transparent;
     }
+    .logos{
+      @media (max-width: 480px) {
+        width:30px;
+      }
+      img{
+        width:100%;
+        height:100%;
+      }
+    }
   }
   .closeIcon {
     font-size: 40px;
     color: ${(props) => props.theme.palette.closeIcon};
     cursor: pointer;
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
   }
   .secondSection {
     padding: 20px 0;
