@@ -8,7 +8,6 @@ export const HeaderStyle = styled.div`
   z-index: 1;
   @media (max-width: 480px) {
     position: relative;
-    padding:10px;
   }
   .headers-own-style {
     display: flex;
