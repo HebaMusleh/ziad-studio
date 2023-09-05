@@ -22,6 +22,7 @@ export const Style = styled.div`
       border: 1px solid #1f81b0;
     }
   }
+
   textarea {
     width: 100%;
     margin-top: 20px;
@@ -35,5 +36,8 @@ export const Style = styled.div`
     &:focus {
       border: 1px solid #1f81b0;
     }
+  }
+  .error{
+    border: 1px solid #f00;
   }
 `;
