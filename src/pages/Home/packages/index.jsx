@@ -9,6 +9,8 @@ import G2 from '../../../assets/G2.png';
 import G3 from '../../../assets/G3.png';
 
 import Card from './Card';
+import NotMobile from '../../../components/NotMobile';
+import Mobile from '../../../components/Mobile';
 
 const Packages = () => {
     const { t } = useTranslation();
@@ -36,7 +38,7 @@ const Packages = () => {
                 t('logoAnimation'),
                 t('posterDesign'),
             ],
-            brand:"true"
+            brand: "true"
         },
         {
             img: G3,
@@ -55,7 +57,7 @@ const Packages = () => {
                 t('packagingDesign'),
                 t('posterDesign'),
             ],
-            brand:"true"
+            brand: "true"
         },
         {
             img: G2,
@@ -74,13 +76,18 @@ const Packages = () => {
 
     return (
         <Container>
-                <Title title={t('services')} desc={t('descServices')} />
-                <H3>{t('design')}</H3>
+            <Title title={t('services')} desc={t('descServices')} />
+            <H3>{t('design')}</H3>
+            <Mobile>
+                <p style={{color:"#fff"}}>mobile section</p>
+            </Mobile>
+            <NotMobile>
                 <AllCard>
                     {cardData.map((card, index) => (
                         <Card key={index} {...card} />
                     ))}
                 </AllCard>
+            </NotMobile>
         </Container>
     );
 };
