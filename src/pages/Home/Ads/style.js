@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const AdsStyle = styled.div`
   background: ${(props) => props.theme.palette.adsBg};
   padding: 20px 0;
+  @media (max-width: 480px) {
+    padding:0;
+  }
   .card-container {
     display: flex;
     justify-content: space-between;

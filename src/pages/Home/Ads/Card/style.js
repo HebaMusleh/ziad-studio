@@ -12,8 +12,10 @@ export const CardStyle = styled.div`
   justify-content: center;
   flex-direction: column;
   @media (max-width: 480px) {
-    width: 105px;
-    height: 105px;
+    background:transparent;
+    border:1px solid transparent;
+    height: 100px;
+
   }
   .singleIcon {
     color: ${(props) => props.theme.palette.iconColor};
