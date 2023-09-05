@@ -29,7 +29,7 @@ const Style = styled.div`
     text-align: center;
     color: ${(props) => props.theme.palette.singleWorkTitle};
   }
-  img {
+  .myImg {
     width: 100%;
     height: 100%;
     border-radius: 16px;
@@ -49,31 +49,31 @@ const SingleWork = () => {
       setMyData(selectedData);
       setLoading(false);
     }, 1000);
-  }, [id,data]);
+  }, [id, data]);
 
   return (
-    <>
-      {loading ? (
-        <FullHeight>
-          <Spinner />
-        </FullHeight>
-      ) : (
-        <Style>
-          <Container>
+    <Style>
+      <Container>
+        {loading ? (
+          <FullHeight>
+            <Spinner />
+          </FullHeight>
+        ) : (
+          <>
             <h1>{myData?.title}</h1>
-            <img src={myData?.cover} alt="" />
-            {myData?.img2 ? <img src={myData?.img2} alt="" /> : ''}
-            {myData?.img3 ? <img src={myData?.img3} alt="" /> : ''}
-            {myData?.img4 ? <img src={myData?.img4} alt="" /> : ''}
-            {myData?.img5 ? <img src={myData?.img5} alt="" /> : ''}
-            {myData?.img6 ? <img src={myData?.img6} alt="" /> : ''}
-            {myData?.img7 ? <img src={myData?.img7} alt="" /> : ''}
-            {myData?.img8 ? <img src={myData?.img8} alt="" /> : ''}
-            {myData?.img9 ? <img src={myData?.img9} alt="" /> : ''}
-          </Container>
-        </Style>
-      )}
-    </>
+            <img className='myImg' src={myData?.cover} alt="" />
+            {myData?.img2 ? <img className='myImg' src={myData?.img2} alt="" /> : ''}
+            {myData?.img3 ? <img className='myImg' src={myData?.img3} alt="" /> : ''}
+            {myData?.img4 ? <img className='myImg' src={myData?.img4} alt="" /> : ''}
+            {myData?.img5 ? <img className='myImg' src={myData?.img5} alt="" /> : ''}
+            {myData?.img6 ? <img className='myImg' src={myData?.img6} alt="" /> : ''}
+            {myData?.img7 ? <img className='myImg' src={myData?.img7} alt="" /> : ''}
+            {myData?.img8 ? <img className='myImg' src={myData?.img8} alt="" /> : ''}
+            {myData?.img9 ? <img className='myImg' src={myData?.img9} alt="" /> : ''}
+          </>
+        )}
+      </Container>
+    </Style>
 
   );
 };

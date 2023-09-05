@@ -20,5 +20,10 @@ export const AllCard = styled.div`
   margin-bottom: 10%;
   @media (max-width: 1000px) {
     justify-content: center;
+    gap: 100px;
+  }
+  @media (max-width: 480px) {
+    justify-content: center;
+    gap: 30px;
   }
 `;

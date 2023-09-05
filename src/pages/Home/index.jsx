@@ -8,10 +8,15 @@ import Work from './Work'
 import Ads from './Ads'
 import US from './US'
 import Steps from './Steps'
-import  styled  from 'styled-components'
+import styled from 'styled-components'
 
 const Style = styled.div`
-padding-top:7%;
+@media (max-width: 2946px) {
+  padding-top:0;
+}
+@media (max-width: 1940px) {
+  padding-top:5.5%;
+}
 @media (max-width: 768px) {
   padding-top:10%;
 }

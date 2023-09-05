@@ -20,6 +20,7 @@ import FullHeight from "./components/FullHeight";
 
 import { useTranslation } from "react-i18next";
 import Router from "./Router";
+import ArrowToTop from "./components/ArrowButton";
 
 export default function App() {
   const [theme, setTheme] = useState(darkTheme);
@@ -63,6 +64,7 @@ export default function App() {
               theme={theme.theme}
             />
             <Footer />
+            <ArrowToTop/>
           </Suspense>
         </themeContext.Provider>
       </LanguageProvider>

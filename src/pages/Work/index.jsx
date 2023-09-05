@@ -35,27 +35,25 @@ const Work = () => {
     }, [fetchedData]);
 
     return (
-        <>
-            {loading ? (
-                <FullHeight>
-                    <Spinner />
-                </FullHeight>
-            ) : (
-                <Style>
-                    <Container>
-                        <Hero />
-                        {data.map((item, index) => (
-                            <Card
-                                key={index}
-                                title={item.title}
-                                description={item.description}
-                                img={item.img1}
-                                id={index + 1} />
-                        ))}
-                    </Container>
-                </Style>
-            )}
-        </>
+        <Style>
+            <Container>
+                <Hero />
+                {loading ? (
+                    <FullHeight>
+                        <Spinner />
+                    </FullHeight>
+                ) : (
+                    data.map((item, index) => (
+                        <Card
+                            key={index}
+                            title={item.title}
+                            description={item.description}
+                            img={item.img1}
+                            id={index + 1} />
+                    ))
+                )}
+            </Container>
+        </Style>
 
     );
 };
