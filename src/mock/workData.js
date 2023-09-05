@@ -35,34 +35,31 @@ import img45 from "../assets/3basi5.png";
 import img46 from "../assets/3basi6.png";
 import img47 from "../assets/3basi1.png";
 
-
 //Fayyah
 import img51 from "../assets/dabah.png";
-import cover5 from '../assets/fayyahCover.jpg';
+import cover5 from "../assets/fayyahCover.jpg";
 
-import img61 from '../assets/work7.jpg';
-import cover6 from '../assets/work72.jpg'
-import img62 from '../assets/work72.jpg'
+import img61 from "../assets/work7.jpg";
+import cover6 from "../assets/work72.jpg";
+import img62 from "../assets/work73.jpg";
 
-import img71 from '../assets/work8.jpg';
-import cover7 from '../assets/work82.jpg';
-import img72 from '../assets/work83.jpg'
-import img73 from '../assets/work84.jpg'
-import img74 from '../assets/work85.jpg'
-import img75 from '../assets/work86.jpg'
+import img71 from "../assets/work8.jpg";
+import cover7 from "../assets/work82.jpg";
+import img72 from "../assets/work83.jpg";
+import img74 from "../assets/work85.jpg";
+import img75 from "../assets/work86.jpg";
 
+import img81 from "../assets/work9.jpg";
+import cover8 from "../assets/work92.jpg";
+import img82 from "../assets/work93.jpg";
+import img83 from "../assets/work94.jpg";
+import img84 from "../assets/work95.jpg";
+import img85 from "../assets/work96.jpg";
 
-import img81 from '../assets/work9.jpg';
-import cover8 from '../assets/work92.jpg';
-import img82 from '../assets/work93.jpg'
-import img83 from '../assets/work94.jpg'
-import img84 from '../assets/work95.jpg'
-import img85 from '../assets/work96.jpg'
-
-import img91 from '../assets/work10.jpg';
-import cover9 from '../assets/work101.jpg';
-import img92 from '../assets/work102.jpg'
-import img93 from '../assets/work103.jpg'
+import img91 from "../assets/work10.jpg";
+import cover9 from "../assets/work101.jpg";
+import img92 from "../assets/work102.jpg";
+import img93 from "../assets/work103.jpg";
 
 const WorkData = () => {
   const { t } = useTranslation();
@@ -108,12 +105,12 @@ const WorkData = () => {
       description: t("3basiDesc"),
       img1: img41,
       cover: cover4,
-      img2:img42,
-      img3:img43,
-      img4:img44,
-      img5:img45,
-      img6:img46,
-      img7:img47
+      img2: img42,
+      img3: img43,
+      img4: img44,
+      img5: img45,
+      img6: img46,
+      img7: img47,
     },
     {
       id: 5,
@@ -124,33 +121,33 @@ const WorkData = () => {
     },
     {
       id: 6,
-      title: t("fayyah"),
-      description: t("fayyahDesc"),
+      title: t("work6"),
+      description: t("work6Desc"),
       img1: img61,
       cover: cover6,
-      img2:img62,
+      img2: img62,
+      img3: img61,
     },
     {
       id: 7,
-      title: t("3basi"),
-      description: t("3basiDesc"),
+      title: t("work7"),
+      description: t("work7Desc"),
       img1: img71,
       cover: cover7,
-      img2:img72,
-      img3:img73,
-      img4:img74,
-      img5:img75,
+      img2: img72,
+      img3: img74,
+      img4: img75,
     },
     {
       id: 8,
-      title: t("3basi"),
-      description: t("3basiDesc"),
+      title: t("work8"),
+      description: t("work8Desc"),
       img1: img81,
       cover: cover8,
-      img2:img82,
-      img3:img83,
-      img4:img84,
-      img5:img85,
+      img2: img82,
+      img3: img83,
+      img4: img84,
+      img5: img85,
     },
     {
       id: 9,
@@ -158,8 +155,8 @@ const WorkData = () => {
       description: t("work9Desc"),
       img1: img91,
       cover: cover9,
-      img2:img92,
-      img3:img93,
+      img2: img92,
+      img3: img93,
     },
   ];
   return data;
