@@ -21,7 +21,7 @@ export const SideStyle = styled.div`
       width: 65%;
     }
     @media (max-width: 480px) {
-      width: 100%;
+      width: 90%;
     }
   }
   ul {
