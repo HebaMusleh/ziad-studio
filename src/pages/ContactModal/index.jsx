@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Btn, ModalWrapper } from './style';
 import contactImg from '../../assets/contact.png'
@@ -7,25 +7,23 @@ import { useTranslation } from 'react-i18next';
 import { Container } from '../../global/component';
 import { IoClose } from 'react-icons/io5';
 import { useLanguage } from '../../context/directionContext';
+import emailjs from '@emailjs/browser';
 
 
 const ContactModal = ({ isOpen, closeModal }) => {
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   email: '',
-  // });
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData({
-  //     ...formData,
-  //     [name]: value,
-  //   });
-  // };
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     closeModal();
+    emailjs.sendForm('service_5no24mx', 'template_z4hh3dt', form.current, 'b3vb2TN3nJiYxxSyE')
+      .then((result) => {
+        console.log(result.text);
+        console.log("msg sent successfully")
+      }, (error) => {
+        console.log(error.text);
+        console.log("something went wrong ")
+      });
   };
 
   const modalVariants = {
@@ -60,11 +58,11 @@ const ContactModal = ({ isOpen, closeModal }) => {
                 <div className="closeIcon" dir={direction}>
                   <IoClose onClick={closeModal} />
                 </div>
-                <form onSubmit={handleSubmit}>
-                  <Input Label="FullName" Type="text" />
-                  <Input Label="Email" Type="email" />
-                  <Input Label="phone" Type="tel" />
-                  <Input textarea />
+                <form onSubmit={handleSubmit} ref={form}>
+                  <Input Label="FullName" Type="text" name="user_name" />
+                  <Input Label="Email" Type="email" name="user_email" />
+                  <Input Label="phone" Type="tel" name="user_phone" />
+                  <Input textarea name="message" />
                   <div className='btns'>
                     <div><Btn type="submit">{t('send')}</Btn></div>
                   </div>

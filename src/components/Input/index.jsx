@@ -2,7 +2,7 @@ import React from 'react'
 import { Style } from './style'
 import { useTranslation } from 'react-i18next'
 
-const Input = ({ textarea,Label,Type }) => {
+const Input = ({ textarea,Label,Type,name }) => {
     const {t} = useTranslation();
     return (
         <>
@@ -10,12 +10,12 @@ const Input = ({ textarea,Label,Type }) => {
                 textarea ?
                     <Style>
                         <label htmlFor="">{t('msg')}</label>
-                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                        <textarea cols="30" rows="5" name={name}></textarea>
                     </Style>
                     :
                     <Style>
                         <label htmlFor="">{t(Label)}</label>
-                        <input type={Type} />
+                    <input type={Type} name={name}/>
                     </Style>
             }
         </>
