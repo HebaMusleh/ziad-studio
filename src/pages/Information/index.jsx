@@ -34,7 +34,7 @@ const Information = () => {
     <>
       {loading ? (
         <FullHeight>
-          <Spinner/>
+          <Spinner />
         </FullHeight>
       ) : (
         <Style>
