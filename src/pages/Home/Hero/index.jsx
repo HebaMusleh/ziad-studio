@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 
 import { motion, useTime, useTransform } from "framer-motion";
 import { fadeIn, staggerContainer } from "../../../utils/motion";
@@ -13,6 +13,8 @@ import heroCircle from '../../../assets/her1.png';
 import heroPincel from '../../../assets/her2.png';
 import ContactModal from '../../ContactModal';
 
+import cloud from '../../../assets/cloud.png';
+
 
 
 const Hero = () => {
@@ -22,11 +24,11 @@ const Hero = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => {
-      setIsModalOpen(true);
+        setIsModalOpen(true);
     };
-  
+
     const closeModal = () => {
-      setIsModalOpen(false);
+        setIsModalOpen(false);
     };
     return (
         <HeroStyle>
@@ -38,6 +40,9 @@ const Hero = () => {
                     viewport={{ once: false, amount: 0.25 }}
                     className={`innerWidth container-hero`}
                 >
+                    <div className="cloud">
+                            <img src={cloud} alt="cloud" />
+                        </div>
                     <motion.span className="left-side" variants={fadeIn("right", "tween", 0.2, 1)}>
                         <img src={heroCircle} alt="circle" />
                         <motion.div style={{ rotate }} className='pincel'>

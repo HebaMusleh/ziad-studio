@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeroStyle = styled.div`
   background: ${(props) => props.theme.palette.heroBackground};
   padding: 100px 0;
+  position:relative;
   .container-hero {
     display: flex;
     align-items: center;
@@ -99,6 +100,21 @@ export const HeroStyle = styled.div`
           margin-top: 20px;
         }
       }
+    }
+  }
+  .cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveCloud 10s linear infinite; /* Adjust duration and timing function as needed */
+  }
+  
+  @keyframes moveCloud {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%); /* Adjust the distance to move the cloud */
     }
   }
 `;
