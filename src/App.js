@@ -1,15 +1,25 @@
 import { useState, useEffect, Suspense } from "react";
+
+
 import { ThemeProvider } from "styled-components";
+
+
 import { lightTheme, darkTheme } from "./global/theme";
-import { themeContext } from "./context/themeContext";
 import { GlobalStyle } from "./global/style";
+
+
+import { themeContext } from "./context/themeContext";
+import { LanguageProvider } from "./context/directionContext";
+
 import Spinner from "./components/Spinner";
 import SideMenu from "./components/SideMenu";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
+import FullHeight from "./components/FullHeight";
+
+
 import { useTranslation } from "react-i18next";
 import Router from "./Router";
-import Footer from "./components/Footer";
-import { LanguageProvider } from "./context/directionContext";
 
 export default function App() {
   const [theme, setTheme] = useState(darkTheme);
@@ -38,7 +48,13 @@ export default function App() {
           <GlobalStyle dir={direction} close={close} />
           <Suspense fallback={<Spinner />}>
             <Header openClick={openClick} theme={theme.theme} />
-            <Suspense fallback={<Spinner />}>
+            <Suspense
+              fallback={
+                <FullHeight>
+                  <Spinner />
+                </FullHeight>
+              }
+            >
               <Router />
             </Suspense>
             <SideMenu
