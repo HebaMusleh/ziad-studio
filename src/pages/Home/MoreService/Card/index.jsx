@@ -6,11 +6,13 @@ import BtnOrder from '../../../../components/BtnOrder';
 import { useTranslation } from 'react-i18next';
 
 import { BsFillCheckCircleFill } from 'react-icons/bs';
+import { useLanguage } from '../../../../context/directionContext';
 
 const Card = ({ title, img, desc1, desc2 }) => {
     const { t } = useTranslation();
+    const {direction} = useLanguage();
     return (
-        <CardStyle>
+        <CardStyle dir={direction}>
             <div className="images">
                 <div className="singleImg">
                 <img src={img} alt="card-1-" />

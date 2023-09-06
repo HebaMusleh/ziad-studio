@@ -9,6 +9,7 @@ export const CardStyle = styled.div`
   border-radius: 16px;
   padding: 5%;
   height: 700px;
+  direction: ${props=>props.dir};
   @media (max-width: 768px) {
     flex-basis: 88%;
     height: 700px;

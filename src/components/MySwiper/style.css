@@ -18,3 +18,6 @@
   height: 100%;
   object-fit: cover;
 }
+.mySwiper{
+  direction: ltr;
+}
