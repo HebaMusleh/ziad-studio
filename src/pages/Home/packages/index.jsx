@@ -13,12 +13,10 @@ import NotMobile from '../../../components/NotMobile';
 import Mobile from '../../../components/Mobile';
 import MySwiper from '../../../components/MySwiper';
 import { SwiperSlide } from 'swiper/react';
-import ContactModal from '../../ContactModal';
-import { useModal } from '../../../context/modalContext';
+
 
 const Packages = () => {
     const { t } = useTranslation();
-    const { isModalOpen, closeModal } = useModal();
 
     const cardData = [
         {
@@ -93,7 +91,6 @@ const Packages = () => {
                         <Card key={index} {...card} />
                     ))}
                 </AllCard>
-                <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
             </NotMobile>
             <Mobile>
                 <MySwiper>
@@ -102,7 +99,6 @@ const Packages = () => {
                             <Card {...card} />
                         </SwiperSlide>
                     ))}
-                    <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
                 </MySwiper>
             </Mobile>
         </Container>

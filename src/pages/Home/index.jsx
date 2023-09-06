@@ -8,6 +8,9 @@ import Work from './Work'
 import Ads from './Ads'
 import Steps from './Steps'
 import styled from 'styled-components'
+import ContactModal from '../ContactModal'
+
+import { useModal } from '../../context/modalContext'
 
 const Style = styled.div`
 @media (max-width: 2946px) {
@@ -24,6 +27,7 @@ const Style = styled.div`
 }
 `
 const Home = () => {
+  const { isModalOpen, closeModal } = useModal();
   return (
     <Style>
       <Hero />
@@ -33,6 +37,7 @@ const Home = () => {
       <Steps />
       <MoreService />
       <Work />
+      <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
     </Style>
   )
 }
