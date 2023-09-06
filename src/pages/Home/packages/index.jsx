@@ -3,6 +3,7 @@ import { Container } from '../../../global/component';
 import { H3, AllCard } from './style';
 import Title from '../../../components/Title';
 import { useTranslation } from 'react-i18next';
+import { SwiperSlide } from 'swiper/react';
 
 import G1 from '../../../assets/G1.png';
 import G2 from '../../../assets/G2.png';
@@ -11,6 +12,7 @@ import G3 from '../../../assets/G3.png';
 import Card from './Card';
 import NotMobile from '../../../components/NotMobile';
 import Mobile from '../../../components/Mobile';
+import Slides from '../../../components/Slides';
 
 const Packages = () => {
     const { t } = useTranslation();
@@ -79,7 +81,13 @@ const Packages = () => {
             <Title title={t('services')} desc={t('descServices')} />
             <H3>{t('design')}</H3>
             <Mobile>
-                <p style={{color:"#fff"}}>mobile section</p>
+                <Slides>
+                    {cardData.map((card, index) => (
+                        <SwiperSlide>
+                            <Card key={index} {...card} />
+                        </SwiperSlide>
+                    ))}
+                </Slides>
             </Mobile>
             <NotMobile>
                 <AllCard>
