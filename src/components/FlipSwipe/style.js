@@ -14,7 +14,6 @@ export const Style = styled.div`
     justify-content: center;
     align-items: center;
   }
-  
   .swiper-slide img {
     display: block;
     width: 100%;
