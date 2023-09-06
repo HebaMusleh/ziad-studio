@@ -6,7 +6,7 @@ export const HeroStyle = styled.div`
   .container-hero {
     display: flex;
     align-items: center;
-    gap: 10%;
+    gap: 4%;
     @media (max-width: 768px) {
       flex-direction: column;
     }
@@ -16,7 +16,7 @@ export const HeroStyle = styled.div`
     }
 
     .left-side {
-      flex-basis: 60%;
+      flex-basis: 30%;
       position: relative;
       img {
         width: 100%;
@@ -41,6 +41,7 @@ export const HeroStyle = styled.div`
       }
     }
     .right-side {
+      flex-basis:70%;
       h1 {
         font-size: 	3rem;
         font-weight: 500;

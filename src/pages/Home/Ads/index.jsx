@@ -20,7 +20,7 @@ const Ads = () => {
             <Container>
                 <motion.div className="card-container" variants={fadeIn("right", "tween", 0.2, 1)}>
                     <Card icons={<SlCalender />} num="1760" title={t('day')} />
-                    <Card icons={<CiCoffeeCup />} num="1360" title={t('cup')} />
+                    <Card icons={<CiCoffeeCup />} num="876" title={t('cup')} />
                     <Card icons={<SiSlideshare />} num="18" title={t('customrs')} />
                 </motion.div>
             </Container>
