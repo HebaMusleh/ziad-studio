@@ -8,6 +8,7 @@ const Card = ({ img, title, desc, price, num = 1, options, brand }) => {
 
   return (
     <Wrapper>
+      <div className="content">
       <div className='image'>
         <img src={img} alt='' />
       </div>
@@ -29,6 +30,7 @@ const Card = ({ img, title, desc, price, num = 1, options, brand }) => {
       <div className='price'>
         <h4>{price}</h4>
         <BtnOrder />
+      </div>
       </div>
     </Wrapper>
   );

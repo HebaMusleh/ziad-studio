@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Width = styled.div`
   background: ${(props) => props.theme.palette.packagesBackground};
   box-shadow: 0px 4px 25px 0px #82c8dc66;
   border-radius: 48px;
-  flex-basis: 30%;
+  flex-basis: 90%;
+  height: 1000px;
   padding: 40px;
-  height: fit-content;
   display:flex;
+  flex-direction:column;
   align-items:center;
   justify-content:center;
+  @media (max-width: 480px) {
+    padding: 5px;
+  }
   .image {
     background: ${(props) => props.theme.palette.whiteFonts};
     width: 80px;
@@ -61,6 +65,9 @@ export const Wrapper = styled.div`
       text-align: center;
       color: ${(props) => props.theme.palette.secondText};
     }
+    ul{
+        padding:20px;
+    }
   }
   .price {
     h4 {
@@ -73,6 +80,8 @@ export const Wrapper = styled.div`
       text-align: center;
       @media (max-width: 768px) {
         font-size: 1rem;
+        line-height: 1;
+        margin:0;
       }
     }
   }
@@ -105,12 +114,30 @@ export const Wrapper = styled.div`
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 41.09px;
+    margin:auto;
     text-align: center;
     @media (max-width: 768px) {
       font-size: 1rem;
+      line-height: 1;
+      margin:auto;
     }
   }
   .brand {
     color: ${(props) => props.theme.palette.icon6Bg};
+  }
+  .description-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin:0;
+    ul{
+        padding:0 10px;
+    }
+  }
+  .down-list{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin:30px auto;
   }
 `;

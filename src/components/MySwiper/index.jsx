@@ -13,7 +13,6 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function MySwiper({ children }) {
   return (
-    <>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -30,7 +29,5 @@ export default function MySwiper({ children }) {
       >
         {children}
       </Swiper>
-
-    </>
   );
 }

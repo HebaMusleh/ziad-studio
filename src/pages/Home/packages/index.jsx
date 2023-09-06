@@ -13,6 +13,7 @@ import NotMobile from '../../../components/NotMobile';
 import Mobile from '../../../components/Mobile';
 import MySwiper from '../../../components/MySwiper';
 import { SwiperSlide } from 'swiper/react';
+import CardMobile from './CardMobile';
 
 
 const Packages = () => {
@@ -44,7 +45,8 @@ const Packages = () => {
                 t('socialMediaTemplateDesign'),
                 t('logoAnimation'),
             ],
-            brand: "true"
+            brand: "true",
+            downList:"true"
         },
         {
             img: G3,
@@ -82,8 +84,8 @@ const Packages = () => {
 
     return (
         <Container>
-            <H3>{t('design')}</H3>
             <Title title={t('services')} desc={t('descServices')} />
+            <H3>{t('design')}</H3>
 
             <NotMobile>
                 <AllCard>

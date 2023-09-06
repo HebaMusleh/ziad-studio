@@ -10,12 +10,12 @@ export const CardStyle = styled.div`
   padding: 5%;
   height: 700px;
   @media (max-width: 768px) {
-    flex-basis: 85%;
+    flex-basis: 88%;
     height: 500px;
   }
   @media (max-width: 480px) {
     justify-content: center;
-    flex-basis: 90%;
+    flex-basis: 88%;
     height: 500px;
   }
   .images {
