@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const HeroStyle = styled.div`
   background: ${(props) => props.theme.palette.heroBackground};
   padding: 100px 0;
+  position:relative;
+  overflow-x:hidden;
   .container-hero {
     display: flex;
     align-items: center;
@@ -102,4 +104,24 @@ export const HeroStyle = styled.div`
       }
     }
   }
+
+  .cloud {
+    position: absolute;
+    top: 0;
+    animation: moveCloud 20s linear infinite;
+    overflow-x: hidden;
+    z-index: 1000;
+    overflow-x:hidden;
+  }
+
+  @keyframes moveCloud {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100vw); /* Move to the right of the viewport */
+    }
+  }
+
 `;
