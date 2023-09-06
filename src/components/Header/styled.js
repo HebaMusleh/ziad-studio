@@ -17,10 +17,6 @@ z-index:1;
   }
   .logo{
     cursor:pointer;
-    img{
-      width:100%;
-      height:100%;
-    }
   }
 
   .icons {
