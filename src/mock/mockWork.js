@@ -14,17 +14,6 @@ import img7 from "../assets/pedalco7.png";
 import img21 from "../assets/lukkan.png";
 import cover2 from "../assets/lukka.jpg";
 
-//sedra
-import img31 from "../assets/sedra.png";
-import cover3 from "../assets/sadra1.jpg";
-import img32 from "../assets/sadra2.jpg";
-import img33 from "../assets/sadra3.jpg";
-import img34 from "../assets/sadra4.jpg";
-import img35 from "../assets/sadra5.jpg";
-import img36 from "../assets/sadra7.jpg";
-import img37 from "../assets/sadra8.jpg";
-import img38 from "../assets/sadra9.jpg";
-
 //3basi
 import img41 from "../assets/3basi1.png";
 import cover4 from "../assets/3basi7.png";
@@ -42,6 +31,13 @@ import cover5 from "../assets/fayyahCover.jpg";
 import img61 from "../assets/work7.jpg";
 import cover6 from "../assets/work72.jpg";
 import img62 from "../assets/work73.jpg";
+
+
+import img71 from "../assets/work8.jpg";
+import cover7 from "../assets/work82.jpg";
+import img72 from "../assets/work83.jpg";
+import img74 from "../assets/work85.jpg";
+import img75 from "../assets/work86.jpg";
 
 const MockWork = () => {
   const { t } = useTranslation();
@@ -68,19 +64,15 @@ const MockWork = () => {
       cover: cover2,
     },
     {
-      id: 3,
-      title: t("sedra"),
-      description: t("sedraDesc"),
-      img1: img31,
-      cover: cover3,
-      img2: img32,
-      img3: img33,
-      img4: img34,
-      img5: img35,
-      img6: img36,
-      img7: img37,
-      img8: img38,
-    },
+        id: 3,
+        title: t("work7"),
+        description: t("work7Desc"),
+        img1: img71,
+        cover: cover7,
+        img2: img72,
+        img3: img74,
+        img4: img75,
+      },
     {
       id: 4,
       title: t("3basi"),
