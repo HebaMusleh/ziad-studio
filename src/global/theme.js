@@ -58,7 +58,9 @@ export const lightTheme = {
     labelColor:"#353535",
     inputBG:"#F7F7F7",
     step:"#3A3A3A",
-    black:"#000"
+    black:"#000",
+    bold:"#646464bf",
+    extrabold:"#3A3A3A"
   },
 };
 
@@ -121,6 +123,8 @@ export const darkTheme = {
     labelColor:"#939292",
     inputBG:"#151515",
     step:"#D2D2D2",
-    black:"#eee"
+    black:"#eee",
+    bold:"#8b949e",
+    extrabold:"#eee"
   },
 };

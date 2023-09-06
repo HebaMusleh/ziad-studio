@@ -70,8 +70,8 @@ export const Wrapper = styled.div`
   ul {
     padding:40px;
     li {
-      font-size: 1.25rem;
-      font-weight: 400;
+      font-size: 1rem;
+      font-weight: 500;
       line-height: 34px;
       letter-spacing: 0em;
       width: fit-content;
@@ -80,6 +80,14 @@ export const Wrapper = styled.div`
       @media (max-width: 768px) {
         font-size: .9rem;
       }
+    }
+    .bold{
+      font-weight:bold;
+      color:${(props) => props.theme.palette.bold};
+    }
+    .extraBold{
+      font-weight:bold;
+      color:${(props) => props.theme.palette.extrabold};
     }
   }
   .edits {
