@@ -17,6 +17,10 @@ export const Wrapper = styled.div`
     justify-content: center;
     margin: auto;
     margin-bottom: 30px;
+    @media (max-width:920px) {
+      width: 60px;
+      height: 60px;
+}
   }
   .title {
     h3 {

@@ -13,7 +13,9 @@ export const CardStyle = styled.div`
     flex-basis: 85%;
   }
   @media (max-width: 480px) {
-    flex-basis: 95%;
+    flex-basis: 90%;
+    padding:2%;
+    height: 400px;
   }
   .images {
     width: 160px;
@@ -24,6 +26,10 @@ export const CardStyle = styled.div`
     align-items: center;
     justify-content: center;
     margin: 30px auto;
+    @media (max-width:920px) {
+      width: 60px;
+      height: 60px;
+}
   }
   .title {
     h3 {
