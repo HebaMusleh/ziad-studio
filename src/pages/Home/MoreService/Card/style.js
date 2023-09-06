@@ -28,8 +28,8 @@ export const CardStyle = styled.div`
     justify-content: center;
     margin: 30px auto;
     @media (max-width: 480px) {
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
     }
     img {
       width: 100%;

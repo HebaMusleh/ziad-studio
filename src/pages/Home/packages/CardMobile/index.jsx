@@ -1,5 +1,4 @@
 import React from 'react';
-import { Wrapper } from '../Card/style';
 import BtnOrder from '../../../../components/BtnOrder';
 import { useTranslation } from 'react-i18next';
 import { Width } from './style';

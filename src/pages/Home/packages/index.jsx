@@ -13,7 +13,6 @@ import NotMobile from '../../../components/NotMobile';
 import Mobile from '../../../components/Mobile';
 import MySwiper from '../../../components/MySwiper';
 import { SwiperSlide } from 'swiper/react';
-import CardMobile from './CardMobile';
 
 
 const Packages = () => {
