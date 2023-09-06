@@ -4,9 +4,9 @@ import { H3, AllCard } from './style';
 import Title from '../../../components/Title';
 import { useTranslation } from 'react-i18next';
 
-import G1 from '../../../assets/G1.png';
-import G2 from '../../../assets/G2.png';
-import G3 from '../../../assets/G3.png';
+import G1 from '../../../assets/G1.svg';
+import G2 from '../../../assets/G2.svg';
+import G3 from '../../../assets/G3.svg';
 
 import Card from './Card';
 import NotMobile from '../../../components/NotMobile';

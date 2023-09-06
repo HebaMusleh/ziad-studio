@@ -11,9 +11,12 @@ export const CardStyle = styled.div`
   height: 700px;
   @media (max-width: 768px) {
     flex-basis: 85%;
+    height: 500px;
   }
   @media (max-width: 480px) {
-    flex-basis: 95%;
+    justify-content: center;
+    flex-basis: 90%;
+    height: 500px;
   }
   .images {
     width: 160px;
@@ -24,6 +27,21 @@ export const CardStyle = styled.div`
     align-items: center;
     justify-content: center;
     margin: 30px auto;
+    @media (max-width: 480px) {
+      width: 100px;
+      height: 100px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .singleImg {
+      width: 100px;
+      @media (max-width: 480px) {
+        width: 60px;
+        height: 60px;
+      }
+    }
   }
   .title {
     h3 {

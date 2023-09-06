@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 
 import { motion, useTime, useTransform } from "framer-motion";
 import { fadeIn, staggerContainer } from "../../../utils/motion";
@@ -9,8 +9,8 @@ import { Container } from '../../../global/component'
 import { HeroStyle } from './style';
 
 
-import heroCircle from '../../../assets/her1.png';
-import heroPincel from '../../../assets/her2.png';
+import heroCircle from '../../../assets/her1.svg';
+import heroPincel from '../../../assets/her2.svg';
 import ContactModal from '../../ContactModal';
 
 
@@ -22,11 +22,11 @@ const Hero = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => {
-      setIsModalOpen(true);
+        setIsModalOpen(true);
     };
-  
+
     const closeModal = () => {
-      setIsModalOpen(false);
+        setIsModalOpen(false);
     };
     return (
         <HeroStyle>
