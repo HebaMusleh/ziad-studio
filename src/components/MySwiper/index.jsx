@@ -1,31 +1,36 @@
-import React  from 'react';
-// Import Swiper React components
+import React from 'react';
+
+
 import { Swiper } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import './style.css';
 
-// import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function MySwiper({ children }) {
   return (
     <>
       <Swiper
-        cssMode={true}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
         navigation={true}
-        pagination={true}
-        mousewheel={true}
-        keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         {children}
       </Swiper>
+
     </>
   );
 }
