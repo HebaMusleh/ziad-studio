@@ -16,7 +16,7 @@ export const CardStyle = styled.div`
   @media (max-width: 480px) {
     justify-content: center;
     flex-basis: 88%;
-    height: 700px;
+    height: 600px;
   }
   .images {
     width: 160px;
@@ -28,8 +28,8 @@ export const CardStyle = styled.div`
     justify-content: center;
     margin: 30px auto;
     @media (max-width: 480px) {
-      width: 80px;
-      height: 80px;
+      width: 90px;
+      height: 90px;
     }
     img {
       width: 100%;
