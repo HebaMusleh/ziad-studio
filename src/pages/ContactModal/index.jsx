@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { Btn, ModalWrapper } from './style';
 
-import contactImg from '../../assets/contact.png'
+import contactImg from '../../assets/contact.svg'
 import Input from '../../components/Input';
 import { Container } from '../../global/component';
 

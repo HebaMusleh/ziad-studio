@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React  from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
-import ContactModal from '../../pages/ContactModal'
 import { useModal } from '../../context/modalContext'
 
 
@@ -31,7 +30,7 @@ const BtnStyle = styled.button`
 `
 const BtnOrder = () => {
   const { t } = useTranslation();
-  const { isModalOpen, openModal, closeModal } = useModal();
+  const { openModal } = useModal();
   return (
     <>
       <BtnStyle onClick={() => openModal()}>
