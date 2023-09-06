@@ -1,12 +1,9 @@
 import { useState, useEffect, Suspense } from "react";
 
-
 import { ThemeProvider } from "styled-components";
-
 
 import { lightTheme, darkTheme } from "./global/theme";
 import { GlobalStyle } from "./global/style";
-
 
 import { themeContext } from "./context/themeContext";
 import { LanguageProvider } from "./context/directionContext";
@@ -17,10 +14,10 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import FullHeight from "./components/FullHeight";
 
-
 import { useTranslation } from "react-i18next";
 import Router from "./Router";
 import ArrowToTop from "./components/ArrowButton";
+import { ModalProvider } from "./context/modalContext";
 
 export default function App() {
   const [theme, setTheme] = useState(darkTheme);
@@ -45,28 +42,30 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <LanguageProvider>
-        <themeContext.Provider value={[theme, setTheme]}>
-          <GlobalStyle dir={direction} close={close} />
-          <Suspense fallback={<Spinner />}>
-            <Header openClick={openClick} theme={theme.theme} />
-            <Suspense
-              fallback={
-                <FullHeight>
-                  <Spinner />
-                </FullHeight>
-              }
-            >
-              <Router />
+        <ModalProvider>
+          <themeContext.Provider value={[theme, setTheme]}>
+            <GlobalStyle dir={direction} close={close} />
+            <Suspense fallback={<Spinner />}>
+              <Header openClick={openClick} theme={theme.theme} />
+              <Suspense
+                fallback={
+                  <FullHeight>
+                    <Spinner />
+                  </FullHeight>
+                }
+              >
+                <Router />
+              </Suspense>
+              <SideMenu
+                close={close}
+                closeClick={closeClick}
+                theme={theme.theme}
+              />
+              <Footer />
+              <ArrowToTop />
             </Suspense>
-            <SideMenu
-              close={close}
-              closeClick={closeClick}
-              theme={theme.theme}
-            />
-            <Footer />
-            <ArrowToTop/>
-          </Suspense>
-        </themeContext.Provider>
+          </themeContext.Provider>
+        </ModalProvider>
       </LanguageProvider>
     </ThemeProvider>
   );

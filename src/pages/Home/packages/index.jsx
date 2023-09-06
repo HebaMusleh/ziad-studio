@@ -9,9 +9,16 @@ import G2 from '../../../assets/G2.png';
 import G3 from '../../../assets/G3.png';
 
 import Card from './Card';
+import NotMobile from '../../../components/NotMobile';
+import Mobile from '../../../components/Mobile';
+import MySwiper from '../../../components/MySwiper';
+import { SwiperSlide } from 'swiper/react';
+import ContactModal from '../../ContactModal';
+import { useModal } from '../../../context/modalContext';
 
 const Packages = () => {
     const { t } = useTranslation();
+    const { isModalOpen, closeModal } = useModal();
 
     const cardData = [
         {
@@ -39,7 +46,7 @@ const Packages = () => {
                 t('socialMediaTemplateDesign'),
                 t('logoAnimation'),
             ],
-            brand:"true"
+            brand: "true"
         },
         {
             img: G3,
@@ -58,7 +65,7 @@ const Packages = () => {
                 t('packagingDesign'),
                 t('posterDesign'),
             ],
-            brand:"true"
+            brand: "true"
         },
         {
             img: G2,
@@ -77,13 +84,27 @@ const Packages = () => {
 
     return (
         <Container>
-                <Title title={t('services')} desc={t('descServices')} />
-                <H3>{t('design')}</H3>
+            <H3>{t('design')}</H3>
+            <Title title={t('services')} desc={t('descServices')} />
+
+            <NotMobile>
                 <AllCard>
                     {cardData.map((card, index) => (
                         <Card key={index} {...card} />
                     ))}
                 </AllCard>
+                <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
+            </NotMobile>
+            <Mobile>
+                <MySwiper>
+                    {cardData.map((card, index) => (
+                        <SwiperSlide key={index} >
+                            <Card {...card} />
+                        </SwiperSlide>
+                    ))}
+                    <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
+                </MySwiper>
+            </Mobile>
         </Container>
     );
 };
