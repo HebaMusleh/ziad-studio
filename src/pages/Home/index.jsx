@@ -6,7 +6,6 @@ import MoreService from './MoreService'
 import Supporter from './Supporter'
 import Work from './Work'
 import Ads from './Ads'
-import US from './US'
 import Steps from './Steps'
 import styled from 'styled-components'
 
@@ -28,7 +27,6 @@ const Home = () => {
   return (
     <Style>
       <Hero />
-      <US />
       <Ads />
       <Supporter />
       <Packages />
