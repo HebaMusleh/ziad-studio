@@ -118,6 +118,18 @@ export const SideStyle = styled.div`
   .theme-btns {
     justify-content: space-between;
   }
+  .head {
+    .logo {
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-width: 480px) {
+        width: 25px;
+      }
+    }
+  }
 `;
 
 // export const Overlay = styled.div`
@@ -129,8 +141,8 @@ export const SideStyle = styled.div`
 //   background-color: rgba(0, 0, 0, 0.7);
 //   opacity: 0;
 //   transition: 1s all ease-in-out;
-  
+
 //   &.show {
 //     opacity: 1;
 //   }
-// ` 
+// `

@@ -15,6 +15,16 @@ z-index:1;
     align-items: center;
     justify-content: space-between;
   }
+  .logo{
+    cursor:pointer;
+    img{
+      width:100%;
+      height:100%;
+    }
+    @media (max-width: 480px) {
+      width:25px;
+    }
+  }
 
   .icons {
     font-size: 32px;
