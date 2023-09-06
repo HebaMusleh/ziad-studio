@@ -15,6 +15,7 @@ export const Style = styled.div`
     background: ${(props) => props.theme.palette.inputBG};
     border-radius: 8px;
     border: 1px solid ${(props) => props.theme.palette.inputBG};
+    color:${(props) => props.theme.palette.black};
     padding: 15px;
     outline: none;
     font-size: 1rem;
@@ -33,6 +34,7 @@ export const Style = styled.div`
     outline: none;
     font-size: 1rem;
     padding: 20px;
+    color:${(props) => props.theme.palette.black};
     &:focus {
       border: 1px solid #1f81b0;
     }

@@ -57,7 +57,8 @@ export const lightTheme = {
     contactDesc:"#646464",
     labelColor:"#353535",
     inputBG:"#F7F7F7",
-    step:"#3A3A3A"
+    step:"#3A3A3A",
+    black:"#000"
   },
 };
 
@@ -119,6 +120,7 @@ export const darkTheme = {
     contactDesc:"#d0d0d0",
     labelColor:"#939292",
     inputBG:"#151515",
-    step:"#D2D2D2"
+    step:"#D2D2D2",
+    black:"#eee"
   },
 };
