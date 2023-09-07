@@ -19,10 +19,7 @@ const Style = styled.div`
 @media (max-width: 1940px) {
   padding-top:5.5%;
 }
-@media (max-width: 768px) {
-  padding-top:10%;
-}
-@media (max-width: 480px) {
+@media (max-width: 904px) {
   padding-top:0;
 }
 `

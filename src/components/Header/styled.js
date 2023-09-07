@@ -7,7 +7,7 @@ transition:.8s;
 position:fixed;
 width:100%;
 z-index:1;
-@media (max-width: 480px) {
+@media (max-width: 914px) {
   position: relative;
 }
   .headers-own-style {

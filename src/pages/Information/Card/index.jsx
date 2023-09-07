@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardStyle } from './style';
+import { CardStyle,Content } from './style';
 import { useTranslation } from 'react-i18next';
 import pdf from '../../../assets/download.pdf';
 
@@ -16,13 +16,9 @@ const Card = ({ question, answer, BG, link, answer1, answer2, answer3, answer4, 
         backgroundSize: 'cover',
     };
 
-    const contentStyle = {
-        ...(right ? { right: '25%' } : {}),
-    }
-
     return (
         <CardStyle style={cardStyle}>
-            <div className='content' style={contentStyle}>
+            <Content className='content' right={right}>
                 <h4>{question}</h4>
                 <p>{answer}</p>
                 {link ? (
@@ -50,7 +46,7 @@ const Card = ({ question, answer, BG, link, answer1, answer2, answer3, answer4, 
                 ) : (
                     ''
                 )}
-            </div>
+            </Content>
         </CardStyle>
     );
 };

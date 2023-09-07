@@ -27,7 +27,6 @@ export default function App() {
     localStorage.getItem("theme") === darkTheme.theme
       ? setTheme(darkTheme)
       : setTheme(lightTheme);
-    console.log(theme);
   }, [theme]);
 
   const [close, setClose] = useState(false);

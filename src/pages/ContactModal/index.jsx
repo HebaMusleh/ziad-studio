@@ -71,7 +71,6 @@ const ContactModal = ({ isOpen, closeModal }) => {
 
   const { t } = useTranslation();
   const { direction } = useLanguage();
-  console.log(direction);
 
   return (
     <>
