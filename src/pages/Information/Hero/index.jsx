@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <TitleHero
             title={t('infoTitle')}
-            desc={t('infoDesc')}
+            desc=" "
         />
     );
 };
