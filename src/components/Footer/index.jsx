@@ -28,6 +28,10 @@ text-align: center;
     font-size: 10px;
   }
 .images{
+    width:50px;
+    @media (max-width: 480px) {
+        width:30px;
+      }
     img{
     }
         width:100%;
