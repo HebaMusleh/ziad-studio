@@ -120,12 +120,13 @@ export const SideStyle = styled.div`
   .head {
     .logo {
       cursor: pointer;
+      width:50px;
       img {
         width: 100%;
         height: 100%;
       }
       @media (max-width: 480px) {
-        width: 25px;
+        width: 10%;
       }
     }
   }
