@@ -24,9 +24,4 @@ z-index:1;
     cursor: pointer;
     color: ${(props) => props.theme.palette.primaryHeroColor};
   }
-  .logs{
-    @media (max-width: 480px) {
-      // width:30px;
-    }
-  }
 `;

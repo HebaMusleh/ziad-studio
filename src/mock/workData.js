@@ -122,7 +122,7 @@ const WorkData = () => {
       img3: img61,
     },
     {
-      id: 8,
+      id: 7,
       title: t("work8"),
       description: t("work8Desc"),
       img1: img81,
@@ -133,7 +133,7 @@ const WorkData = () => {
       img5: img85,
     },
     {
-      id: 9,
+      id: 8,
       title: t("work9"),
       description: t("work9Desc"),
       img1: img91,
@@ -142,7 +142,7 @@ const WorkData = () => {
       img3: img93,
     },
     {
-      id: 10,
+      id: 9,
       title: t("work10"),
       description: t("work10Desc"),
       img1: img101,
