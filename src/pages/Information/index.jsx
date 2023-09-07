@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import InfoData from '../../mock/InfoData';
 import Spinner from '../../components/Spinner';
 import FullHeight from '../../components/FullHeight';
+import Footer from '../../components/Footer';
 
 const Style = styled.div`
   padding-top: 7%;
@@ -37,6 +38,7 @@ const Information = () => {
           <Spinner />
         </FullHeight>
       ) : (
+        <>
         <Style>
           <Container>
             <Hero />
@@ -56,6 +58,8 @@ const Information = () => {
             ))}
           </Container>
         </Style>
+        <Footer/>
+        </>
       )}
     </>
 

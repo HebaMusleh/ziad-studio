@@ -11,6 +11,7 @@ import styled from 'styled-components'
 import ContactModal from '../ContactModal'
 
 import { useModal } from '../../context/modalContext'
+import Footer from '../../components/Footer'
 
 const Style = styled.div`
 @media (max-width: 2946px) {
@@ -26,16 +27,19 @@ const Style = styled.div`
 const Home = () => {
   const { isModalOpen, closeModal } = useModal();
   return (
-    <Style>
-      <Hero />
-      <Ads />
-      <Supporter />
-      <Packages />
-      <Steps />
-      <MoreService />
-      <Work />
-      <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
-    </Style>
+    <>
+      <Style>
+        <Hero />
+        <Ads />
+        <Supporter />
+        <Packages />
+        <Steps />
+        <MoreService />
+        <Work />
+        <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
+      </Style>
+      <Footer />
+    </>
   )
 }
 

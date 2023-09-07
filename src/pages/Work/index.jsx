@@ -10,6 +10,7 @@ import Spinner from './../../components/Spinner/index';
 import FullHeight from '../../components/FullHeight';
 
 import WorkData from '../../mock/workData';
+import Footer from '../../components/Footer';
 
 const Style = styled.div`
   padding-top: 7%;
@@ -41,6 +42,7 @@ const Work = () => {
                     <Spinner />
                 </FullHeight>
             ) : (
+                <>
                 <Style>
                     <Container>
                         <Hero />
@@ -54,6 +56,8 @@ const Work = () => {
                         ))}
                     </Container>
                 </Style>
+                <Footer/>
+                </>
             )}
 
         </>

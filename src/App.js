@@ -10,7 +10,6 @@ import { LanguageProvider } from "./context/directionContext";
 
 import Spinner from "./components/Spinner";
 import SideMenu from "./components/SideMenu";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import FullHeight from "./components/FullHeight";
 
@@ -60,7 +59,6 @@ export default function App() {
                 closeClick={closeClick}
                 theme={theme.theme}
               />
-              <Footer />
               <ArrowToTop />
             </Suspense>
           </themeContext.Provider>

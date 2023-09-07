@@ -10,6 +10,7 @@ import WorkData from '../../mock/workData';
 
 import Spinner from '../../components/Spinner';
 import FullHeight from '../../components/FullHeight';
+import Footer from '../../components/Footer';
 
 const Style = styled.div`
   padding-top: 7%;
@@ -58,6 +59,7 @@ const SingleWork = () => {
           <Spinner />
         </FullHeight>
       ) : (
+        <>
         <Style>
           <Container>
             <h1>{myData?.title}</h1>
@@ -72,6 +74,8 @@ const SingleWork = () => {
             {myData?.img9 ? <img className='myImg' src={myData?.img9} alt=""  /> : ''}
           </Container>
         </Style>
+        <Footer/>
+        </>
       )}
     </>
 
