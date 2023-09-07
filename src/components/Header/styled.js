@@ -14,6 +14,7 @@ z-index:1;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow:hidden;
   }
 
   .icons {
@@ -23,13 +24,15 @@ z-index:1;
   }
   .logo{
     width:50px;
+    height:65px;
     cursor:pointer;
     @media (max-width: 480px) {
       width:30px;
+      height:35px;
     }
       img{
         width:100%;
-        height: auto; 
+        height: 100%; 
     }
   }
 `;
