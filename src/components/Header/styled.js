@@ -24,12 +24,7 @@ z-index:1;
   }
   .logo{
     width:50px;
-    height:65px;
     cursor:pointer;
-    @media (max-width: 480px) {
-      width:30px;
-      height:35px;
-    }
       img{
         width:100%;
         height: 100%; 
