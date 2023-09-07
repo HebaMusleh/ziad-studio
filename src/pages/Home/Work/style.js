@@ -43,6 +43,8 @@ export const WorkStyle = styled.div`
     }
     @media (max-width: 480px) {
       font-size: 20px;
+      width:100%;
+      height: 50px;
     }
   }
 `;
