@@ -11,6 +11,8 @@ import { motion } from 'framer-motion';
 import { HeaderStyle } from './styled';
 import { useLanguage } from '../../context/directionContext';
 import { useNavigate } from 'react-router-dom';
+import NotMobile from './../NotMobile/index';
+import Mobile from '../Mobile';
 
 
 
@@ -20,13 +22,30 @@ const Header = ({ openClick, theme }) => {
     return (
         <HeaderStyle>
             <Container>
-                <motion.div
-                    variants={headerVariants}
-                    initial="hidden"
-                    whileInView="show"
-                    className={`bg-primary paddings`}
-                    viewport={{ once: true, amount: 0.25 }}
-                >
+                <NotMobile>
+                    <motion.div
+                        variants={headerVariants}
+                        initial="hidden"
+                        whileInView="show"
+                        className={`bg-primary paddings headers-own-style`}
+                        viewport={{ once: true, amount: 0.25 }}
+                    >
+                        <div className="sidebar">
+                            {direction === "rtl" ?
+                                <RiMenu3Fill className='icons' onClick={openClick} /> :
+                                <RiMenu2Line className='icons' onClick={openClick} />
+                            }
+                        </div>
+                        <div className="logo" onClick={() => navigate('/')}>
+                            {theme === 'dark' ?
+                                <img src={darkLogo} alt="logo" />
+                                :
+                                <img src={logo} alt="logo" />
+                            }
+                        </div>
+                    </motion.div>
+                </NotMobile>
+                <Mobile>
                     <div className='headers-own-style'>
                         <div className="sidebar">
                             {direction === "rtl" ?
@@ -42,7 +61,7 @@ const Header = ({ openClick, theme }) => {
                             }
                         </div>
                     </div>
-                </motion.div>
+                </Mobile>
             </Container>
         </HeaderStyle>
     )
