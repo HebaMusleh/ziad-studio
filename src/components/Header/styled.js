@@ -8,7 +8,7 @@ position:fixed;
 width:100%;
 z-index:1;
 @media (max-width: 914px) {
-  position: relative;
+  position: relative; 
 }
   .headers-own-style {
     display: flex;
@@ -26,7 +26,7 @@ z-index:1;
   }
   .logs{
     @media (max-width: 480px) {
-      width:30px;
+      // width:30px;
     }
   }
 `;

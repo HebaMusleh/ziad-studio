@@ -5,6 +5,9 @@ export const CardStyle = styled.div`
   width: 100%;
   height: 500px;
   margin: 30px auto;
+  display: flex;
+  align-items: end;
+  justify-content: center;
   position: relative;
   @media (max-width: 480px) {
     height: 600px;
@@ -12,16 +15,13 @@ export const CardStyle = styled.div`
 `;
 
 export const Content = styled.div`
-  ${(props) => props.right && "right: 30%;"}
-  position: absolute;
-  bottom: 0;
   text-align: center;
   padding: 50px;
+  flex: 1;
 
   @media (max-width: 480px) {
     padding: 5px;
     bottom: 35px;
-    ${(props) => props.right && "right: 13%;"}
   }
   h4 {
     font-size: 2rem;

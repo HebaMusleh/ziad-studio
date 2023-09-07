@@ -38,8 +38,7 @@ const InfoData = () => {
       answer3: t("opt3"),
       answer4: t("opt4"),
       answer5: t("opt5"),
-      BG: BG4,
-      right:"true"
+      BG: BG4
     },
     {
       id: 5,

@@ -2,10 +2,12 @@ import React from 'react';
 import { CardStyle,Content } from './style';
 import { useTranslation } from 'react-i18next';
 import pdf from '../../../assets/download.pdf';
+import { useLanguage } from '../../../context/directionContext';
 
-const Card = ({ question, answer, BG, link, answer1, answer2, answer3, answer4, answer5, right }) => {
+const Card = ({ question, answer, BG, link, answer1, answer2, answer3, answer4, answer5 }) => {
 
     const { t } = useTranslation();
+    const {direction} = useLanguage();
 
     const bgImage = `linear-gradient(180deg, rgba(16, 20, 24, 0) 0%, #101418 100%), url(${BG})`;
 
@@ -18,7 +20,7 @@ const Card = ({ question, answer, BG, link, answer1, answer2, answer3, answer4, 
 
     return (
         <CardStyle style={cardStyle}>
-            <Content className='content' right={right}>
+            <Content className='content' >
                 <h4>{question}</h4>
                 <p>{answer}</p>
                 {link ? (

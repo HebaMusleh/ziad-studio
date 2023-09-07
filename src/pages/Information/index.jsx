@@ -52,7 +52,6 @@ const Information = () => {
                 answer3={singleData.answer3}
                 answer4={singleData.answer4}
                 answer5={singleData.answer5}
-                right={singleData.right}
               />
             ))}
           </Container>
