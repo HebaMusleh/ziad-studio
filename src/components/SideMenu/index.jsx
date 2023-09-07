@@ -40,9 +40,9 @@ const SideMenu = ({ close, closeClick, theme }) => {
           <li className='head'>
             <div className='logo'>
               {theme === "dark" ?
-                <img src={darkLogo} alt="logo" />
+                <img src={darkLogo} alt="logo" loading="lazy"/>
                 :
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo" loading="lazy"/>
               }
             </div>
             <div>
@@ -82,7 +82,6 @@ const SideMenu = ({ close, closeClick, theme }) => {
         </ul>
       </aside>
     </SideStyle>
-      {/* <Overlay className={close ? "show" : ""} onClick={closeClick} ></Overlay> */}
     </>
   )
 }
