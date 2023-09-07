@@ -36,9 +36,9 @@ const Header = ({ openClick, theme }) => {
                     </div>
                     <div className="logo" onClick={()=>navigate('/')}>
                         {theme === 'dark' ?
-                            <img src={darkLogo} alt="logo" loading="lazy"/>
+                            <img src={darkLogo} alt="logo" loading="lazy" className='logs'/>
                             :
-                            <img src={logo} alt="logo" loading="lazy"/>
+                            <img src={logo} alt="logo" loading="lazy" className='logs'/>
                         }
                     </div>
                 </motion.div>
