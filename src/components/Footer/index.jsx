@@ -42,7 +42,7 @@ const Footer = () => {
     return (
         <FooterStyle>
             <div><p>{t('footer')}</p></div>
-            <div className='images'><img src={img} alt="footerImg" loading="lazy"/></div>
+            <div className='images'><img src={img} alt="footerImg" /></div>
         </FooterStyle>
     )
 }

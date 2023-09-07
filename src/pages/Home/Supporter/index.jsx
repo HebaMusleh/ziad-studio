@@ -30,10 +30,10 @@ export default function Supporter() {
           <div className="logos">
             <div className="logos-slide">
               {[img1, img2, img3, img4, img5, img6, img7, img8, img9].map((img, index) => (
-                <img src={img} alt={`Logo ${index + 1}`} key={index} loading='lazy' />
+                <img src={img} alt={`Logo ${index + 1}`} key={index}  />
               ))}
               {[img1, img2, img3, img4, img5, img6, img7, img8, img9].map((img, index) => (
-                <img src={img} alt={`Logo ${index + 10}`} key={index + 10}  loading='lazy'/>
+                <img src={img} alt={`Logo ${index + 10}`} key={index + 10}  />
               ))}
             </div>
           </div>

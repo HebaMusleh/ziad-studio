@@ -61,15 +61,15 @@ const SingleWork = () => {
         <Style>
           <Container>
             <h1>{myData?.title}</h1>
-            <img className='myImg' src={myData?.cover} alt="" loading="lazy" />
-            {myData?.img2 ? <img className='myImg' src={myData?.img2} alt="" loading="lazy" /> : ''}
-            {myData?.img3 ? <img className='myImg' src={myData?.img3} alt="" loading="lazy" /> : ''}
-            {myData?.img4 ? <img className='myImg' src={myData?.img4} alt="" loading="lazy" /> : ''}
-            {myData?.img5 ? <img className='myImg' src={myData?.img5} alt="" loading="lazy" /> : ''}
-            {myData?.img6 ? <img className='myImg' src={myData?.img6} alt="" loading="lazy" /> : ''}
-            {myData?.img7 ? <img className='myImg' src={myData?.img7} alt="" loading="lazy" /> : ''}
-            {myData?.img8 ? <img className='myImg' src={myData?.img8} alt="" loading="lazy" /> : ''}
-            {myData?.img9 ? <img className='myImg' src={myData?.img9} alt="" loading="lazy" /> : ''}
+            <img className='myImg' src={myData?.cover} alt=""  />
+            {myData?.img2 ? <img className='myImg' src={myData?.img2} alt=""  /> : ''}
+            {myData?.img3 ? <img className='myImg' src={myData?.img3} alt=""  /> : ''}
+            {myData?.img4 ? <img className='myImg' src={myData?.img4} alt=""  /> : ''}
+            {myData?.img5 ? <img className='myImg' src={myData?.img5} alt=""  /> : ''}
+            {myData?.img6 ? <img className='myImg' src={myData?.img6} alt=""  /> : ''}
+            {myData?.img7 ? <img className='myImg' src={myData?.img7} alt=""  /> : ''}
+            {myData?.img8 ? <img className='myImg' src={myData?.img8} alt=""  /> : ''}
+            {myData?.img9 ? <img className='myImg' src={myData?.img9} alt=""  /> : ''}
           </Container>
         </Style>
       )}

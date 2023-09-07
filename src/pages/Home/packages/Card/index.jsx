@@ -10,7 +10,7 @@ const Card = ({ img, title, desc, price, num = 1, options, brand }) => {
     <Wrapper>
       <div className="content">
       <div className='image'>
-        <img src={img} alt='' loading='lazy'/>
+        <img src={img} alt=''/>
       </div>
       <div className='title'>
         <h3>{title}</h3>

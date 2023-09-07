@@ -40,9 +40,9 @@ const SideMenu = ({ close, closeClick, theme }) => {
           <li className='head'>
             <div className='logo'>
               {theme === "dark" ?
-                <img src={darkLogo} alt="logo" loading="lazy"/>
+                <img src={darkLogo} alt="logo" />
                 :
-                <img src={logo} alt="logo" loading="lazy"/>
+                <img src={logo} alt="logo" />
               }
             </div>
             <div>

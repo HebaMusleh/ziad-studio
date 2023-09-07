@@ -18,14 +18,14 @@ const Card = ({ title, description, img, id }) => {
                 </p>
                 <div className="socials">
                     <ul>
-                        <li><a href="https://www.instagram.com/_ziadstudio/"><img src={insta} alt="" loading="lazy"/></a></li>
+                        <li><a href="https://www.instagram.com/_ziadstudio/"><img src={insta} alt="" /></a></li>
                         <li><a href="https://www.facebook.com/profile.php?id=100088223005602&mibextid=ZbWKwL"><img src={facebook} alt="" /></a></li>
-                        <li><a href="https://api.whatsapp.com/send/?phone=%2B966568117840"><img src={whats} alt="" loading="lazy"/></a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=%2B966568117840"><img src={whats} alt="" /></a></li>
                     </ul>
                 </div>
             </div>
             <div className="image-section">
-                <img src={img} alt="test" loading="lazy"/>
+                <img src={img} alt="test" />
             </div>
         </CardStyle>
     )
