@@ -15,10 +15,15 @@ import { Wrapper, VerticalWrapper, Title, H2 } from './style'
 import { Container } from "../../../global/component";
 import { useTranslation } from "react-i18next";
 
+
+import NotMobile from './../../../components/NotMobile/index';
+import Mobile from './../../../components/Mobile/index';
+import MobileStep from "../../../components/MobileStep";
+
 const ExperienceCard = ({ step }) => {
     return (
         <VerticalTimelineElement
-            contentStyle={{ background: step.iconBg, color: "#fff"}}
+            contentStyle={{ background: step.iconBg, color: "#fff" }}
             contentArrowStyle={{
                 borderRight: `7px solid ${step.iconBg}`,
             }}
@@ -42,30 +47,41 @@ const Steps = () => {
     const { t } = useTranslation();
     const data = Data();
     return (
-        <Wrapper>
-            <Container>
-                <motion.section
-                    variants={staggerContainer()}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true, amount: 0.25 }}
-                    className={'myComponent'}>
-                    <span className="hash-span">
-                        &nbsp;
-                    </span>
-                    <motion.dev variant={textVariant3()}>
-                        <H2>{t('project')}</H2>
-                    </motion.dev>
-                    <div className="wrapped">
-                        <VerticalTimeline>
-                            {data.map((step, index) => (
-                                <ExperienceCard key={index} step={step} />
-                            ))}
-                        </VerticalTimeline>
-                    </div>
-                </motion.section>
-            </Container>
-        </Wrapper>
+        <>
+            <NotMobile>
+                <Wrapper>
+                    <Container>
+                        <motion.section
+                            variants={staggerContainer()}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true, amount: 0.25 }}
+                            className={'myComponent'}>
+                            <span className="hash-span">
+                                &nbsp;
+                            </span>
+                            <motion.dev variant={textVariant3()}>
+                                <H2>{t('project')}</H2>
+                            </motion.dev>
+                            <div className="wrapped">
+                                <VerticalTimeline>
+                                    {data.map((step, index) => (
+                                        <ExperienceCard key={index} step={step} />
+                                    ))}
+                                </VerticalTimeline>
+                            </div>
+                        </motion.section>
+                    </Container>
+                </Wrapper>
+            </NotMobile>
+
+            <Mobile>
+                <Container>
+                    <H2>{t('project')}</H2>
+                    <MobileStep />
+                </Container>
+            </Mobile>
+        </>
     );
 };
 

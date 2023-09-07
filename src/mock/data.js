@@ -12,36 +12,42 @@ const Data = () => {
 
   const data = [
     {
+      id:1,
       title: t("step1"),
       icon: icon,
       iconBg: "#E03131",
       num: "Step -1-",
     },
     {
+      id:2,
       title: t("step2"),
       icon: icon2,
       iconBg: "#FFDB77",
       num: "Step -2-",
     },
     {
+      id:3,
       title: t("step3"),
       icon: icon3,
       iconBg: "#649D54",
       num: "Step -3-",
     },
     {
+      id:4,
       title: t("step4"),
       icon: icon4,
       iconBg: "#6BBFF6",
       num: "Step -4-",
     },
     {
+      id:5,
       title: t("step5"),
       icon: icon5,
       iconBg: "#D0558F",
       num: "Step -5-",
     },
     {
+      id:6,
       title: t("step6"),
       icon: icon6,
       iconBg: "#FD8758",

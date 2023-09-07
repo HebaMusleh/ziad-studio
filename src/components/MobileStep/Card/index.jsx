@@ -1,13 +1,17 @@
 import React from 'react'
-import icon from '../../../assets/icon.svg';
-const Card = () => {
+
+import { Style } from './style';
+
+const Card = ({icon,desc,bg}) => {
     return (
-        <Style>
+        <Style bg={bg}>
+            <div className="wrapper-icons">
             <div className="icons">
                 <img src={icon} alt="" />
             </div>
+            </div>
             <div className="description">
-                <p>Meeting and gathering more information about your business activity and your competitive advantage.</p>
+                <p>{desc}</p>
             </div>
         </Style>
     )
