@@ -45,9 +45,9 @@ const Hero = () => {
                         <img src={cloud} alt="cloud" />
                     </div>
                     <motion.span className="left-side" variants={fadeIn("right", "tween", 0.2, 1)}>
-                        <img src={heroCircle} alt="circle" />
+                        <img src={heroCircle} alt="circle" loading='lazy'/>
                         <motion.div style={{ rotate }} className='pincel'>
-                            <img src={heroPincel} alt="hero img" />
+                            <img src={heroPincel} alt="hero img" loading='lazy'/>
                         </motion.div>
                     </motion.span>
                     <motion.span className="right-side" variants={fadeIn("left", "tween", 0.4, 1)}>

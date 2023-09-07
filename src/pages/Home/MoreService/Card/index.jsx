@@ -15,7 +15,7 @@ const Card = ({ title, img, desc1, desc2 }) => {
         <CardStyle dir={direction}>
             <div className="images">
                 <div className="singleImg">
-                <img src={img} alt="card-1-" />
+                <img src={img} alt="card-1-" loading='lazy'/>
                 </div>
             </div>
             <div className="title">

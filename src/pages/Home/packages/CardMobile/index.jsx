@@ -10,7 +10,7 @@ const CardMobile = ({ img, title, desc, price, num = 1, options, brand,downList 
         <Width>
             <div className="wrapper">
             <div className='image'>
-                <img src={img} alt='' />
+                <img src={img} alt='' loading='lazy'/>
             </div>
             <div className='title'>
                 <h3>{title}</h3>

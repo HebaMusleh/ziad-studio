@@ -3,7 +3,7 @@ import { CardStyle } from './style';
 import { useTranslation } from 'react-i18next';
 import pdf from '../../../assets/download.pdf';
 
-const Card = ({ question, answer, BG, link, answer1, answer2, answer3, answer4, answer5,right }) => {
+const Card = ({ question, answer, BG, link, answer1, answer2, answer3, answer4, answer5, right }) => {
 
     const { t } = useTranslation();
 
@@ -16,8 +16,8 @@ const Card = ({ question, answer, BG, link, answer1, answer2, answer3, answer4, 
         backgroundSize: 'cover',
     };
 
-    const contentStyle ={
-        ...(right ? { right: '25%' } : {}), 
+    const contentStyle = {
+        ...(right ? { right: '25%' } : {}),
     }
 
     return (

@@ -21,13 +21,13 @@ const US = () => {
           viewport={{ once: false, amount: 0.25 }}
           className={`us-content`}>
           <div className="right-wrapper">
-            <img src={right} alt="" />
+            <img src={right} alt="" loading="lazy"/>
           </div>
           <div className="left-wrapper">
-            <img src={left} alt="" />
+            <img src={left} alt="" loading="lazy"/>
           </div>
           <div className="images">
-            <img src={img} alt="images" />
+            <img src={img} alt="images" loading="lazy"/>
           </div>
           <motion.div
             variants={staggerChildren}
