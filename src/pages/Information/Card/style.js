@@ -11,6 +11,7 @@ export const CardStyle = styled.div`
   position: relative;
   @media (max-width: 480px) {
     height: 100%;
+    margin-bottom:30px;
   }
 `;
 

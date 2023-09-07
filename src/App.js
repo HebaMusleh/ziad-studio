@@ -20,7 +20,7 @@ import ArrowToTop from "./components/ArrowButton";
 import { ModalProvider } from "./context/modalContext";
 
 export default function App() {
-  const [theme, setTheme] = useState(darkTheme);
+  const [theme, setTheme] = useState(lightTheme);
   const { i18n } = useTranslation();
 
   useEffect(() => {
