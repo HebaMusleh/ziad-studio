@@ -88,8 +88,13 @@
       "a2": "It consists of visual or auditory elements such as logos, colors, fonts, cover designs, and music associated with the logo. It's the tangible or sensory part of branding. For instance, when you hear about the 'Mobily' company, you may think of its distinctive logo or the orange color associated with Dunkin'. Or even the music in a Home Depot commercial. These are all elements of brand identity.",
       "q3": "What is branding?",
       "a3": "It's a comprehensive process that encompasses both the emotional aspect (brand) and the visual aspect (brand identity). Its goal is to create a name, image, and reputation that differentiates you from your competitors in the eyes of the target audience and makes them aware of what you offer in terms of services.",
-      "q4": "Summarize the philosophy of sales in 5 points.",
-      "a4": "The philosophy of sales can be summarized in 5 key points: 1. The right product. 2. The right place. 3. The right time. 4. The right person. 5. The right message.",
+      "q4": "Summarize the philosophy of sales in 5 key points.",
+      "a4": "The philosophy of sales is summarized in 5 fundamental points, which are:",
+      "opt1": " The appropriate product",
+      "opt2": " The appropriate place",
+      "opt3": " The appropriate time",
+      "opt4": " The appropriate person",
+      "opt5": " The appropriate message",
       "q5": "What are taglines and slogans, and what's the difference between them?",
       "a5": "You've probably thought about Nike and some of its products. If you've ever noticed, Nike has a distinctive slogan or tagline, like 'Just Do It.' This is what we call a tagline. It's a memorable phrase that connects in consumers' minds with a brand and sometimes serves as a promise to customers. Now, if we look at Jarir Bookstore, it transformed from a stationery store to an electronics retailer, and this shift increases customer loyalty to their brand. You can't easily change a tagline unless you're rebranding. Slogans, on the other hand, are typically marketing phrases used in advertising campaigns. They can be easily changed depending on the marketing campaign's goals and can become taglines if they resonate with consumers and hold value for the brand.",
       "q6": "What are the benefits of professionally designed packaging?",
@@ -113,7 +118,7 @@
       "work6Desc": "",
       "work10": "Design Logo and Profile",
       "work10Desc": "",
-      "z":"Z"
+      "z": "Z"
     }
   }
 }

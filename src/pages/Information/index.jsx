@@ -47,6 +47,12 @@ const Information = () => {
                 question={singleData.question}
                 answer={singleData.answer}
                 link={singleData.link}
+                answer1={singleData.answer1}
+                answer2={singleData.answer2}
+                answer3={singleData.answer3}
+                answer4={singleData.answer4}
+                answer5={singleData.answer5}
+                right={singleData.right}
               />
             ))}
           </Container>

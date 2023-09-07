@@ -25,6 +25,7 @@ export const CardStyle = styled.div`
       line-height: 55px;
       letter-spacing: 0em;
       color: #ffffff;
+      text-align:center;
       @media (max-width: 480px) {
         font-size: 1rem;
       }
@@ -43,6 +44,14 @@ export const CardStyle = styled.div`
     a{
       text-decoration:underline;
       color:#3099ca;
+    }
+  }
+  ol{
+    color:#fff;
+    margin: auto;
+    width: fit-content;
+    li{
+      text-align: start;
     }
   }
 `;
