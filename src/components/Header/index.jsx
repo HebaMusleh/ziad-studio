@@ -10,13 +10,11 @@ import { headerVariants } from "../../utils/motion";
 import { motion } from 'framer-motion';
 import { HeaderStyle } from './styled';
 import { useLanguage } from '../../context/directionContext';
-import { useNavigate } from 'react-router';
 
 
 
 const Header = ({ openClick, theme }) => {
     const { direction } = useLanguage();
-    const navigate = useNavigate();
     return (
         <HeaderStyle>
             <Container>
@@ -34,12 +32,14 @@ const Header = ({ openClick, theme }) => {
                         }
 
                     </div>
-                    <div className="logo" onClick={() => navigate('/')}>
+                    <div className="logo">
+                        <a href="/">
                         {theme === 'dark' ?
-                            <img src={darkLogo} alt="logo" loading="lazy" className='logs' />
+                            <img src={darkLogo} alt="logo" />
                             :
-                            <img src={logo} alt="logo" loading="lazy" className='logs' />
+                            <img src={logo} alt="logo" />
                         }
+                        </a>
                     </div>
                 </motion.div>
             </Container>

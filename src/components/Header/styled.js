@@ -7,16 +7,13 @@ transition:.8s;
 position:fixed;
 width:100%;
 z-index:1;
-@media (max-width: 914px) {
-  position: relative; 
+@media (max-width: 900px) {
+  position: relative;
 }
   .headers-own-style {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .logo{
-    cursor:pointer;
   }
 
   .icons {
