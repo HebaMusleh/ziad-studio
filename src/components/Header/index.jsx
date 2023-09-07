@@ -32,7 +32,6 @@ const Header = ({ openClick, theme }) => {
                             <RiMenu3Fill className='icons' onClick={openClick} /> :
                             <RiMenu2Line className='icons' onClick={openClick} />
                         }
-
                     </div>
                     <div className="logo" onClick={()=>navigate('/')}>
                             {theme === 'dark' ?
