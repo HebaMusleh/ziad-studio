@@ -7,6 +7,10 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
   }
+  .mobile-wrapper{
+    margin:50px 0;
+    padding:20px 0;
+  }
   .myComponent {
     max-width: 80rem;
     margin-left: auto;

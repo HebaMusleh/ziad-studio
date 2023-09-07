@@ -78,8 +78,10 @@ const Steps = () => {
             <Mobile>
                 <Wrapper>
                     <Container>
-                        <H2>{t('project')}</H2>
-                        <MobileStep />
+                        <div className="mobile-wrapper">
+                            <H2>{t('project')}</H2>
+                            <MobileStep />
+                        </div>
                     </Container>
                 </Wrapper>
             </Mobile>
