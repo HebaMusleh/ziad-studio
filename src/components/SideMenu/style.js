@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const SideStyle = styled.div`
   position: fixed;
   width: 100%;
-  // background: rgba(0, 0, 0, 0.5);
   ${(props) => (props.dir === "rtl" ? "right: -2000px" : "left: -2000px")};
-  z-index: 1000;
+  z-index: 100000;
   top: 0;
   transition: 0.5s;
   &.show {
