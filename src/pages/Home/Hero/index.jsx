@@ -11,7 +11,8 @@ import { HeroStyle } from './style';
 
 import heroCircle from '../../../assets/her1.svg';
 import heroPincel from '../../../assets/her2.svg';
-import cloud from '../../../assets/cloud.svg'
+import cloud from '../../../assets/cloud.svg';
+import cloud2 from '../../../assets/cloud2.svg';
 
 
 import ContactModal from '../../ContactModal';
@@ -43,6 +44,9 @@ const Hero = () => {
                 >
                     <div className="cloud" style={{left:'0'}}>
                         <img src={cloud} alt="cloud" />
+                    </div>
+                    <div className="cloud mobile" style={{left:'0'}}>
+                        <img src={cloud2} alt="cloud" />
                     </div>
                     <motion.span className="left-side" variants={fadeIn("right", "tween", 0.2, 1)}>
                         <img src={heroCircle} alt="circle" />

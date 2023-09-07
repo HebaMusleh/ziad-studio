@@ -5,6 +5,7 @@ export const HeroStyle = styled.div`
   padding: 100px 0;
   position:relative;
   overflow-x:hidden;
+  overflow-y:hidden;
   .container-hero {
     display: flex;
     align-items: center;
@@ -54,6 +55,7 @@ export const HeroStyle = styled.div`
           text-align:center;
           font-size: 30px;
           line-height: 1.6;
+          z-index:200;
         }
         span {
           color: ${(props) => props.theme.palette.primaryHeroColor};
@@ -107,10 +109,10 @@ export const HeroStyle = styled.div`
 
   .cloud {
     position: absolute;
-    top: 0;
+    top: -10px;
     animation: moveCloud 20s linear infinite;
     overflow-x: hidden;
-    z-index: 1000;
+    z-index: 100;
     overflow-x:hidden;
   }
 
@@ -120,7 +122,7 @@ export const HeroStyle = styled.div`
       transform: translateX(0);
     }
     50% {
-      transform: translateX(100vw); /* Move to the right of the viewport */
+      transform: translateX(70vw); /* Move to the right of the viewport */
     }
   }
 
