@@ -23,9 +23,7 @@ z-index:1;
   }
   .logo{
     width:50px;
-    // @media (max-width: 480px) {
-    //   width:10%;
-    // }
+    cursor:pointer;
       img{
         width:100%;
         height:100%;
