@@ -6,8 +6,8 @@ import darkLogo from '../../assets/darklogo.png';
 import { RiMenu3Fill, RiMenu2Line } from "react-icons/ri";
 
 import { Container } from '../../global/component';
-import { headerVariants } from "../../utils/motion";
-import { motion } from 'framer-motion';
+// import { headerVariants } from "../../utils/motion";
+// import { motion } from 'framer-motion';
 import { HeaderStyle } from './styled';
 import { useLanguage } from '../../context/directionContext';
 import { useNavigate } from 'react-router-dom';
@@ -20,27 +20,29 @@ const Header = ({ openClick, theme }) => {
     return (
         <HeaderStyle>
             <Container>
-                <motion.div
+                {/* <motion.div
                     variants={headerVariants}
                     initial="hidden"
                     whileInView="show"
                     className={`bg-primary paddings headers-own-style`}
                     viewport={{ once: true, amount: 0.25 }}
-                >
+                > */}
+                <div className='headers-own-style'>
                     <div className="sidebar">
                         {direction === "rtl" ?
                             <RiMenu3Fill className='icons' onClick={openClick} /> :
                             <RiMenu2Line className='icons' onClick={openClick} />
                         }
                     </div>
-                    <div className="logo" onClick={()=>navigate('/')}>
-                            {theme === 'dark' ?
-                                <img src={darkLogo} alt="logo" />
-                                :
-                                <img src={logo} alt="logo" />
-                            }
-                            </div>
-                </motion.div>
+                    <div className="logo" onClick={() => navigate('/')}>
+                        {theme === 'dark' ?
+                            <img src={darkLogo} alt="logo" />
+                            :
+                            <img src={logo} alt="logo" />
+                        }
+                    </div>
+                </div>
+                {/* </motion.div> */}
             </Container>
         </HeaderStyle>
     )
