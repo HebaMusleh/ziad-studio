@@ -34,11 +34,13 @@ const Header = ({ openClick, theme }) => {
                     </div>
                     <div className="logo">
                         <a href="/">
-                        {theme === 'dark' ?
-                            <img src={darkLogo} alt="logo" />
-                            :
-                            <img src={logo} alt="logo" />
-                        }
+                            <div className="single-logo">
+                            {theme === 'dark' ?
+                                <img src={darkLogo} alt="logo" />
+                                :
+                                <img src={logo} alt="logo" />
+                            }
+                            </div>
                         </a>
                     </div>
                 </motion.div>

@@ -21,4 +21,17 @@ z-index:1;
     cursor: pointer;
     color: ${(props) => props.theme.palette.primaryHeroColor};
   }
+  .logo{
+    .single-logo{
+      width:50px;
+
+      @media (max-width: 480px) {
+        width:30px;
+      }
+      img{
+        width:100%;
+        height:100%;
+      }
+    }
+  }
 `;
