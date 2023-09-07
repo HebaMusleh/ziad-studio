@@ -23,9 +23,9 @@ z-index:1;
   }
   .logo{
     width:50px;
-    @media (max-width: 480px) {
-      width:10%;
-    }
+    // @media (max-width: 480px) {
+    //   width:10%;
+    // }
       img{
         width:100%;
         height:100%;
