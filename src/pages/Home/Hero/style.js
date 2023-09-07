@@ -6,6 +6,7 @@ export const HeroStyle = styled.div`
   position:relative;
   overflow-x:hidden;
   overflow-y:hidden;
+  z-index:100;
   .container-hero {
     display: flex;
     align-items: center;
@@ -45,6 +46,7 @@ export const HeroStyle = styled.div`
     }
     .right-side {
       flex-basis:70%;
+      z-index: 100;
       h1 {
         font-size: 	3rem;
         font-weight: 500;
@@ -112,7 +114,6 @@ export const HeroStyle = styled.div`
     top: -10px;
     animation: moveCloud 20s linear infinite;
     overflow-x: hidden;
-    z-index: 100;
     overflow-x:hidden;
   }
 
