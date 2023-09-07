@@ -10,7 +10,7 @@ export const CardStyle = styled.div`
   justify-content: center;
   position: relative;
   @media (max-width: 480px) {
-    height: 600px;
+    height: 100%;
   }
 `;
 
