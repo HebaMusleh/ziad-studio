@@ -6,7 +6,7 @@ export const HeroStyle = styled.div`
   position:relative;
   overflow-x:hidden;
   overflow-y:hidden;
-  z-index:100;
+  z-index:8;
   .container-hero {
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@ export const HeroStyle = styled.div`
       }
     }
     .right-side {
-      z-index: 100;
+      z-index: 8;
       h1 {
         font-size: 	3rem;
         font-weight: 500;
@@ -56,7 +56,7 @@ export const HeroStyle = styled.div`
           text-align:center;
           font-size: 30px;
           line-height: 1.6;
-          z-index:200;
+          // z-index:88;
         }
         span {
           color: ${(props) => props.theme.palette.primaryHeroColor};

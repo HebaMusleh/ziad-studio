@@ -5,7 +5,7 @@ export const HeaderStyle = styled.div`
   transition: 0.8s;
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
   @media (max-width: 900px) {
     position: relative;
   }

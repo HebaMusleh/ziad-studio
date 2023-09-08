@@ -36,8 +36,8 @@ const Home = () => {
         <Steps />
         <MoreService />
         <Work />
-        <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
       </Style>
+      <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
       <Footer />
     </>
   )
