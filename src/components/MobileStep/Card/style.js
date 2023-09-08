@@ -7,7 +7,7 @@ export const Style = styled.div`
   margin: 20px 0;
   border-radius: 16px;
   position: relative;
-  height: 200px;
+  height: 250px;
   display:flex;
   align-items:center;
   justify-content:center;
