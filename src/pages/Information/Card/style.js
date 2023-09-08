@@ -47,6 +47,10 @@ export const Content = styled.div`
 }
 .download{
   a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     text-decoration:underline;
     color:#3099ca;
   }

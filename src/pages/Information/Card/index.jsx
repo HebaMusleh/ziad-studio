@@ -3,6 +3,8 @@ import { CardStyle,Content } from './style';
 import { useTranslation } from 'react-i18next';
 import pdf from '../../../assets/download.pdf';
 
+import {BsCloudDownload} from 'react-icons/bs';
+
 
 const Card = ({ question, answer, BG, link, answer1, answer2, answer3, answer4, answer5 }) => {
 
@@ -31,6 +33,7 @@ const Card = ({ question, answer, BG, link, answer1, answer2, answer3, answer4, 
                             rel="noreferrer"
                         >
                             {t('download')}
+                            <BsCloudDownload/>
                         </a>
                     </span>
                 ) : (

@@ -45,7 +45,6 @@ export const HeroStyle = styled.div`
       }
     }
     .right-side {
-      flex-basis:70%;
       z-index: 100;
       h1 {
         font-size: 	3rem;
