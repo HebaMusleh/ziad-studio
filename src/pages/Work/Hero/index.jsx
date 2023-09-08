@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <TitleHero
             title={t('workTitle')}
-            desc={t('workpageDescription')}
+            desc=" "
             btn="true"
             t={t}
         />

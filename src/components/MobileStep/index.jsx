@@ -1,8 +1,9 @@
 import React from 'react';
 import Card from './Card';
-import { PiArrowArcRightFill } from 'react-icons/pi';
+import { PiArrowArcRightFill,PiArrowArcLeftFill } from 'react-icons/pi';
 import styled from 'styled-components';
 import Data from '../../mock/data';
+import { useLanguage } from './../../context/directionContext';
 
 const Wrapper = styled.div`
   display: flex;
@@ -10,7 +11,6 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 30px;
-  direction: ltr;
   .arrow {
     font-weight: 500;
     font-size: 30px;
@@ -20,6 +20,7 @@ const Wrapper = styled.div`
 
 const MobileStep = () => {
   const sortedData = Data().sort((a, b) => a.id - b.id);
+  const {direction} = useLanguage();
 
   return (
     <Wrapper>
@@ -29,7 +30,7 @@ const MobileStep = () => {
           {item.id === 3 || item.id === 6 ? (
             ""
           ) : (
-            <PiArrowArcRightFill className='arrow' />
+            direction ==="ltr"?<PiArrowArcRightFill className='arrow' />:<PiArrowArcLeftFill className='arrow' />
           )}
         </React.Fragment>
       ))}
