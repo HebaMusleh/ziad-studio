@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from 'styled-components'
 
-import img from '../../assets/logofooter.png';
+import img from '../../assets/darklogo.png';
 import { useTranslation } from 'react-i18next';
 
 const FooterStyle = styled.div`
@@ -27,16 +27,17 @@ text-align: center;
   @media (max-width: 480px) {
     font-size: 10px;
   }
+}
+
 .images{
-    width:50px;
+  width:50px;
     @media (max-width: 480px) {
         width:30px;
       }
-    img{
-    }
-        width:100%;
-        height:100%;
-    }
+  img{
+    width:100%;
+    height:100%;
+  }
 }
 
 `
@@ -46,7 +47,9 @@ const Footer = () => {
     return (
         <FooterStyle>
             <div><p>{t('footer')}</p></div>
-            <div className='images'><img src={img} alt="footerImg" /></div>
+            <div className='images'>
+              <img src={img} alt="footerImg" />
+              </div>
         </FooterStyle>
     )
 }
