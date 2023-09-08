@@ -110,7 +110,7 @@ export const HeroStyle = styled.div`
 
   .cloud {
     position: absolute;
-    top: -10px;
+    top: 11px;
     animation: moveCloud 20s linear infinite;
     overflow-x: hidden;
     overflow-x:hidden;
