@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import '../assets/fonts/VIP Rawy Bold Bold.ttf';
+import '../assets/fonts/VIP Rawy Thin Thin.ttf';
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -18,7 +20,7 @@ a{
 body{
     background:${(props) => props.theme.palette.background};
     direction:${(props) => props.dir};
-    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'VIP Rawy Bold Bold', sans-serif;
     transition:.8s;
 }
 `;

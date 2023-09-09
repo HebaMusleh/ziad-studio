@@ -5,7 +5,8 @@ export const HeaderStyle = styled.div`
   transition: 0.8s;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
+  padding:20px 0;
   @media (max-width: 900px) {
     position: relative;
   }
@@ -22,10 +23,10 @@ export const HeaderStyle = styled.div`
     color: ${(props) => props.theme.palette.primaryHeroColor};
   }
   .logo {
-    width: 50px;
+    width: 220px;
     cursor: pointer;
     @media (max-width: 480px) {
-      width: 30px;
+      width: 150px;
     }
     img {
       width: 100%;

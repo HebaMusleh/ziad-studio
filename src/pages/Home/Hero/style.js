@@ -6,7 +6,7 @@ export const HeroStyle = styled.div`
   position:relative;
   overflow-x:hidden;
   overflow-y:hidden;
-  z-index:8;
+  // z-index:8;
   .container-hero {
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@ export const HeroStyle = styled.div`
       }
     }
     .right-side {
-      z-index: 8;
+      // z-index: 8;
       h1 {
         font-size: 	3rem;
         font-weight: 500;
@@ -108,22 +108,22 @@ export const HeroStyle = styled.div`
     }
   }
 
-  .cloud {
-    position: absolute;
-    top: 11px;
-    animation: moveCloud 20s linear infinite;
-    overflow-x: hidden;
-    overflow-x:hidden;
-  }
+  // .cloud {
+  //   position: absolute;
+  //   top: 11px;
+  //   animation: moveCloud 20s linear infinite;
+  //   overflow-x: hidden;
+  //   overflow-x:hidden;
+  // }
 
-  @keyframes moveCloud {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(70vw); /* Move to the right of the viewport */
-    }
-  }
+  // @keyframes moveCloud {
+  //   0%,
+  //   100% {
+  //     transform: translateX(0);
+  //   }
+  //   50% {
+  //     transform: translateX(70vw); /* Move to the right of the viewport */
+  //   }
+  // }
 
 `;

@@ -13,8 +13,8 @@ import BtnTheme from '../BtnTheme';
 import { useTranslation } from 'react-i18next';
 
 
-import logo from '../../assets/logo.png';
-import darkLogo from '../../assets/darklogo.png'
+import logo from '../../assets/menuLogo.png';
+import darkLogo from '../../assets/menuDarkLogo.png'
 import { SideStyle } from './style';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../context/directionContext';
