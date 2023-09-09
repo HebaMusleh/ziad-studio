@@ -11,6 +11,7 @@ export const FooterStyle = styled.div`
     align-items: center;
     @media (max-width: 480px) {
       justify-content: center;
+      font-size: 16px;
     }
   }
   .logo {
@@ -37,8 +38,14 @@ export const FooterStyle = styled.div`
       gap: 50px;
       font-size: 20px;
       padding: 40px 0;
+      @media (max-width: 480px) {
+        padding: 20px 0;
+      }
       li {
         cursor: pointer;
+      }
+      @media (max-width: 480px) {
+        font-size: 16px;
       }
     }
     a {
@@ -47,6 +54,9 @@ export const FooterStyle = styled.div`
   }
   .socials {
     padding: 30px 0;
+    @media (max-width: 480px) {
+      padding: 20px 0;
+    }
     ul {
       list-style: none;
       display: flex;
@@ -57,10 +67,16 @@ export const FooterStyle = styled.div`
         font-size: 25px;
         color: #fff;
         align-items: center;
+        @media (max-width: 480px) {
+          font-size: 16px;
+        }
       }
     }
   }
   .copyright {
     font-size: 20px;
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
   }
 `;
