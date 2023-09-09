@@ -1,7 +1,5 @@
 import React from 'react'
 
-import styled from 'styled-components'
-
 import img from '../../assets/darklogo.png';
 import { useTranslation } from 'react-i18next';
 import BtnOrder from '../BtnOrder';
