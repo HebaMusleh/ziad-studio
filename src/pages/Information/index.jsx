@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Hero from './Hero';
 import Card from './Card';
 import { Container } from '../../global/component';
-import styled from 'styled-components';
 import InfoData from '../../mock/InfoData';
 import Spinner from '../../components/Spinner';
 import FullHeight from '../../components/FullHeight';

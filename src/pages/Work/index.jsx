@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 import { Container } from '../../global/component';
-import styled from 'styled-components';
 
 
 import Hero from './Hero';
