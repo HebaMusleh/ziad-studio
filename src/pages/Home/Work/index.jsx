@@ -23,16 +23,9 @@ const Work = () => {
             <Card img={item.img1} id={item.id} key={item.id} title={item.title} />
           ))}
         </div>
-        <motion.section
-          variants={staggerChildren}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
-          className={`paddings moreBtn`}>
-          <motion.div variants={textVariant2} className={`flexCenter singleImg`}>
+        <div className='moreBtn'>
             <MoreBtn onClick={() => navigate('/work')}> {t('show')} +</MoreBtn>
-          </motion.div>
-        </motion.section>
+        </div>
       </Container>
     </WorkStyle>
   );

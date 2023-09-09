@@ -7,7 +7,6 @@ export const Style = styled.div`
   position: relative;
   display: inline-flex;
   text-align: center;
-  overflow:hidden;
   img {
     width: 100%;
     height: 100%;
@@ -36,12 +35,6 @@ export const Style = styled.div`
     transform: translateX(-50%);
     transition: 1s;
     color:#fff;
-    p {
-      font-size: 14px;
-      @media (max-width: 480px) {
-        font-size: 12px;
-      }
-    }
   }
   &:hover .work-desc {
     bottom: 40%;

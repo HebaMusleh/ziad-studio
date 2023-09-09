@@ -11,6 +11,8 @@ import WorkData from '../../mock/workData';
 import Spinner from '../../components/Spinner';
 import FullHeight from '../../components/FullHeight';
 import Footer from '../../components/Footer';
+import ContactModal from '../ContactModal';
+import { useModal } from '../../context/modalContext';
 
 const Style = styled.div`
   h1 {
@@ -35,6 +37,7 @@ const SingleWork = () => {
   const [loading, setLoading] = useState(true);
   const [myData, setMyData] = useState(null);
   const data = WorkData();
+  const { isModalOpen, closeModal } = useModal();
 
   useEffect(() => {
     setTimeout(() => {
@@ -66,6 +69,7 @@ const SingleWork = () => {
               {myData?.img9 ? <img className='myImg' src={myData?.img9} alt="" /> : ''}
             </Container>
           </Style>
+          <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
           <Footer />
         </>
       )}

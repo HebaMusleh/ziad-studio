@@ -11,7 +11,7 @@ export const HeroStyle = styled.div`
     text-align: center;
     font-size: 18px;
     background: #fff;
-    height:80vh;
+    height:70vh;
     display: flex;
     justify-content: center;
     align-items: center;

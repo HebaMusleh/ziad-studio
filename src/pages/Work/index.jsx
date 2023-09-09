@@ -10,12 +10,15 @@ import FullHeight from '../../components/FullHeight';
 
 import WorkData from '../../mock/workData';
 import Footer from '../../components/Footer';
+import ContactModal from '../ContactModal';
+import { useModal } from '../../context/modalContext';
 
 
 const Work = () => {
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState([]);
     const fetchedData = WorkData();
+    const { isModalOpen, closeModal } = useModal();
 
     useEffect(() => {
         setTimeout(() => {
@@ -44,6 +47,7 @@ const Work = () => {
                                 id={index + 1} />
                         ))}
                     </Container>
+                    <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
                     <Footer />
                 </>
             )}

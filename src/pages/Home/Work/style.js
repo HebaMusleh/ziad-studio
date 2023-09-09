@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const WorkStyle = styled.div`
-overflow:hidden;
   .images {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow-y:hidden;
     @media (max-width: 1085px) {
       justify-content: center;
       gap: 3%;
@@ -20,24 +20,24 @@ overflow:hidden;
   }
 `;
 export const MoreBtn = styled.button`
-  width: 383px;
-  height: 80.39642333984375px;
+  padding: 10px;
+  width: 30%;
   border-radius: 16px;
   border: 1px solid #b9b9b9;
   color: #6c6c6c;
   background: transparent;
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 41px;
   letter-spacing: 0em;
   cursor: pointer;
+  @media (max-width: 480px) {
+    font-size: 16px;
+    width: 100%;
+    padding: 20px 10px;
+  }
   &:hover {
     background: #b9b9b9;
     color: #fff;
-  }
-  @media (max-width: 480px) {
-    font-size: 20px;
-    width: 100%;
-    height: 50px;
   }
 `;
