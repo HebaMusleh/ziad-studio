@@ -7,6 +7,7 @@ export const Style = styled.div`
   position: relative;
   display: inline-flex;
   text-align: center;
+  overflow:hidden;
   img {
     width: 100%;
     height: 100%;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const WorkStyle = styled.div`
+overflow:hidden;
   .images {
     display: flex;
     flex-wrap: wrap;
