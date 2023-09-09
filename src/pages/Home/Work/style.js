@@ -10,14 +10,6 @@ export const WorkStyle = styled.div`
       gap: 3%;
     }
   }
-  .singleImg {
-    flex-basis: 350px;
-    margin-bottom: 30px;
-    cursor:pointer;
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
   .moreBtn {
     display: flex;

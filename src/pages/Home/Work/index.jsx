@@ -20,7 +20,7 @@ const Work = () => {
       <Container>
         <div className="images">
           {data.map((item) => (
-            <Card img={item.img1} id={item.id} key={item.id} />
+            <Card img={item.img1} id={item.id} key={item.id} title={item.title} />
           ))}
         </div>
         <motion.section

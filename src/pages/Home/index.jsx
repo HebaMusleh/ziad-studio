@@ -11,12 +11,14 @@ import Steps from './Steps'
 import Footer from '../../components/Footer'
 import ContactModal from '../ContactModal'
 import { useModal } from '../../context/modalContext'
+import US from './US'
 
 const Home = () => {
   const { isModalOpen, closeModal } = useModal();
   return (
     <>
       <Hero />
+      <US/>
       <Ads />
       <Supporter />
       <Packages />
