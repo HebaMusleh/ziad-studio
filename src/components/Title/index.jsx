@@ -4,20 +4,18 @@ import styled from 'styled-components'
 const TitleStyle = styled.div`
 text-align: center;
 margin:5% auto;
-
 h2{
     font-size: 40px;
     font-weight: 600;
-    line-height: 68px;
+    line-height: 1.6;
     letter-spacing: 0em;
     color:${props => props.theme.palette.primarySecondSection};
     @media (max-width: 480px) {
         font-size: 30px;
-        line-height: 1.6;
       }
 }
 p{
-    font-family: Inter;
+    font-family: Rawy-Thin,sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;

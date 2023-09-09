@@ -20,6 +20,7 @@ const BtnStyle = styled.button`
     width: 228px;
     height: 56px;
     cursor: pointer;
+    font-family:Rawy-Thin,sans-serif;
     @media (max-width: 768px) {
       font-size: 16px;
     }
