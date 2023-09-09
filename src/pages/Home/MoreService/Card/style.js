@@ -4,11 +4,11 @@ export const CardStyle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 50%;
+  flex-basis: 40%;
   background: ${(props) => props.theme.palette.background};
   border-radius: 16px;
   padding: 5%;
-  height: 700px;
+  height: 600px;
   direction: ${props=>props.dir};
   @media (max-width: 768px) {
     flex-basis: 88%;
