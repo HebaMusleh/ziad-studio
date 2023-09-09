@@ -13,14 +13,6 @@ import FullHeight from '../../components/FullHeight';
 import Footer from '../../components/Footer';
 
 const Style = styled.div`
-  padding-top: 7%;
-
-  @media (max-width: 768px) {
-    padding-top: 13%;
-  }
-  @media (max-width: 480px) {
-    padding-top: 0;
-  }
   h1 {
     margin: 20px auto;
     font-size: 2rem;
@@ -60,21 +52,21 @@ const SingleWork = () => {
         </FullHeight>
       ) : (
         <>
-        <Style>
-          <Container>
-            <h1>{myData?.title}</h1>
-            <img className='myImg' src={myData?.cover} alt=""  />
-            {myData?.img2 ? <img className='myImg' src={myData?.img2} alt=""  /> : ''}
-            {myData?.img3 ? <img className='myImg' src={myData?.img3} alt=""  /> : ''}
-            {myData?.img4 ? <img className='myImg' src={myData?.img4} alt=""  /> : ''}
-            {myData?.img5 ? <img className='myImg' src={myData?.img5} alt=""  /> : ''}
-            {myData?.img6 ? <img className='myImg' src={myData?.img6} alt=""  /> : ''}
-            {myData?.img7 ? <img className='myImg' src={myData?.img7} alt=""  /> : ''}
-            {myData?.img8 ? <img className='myImg' src={myData?.img8} alt=""  /> : ''}
-            {myData?.img9 ? <img className='myImg' src={myData?.img9} alt=""  /> : ''}
-          </Container>
-        </Style>
-        <Footer/>
+          <Style>
+            <Container>
+              <h1>{myData?.title}</h1>
+              <img className='myImg' src={myData?.cover} alt="" />
+              {myData?.img2 ? <img className='myImg' src={myData?.img2} alt="" /> : ''}
+              {myData?.img3 ? <img className='myImg' src={myData?.img3} alt="" /> : ''}
+              {myData?.img4 ? <img className='myImg' src={myData?.img4} alt="" /> : ''}
+              {myData?.img5 ? <img className='myImg' src={myData?.img5} alt="" /> : ''}
+              {myData?.img6 ? <img className='myImg' src={myData?.img6} alt="" /> : ''}
+              {myData?.img7 ? <img className='myImg' src={myData?.img7} alt="" /> : ''}
+              {myData?.img8 ? <img className='myImg' src={myData?.img8} alt="" /> : ''}
+              {myData?.img9 ? <img className='myImg' src={myData?.img9} alt="" /> : ''}
+            </Container>
+          </Style>
+          <Footer />
         </>
       )}
     </>

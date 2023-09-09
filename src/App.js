@@ -37,6 +37,7 @@ export default function App() {
     setClose(true);
   };
   const direction = i18n.language === "en" ? "ltr" : "rtl";
+
   return (
     <ThemeProvider theme={theme}>
       <LanguageProvider>

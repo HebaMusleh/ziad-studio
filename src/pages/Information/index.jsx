@@ -7,21 +7,15 @@ import InfoData from '../../mock/InfoData';
 import Spinner from '../../components/Spinner';
 import FullHeight from '../../components/FullHeight';
 import Footer from '../../components/Footer';
+import ContactModal from '../ContactModal';
+import { useModal } from '../../context/modalContext';
 
-const Style = styled.div`
-  padding-top: 7%;
-  @media (max-width: 768px) {
-    padding-top: 13%;
-  }
-  @media (max-width: 480px) {
-    padding-top: 0;
-  }
-`;
 
 const Information = () => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const infoData = InfoData();
+  const { isModalOpen, closeModal } = useModal();
 
 
   useEffect(() => {
@@ -39,7 +33,6 @@ const Information = () => {
         </FullHeight>
       ) : (
         <>
-        <Style>
           <Container>
             <Hero />
             {data.map((singleData) => (
@@ -57,7 +50,7 @@ const Information = () => {
               />
             ))}
           </Container>
-        </Style>
+        <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
         <Footer/>
         </>
       )}

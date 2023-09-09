@@ -12,16 +12,6 @@ import FullHeight from '../../components/FullHeight';
 import WorkData from '../../mock/workData';
 import Footer from '../../components/Footer';
 
-const Style = styled.div`
-  padding-top: 7%;
-
-  @media (max-width: 768px) {
-    padding-top: 13%;
-  }
-  @media (max-width: 480px) {
-    padding-top: 0;
-  }
-`;
 
 const Work = () => {
     const [loading, setLoading] = useState(true);
@@ -43,7 +33,7 @@ const Work = () => {
                 </FullHeight>
             ) : (
                 <>
-                <Style>
+
                     <Container>
                         <Hero />
                         {data.map((item, index) => (
@@ -55,8 +45,7 @@ const Work = () => {
                                 id={index + 1} />
                         ))}
                     </Container>
-                </Style>
-                <Footer/>
+                    <Footer />
                 </>
             )}
 
