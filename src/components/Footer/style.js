@@ -5,6 +5,9 @@ export const FooterStyle = styled.div`
   background: #1f81b0;
   color: #fff;
   padding: 30px 0;
+  @media (max-width: 480px) {
+    padding:0;
+  }
   .top_footer {
     display: flex;
     justify-content: space-between;
@@ -31,6 +34,8 @@ export const FooterStyle = styled.div`
     padding: 20px 0;
     @media (max-width: 480px) {
       align-items: center;
+
+      padding: 0;
     }
     ul {
       display: flex;
@@ -55,7 +60,7 @@ export const FooterStyle = styled.div`
   .socials {
     padding: 30px 0;
     @media (max-width: 480px) {
-      padding: 20px 0;
+        padding:10 0;
     }
     ul {
       list-style: none;

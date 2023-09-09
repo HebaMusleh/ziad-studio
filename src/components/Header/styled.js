@@ -17,10 +17,10 @@ export const HeaderStyle = styled.div`
     color: ${(props) => props.theme.palette.primaryHeroColor};
   }
   .logo {
-    width: 220px;
+    width: 150px;
     cursor: pointer;
     @media (max-width: 480px) {
-      width: 150px;
+      width: 100px;
     }
     img {
       width: 100%;
