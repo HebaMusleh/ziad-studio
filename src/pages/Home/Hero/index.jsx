@@ -1,72 +1,66 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-import { motion } from "framer-motion";
-import { fadeIn, staggerContainer } from "../../../utils/motion";
-import { useTranslation } from 'react-i18next';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 import { Container } from '../../../global/component'
 import { HeroStyle } from './style';
 
+import img1 from '../../../assets/slide-1.jpg';
+import img2 from '../../../assets/slide-2.jpg';
+import img3 from '../../../assets/slide-3.jpg';
+import img4 from '../../../assets/slide-4.jpg';
+import img5 from '../../../assets/slide-5.jpg';
+import img6 from '../../../assets/slide-6.jpg';
+import img7 from '../../../assets/slide-7.jpg';
+import img8 from '../../../assets/slide-8.png';
 
-// import heroCircle from '../../../assets/her1.svg';
-// import heroPincel from '../../../assets/her2.svg';
-// import cloud from '../../../assets/cloud.svg';
-// import cloud2 from '../../../assets/cloud2.svg';
 
-
-import ContactModal from '../../ContactModal';
-
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const Hero = () => {
-    const { t } = useTranslation();
-    // const time = useTime();
-    // const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const openModal = () => {
-        setIsModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-    };
     return (
         <HeroStyle>
-            <Container>
-                <motion.div
-                    variants={staggerContainer}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: false, amount: 0.25 }}
-                    className={`innerWidth container-hero`}
+                <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    modules={[Autoplay]}
+                    className="mySwiper"
                 >
-                    {/* <div className="cloud" style={{left:'0'}}>
-                        <img src={cloud} alt="cloud" />
-                    </div>
-                    <div className="cloud mobile" style={{left:'0'}}>
-                        <img src={cloud2} alt="cloud" />
-                    </div> */}
-                    {/* <motion.span className="left-side" variants={fadeIn("right", "tween", 0.2, 1)}>
-                        <img src={heroCircle} alt="circle" />
-                        <motion.div style={{ rotate }} className='pincel'>
-                            <img src={heroPincel} alt="hero img" />
-                        </motion.div>
-                    </motion.span> */}
-                    <motion.span className="right-side" variants={fadeIn("left", "tween", 0.4, 1)}>
-                        <h1>
-                            {t('heroTitle')} <span>{t('heroSpan')}</span>
-                        </h1>
-                        <p>
-                            {t('About')}
-                        </p>
-                        <button onClick={openModal}>{t('contactUS')}</button>
-                    </motion.span>
-                </motion.div>
-                <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
-            </Container>
-        </HeroStyle>
+                    <SwiperSlide>
+                        <img src={img1} alt="slide" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={img2} alt="slide" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={img3} alt="slide" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={img4} alt="slide" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={img5} alt="slide" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={img6} alt="slide" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={img7} alt="slide" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={img8} alt="slide" />
+                    </SwiperSlide>
+                </Swiper>
+        </HeroStyle >
     )
 }
 
