@@ -18,7 +18,7 @@ export const FooterStyle = styled.div`
     }
   }
   .logo {
-    width: 250px;
+    width: 150px;
     img {
       width: 100%;
       height: 100%;
