@@ -28,7 +28,6 @@ const Card = ({ img, title, desc, num = 1, options, brand }) => {
         </li>
       </div>
       <div className='price'>
-        {/* <h4>{price}</h4> */}
         <BtnOrder />
       </div>
       </div>

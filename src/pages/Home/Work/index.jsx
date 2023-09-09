@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../../../components/Title';
-import { WorkStyle } from './style';
+import { WorkStyle ,MoreBtn} from './style';
 import { Container } from '../../../global/component';
 import { motion } from 'framer-motion';
 import { staggerChildren, textVariant2 } from '../../../utils/motion';
@@ -30,7 +30,7 @@ const Work = () => {
           viewport={{ once: false, amount: 0.25 }}
           className={`paddings moreBtn`}>
           <motion.div variants={textVariant2} className={`flexCenter singleImg`}>
-            <button onClick={() => navigate('/work')}> {t('show')} +</button>
+            <MoreBtn onClick={() => navigate('/work')}> {t('show')} +</MoreBtn>
           </motion.div>
         </motion.section>
       </Container>

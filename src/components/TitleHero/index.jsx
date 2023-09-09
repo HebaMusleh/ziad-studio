@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { AiOutlinePhone } from 'react-icons/ai';
-import { StyleTitle } from './style';
+import { StyleTitle,BtnContact } from './style';
 import ContactModal from '../../pages/ContactModal';
 
 const TitleHero = ({ title, desc, btn, t }) => {
@@ -19,7 +19,7 @@ const TitleHero = ({ title, desc, btn, t }) => {
             <p className='desc'>{desc}</p>
             {btn 
             ? <>
-            <button onClick={()=>openModal()} className='contactBtn'>{t('contactUS')}<AiOutlinePhone /></button>
+            <BtnContact onClick={()=>openModal()} className='contactBtn'>{t('contactUS')}<AiOutlinePhone /></BtnContact>
              <ContactModal isOpen={isModalOpen} closeModal={closeModal} />
             </> : ''}
         </StyleTitle>

@@ -28,8 +28,9 @@ export const StyleTitle = styled.div`
       width:100%;
     }
   }
-  .contactBtn {
-    padding: 5px 30px;
+`;
+export const BtnContact = styled.button`
+padding: 5px 30px;
     border-radius: 8px;
     background: #1f81b0;
     color: #fff;
@@ -43,8 +44,8 @@ export const StyleTitle = styled.div`
     align-items: center;
     gap: 10px;
     margin: 50px auto;
+    justify-content: center;
     @media (max-width: 480px) {
       font-size: .9rem;
     }
-  }
-`;
+`
