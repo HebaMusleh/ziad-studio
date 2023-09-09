@@ -2,8 +2,6 @@ import React from 'react';
 import Title from '../../../components/Title';
 import { WorkStyle ,MoreBtn} from './style';
 import { Container } from '../../../global/component';
-import { motion } from 'framer-motion';
-import { staggerChildren, textVariant2 } from '../../../utils/motion';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import Card from './Card';
