@@ -63,6 +63,7 @@ export const Wrapper = styled.div`
     }
   }
   .price {
+   
     h4 {
       font-size: 1.5rem;
       font-weight: 600;
@@ -78,6 +79,7 @@ export const Wrapper = styled.div`
   }
   ul {
     padding: 40px;
+    padding-bottom:20px;
     li {
       font-size: 1rem;
       font-weight: 500;
@@ -101,6 +103,7 @@ export const Wrapper = styled.div`
   }
   .edits {
     list-style: none;
+    padding-bottom:20px;
     color: ${(props) => props.theme.palette.editColor};
     font-size: 1.5rem;
     font-weight: 500;

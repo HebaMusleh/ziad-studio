@@ -3,7 +3,7 @@ import { Wrapper } from './style';
 import BtnOrder from '../../../../components/BtnOrder';
 import { useTranslation } from 'react-i18next';
 
-const Card = ({ img, title, desc, price, num = 1, options, brand }) => {
+const Card = ({ img, title, desc, num = 1, options, brand }) => {
   const { t } = useTranslation();
 
   return (
@@ -28,7 +28,7 @@ const Card = ({ img, title, desc, price, num = 1, options, brand }) => {
         </li>
       </div>
       <div className='price'>
-        <h4>{price}</h4>
+        {/* <h4>{price}</h4> */}
         <BtnOrder />
       </div>
       </div>
