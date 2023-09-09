@@ -6,7 +6,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Container } from '../../../global/component'
 import { HeroStyle } from './style';
 
 import img1 from '../../../assets/slide-1.jpg';
@@ -19,7 +18,7 @@ import img7 from '../../../assets/slide-7.jpg';
 import img8 from '../../../assets/slide-8.png';
 
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 
 const Hero = () => {
