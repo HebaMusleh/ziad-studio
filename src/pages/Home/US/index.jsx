@@ -1,5 +1,5 @@
 import React from 'react';
-import pattern from '../../../assets/pattern.png';
+// import pattern from '../../../assets/pattern.png';
 
 import { Container } from '../../../global/component';
 import Title from '../../../components/Title';
@@ -12,9 +12,9 @@ const US = () => {
   const { t } = useTranslation();
   return (
     <USStyle>
-      <div className="pattern">
+      {/* <div className="pattern">
         <img src={pattern} alt="pattern" />
-      </div>
+      </div> */}
       <Container>
         <div className='content'>
           <Title title={t('AboutTitle')} />
