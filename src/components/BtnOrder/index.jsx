@@ -9,7 +9,7 @@ const BtnStyle = styled.button`
     justify-content:center;
     align-items:center;
     margin: auto;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 41px;
     letter-spacing: 0em;
@@ -21,7 +21,7 @@ const BtnStyle = styled.button`
     height: 56px;
     cursor: pointer;
     @media (max-width: 768px) {
-      font-size: 20px;
+      font-size: 16px;
     }
     &:hover {
       background: ${(props) => props.theme.palette.TitleColor};
