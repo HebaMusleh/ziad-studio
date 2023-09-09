@@ -31,6 +31,7 @@ export const MoreBtn = styled.button`
   line-height: 41px;
   letter-spacing: 0em;
   cursor: pointer;
+  font-family: Rawy-Thin,sans-serif;
   @media (max-width: 480px) {
     font-size: 16px;
     width: 100%;

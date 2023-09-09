@@ -84,6 +84,7 @@ const ModalWrapper = styled.div`
 `;
 
 const Btn = styled.button`
+  font-family: Rawy-Thin, sans-serif;
   background: #1f81b0;
   color: #fff;
   padding: 10px 20px;
@@ -98,4 +99,3 @@ const Btn = styled.button`
 `;
 
 export { ModalWrapper, Btn };
-

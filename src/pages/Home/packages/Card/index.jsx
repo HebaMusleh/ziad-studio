@@ -24,7 +24,7 @@ const Card = ({ img, title, desc, num = 1, options, brand }) => {
           {brand ? <li className='brand'>{t('brandIdentityGuide')}</li> : ''}
         </ul>
         <li className='edits'>
-          {t('edit')} {num}
+          {t('edit')} <span className="numbers">{num}</span>
         </li>
       </div>
       <div className='price'>

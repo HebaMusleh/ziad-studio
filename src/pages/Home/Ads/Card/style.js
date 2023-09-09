@@ -30,6 +30,7 @@ export const CardStyle = styled.div`
       font-weight: 600;
       line-height: 62px;
       letter-spacing: 0em;
+      font-family:sans-serif;
       color: ${(props) => props.theme.palette.primaryAds};
       @media (max-width: 536px) {
         font-size: 20px;

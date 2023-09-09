@@ -36,7 +36,7 @@ export const Content = styled.div`
     }
   }
   p {
-    font-family: Baloo Bhaijaan 2;
+    font-family: Rawy-Thin,sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 27px;

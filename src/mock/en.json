@@ -118,7 +118,13 @@
       "work6Desc": "",
       "work10": "Design Logo and Profile",
       "work10Desc": "",
-      "z": "Z"
+      "z": "Z",
+      "one":"Step -1-",
+      "two":"Step -2-",
+      "three":"Step -3-",
+      "four":"Step -4-",
+      "five":"Step -5-",
+      "six":"Step -6-"
     }
   }
 }

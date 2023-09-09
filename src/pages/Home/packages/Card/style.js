@@ -7,9 +7,9 @@ export const Wrapper = styled.div`
   flex-basis: 30%;
   padding: 40px;
   height: fit-content;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .image {
     background: ${(props) => props.theme.palette.whiteFonts};
     width: 80px;
@@ -53,7 +53,7 @@ export const Wrapper = styled.div`
       color: ${(props) => props.theme.palette.secondaryTitle};
     }
     p {
-      font-family: Baloo Bhaijaan 2;
+      font-family: Rawy-Thin, sans-serif;
       font-size: 20px;
       font-weight: 400;
       line-height: 34px;
@@ -63,7 +63,6 @@ export const Wrapper = styled.div`
     }
   }
   .price {
-   
     h4 {
       font-size: 1.5rem;
       font-weight: 600;
@@ -79,7 +78,7 @@ export const Wrapper = styled.div`
   }
   ul {
     padding: 40px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     li {
       font-size: 1rem;
       font-weight: 500;
@@ -103,12 +102,15 @@ export const Wrapper = styled.div`
   }
   .edits {
     list-style: none;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     color: ${(props) => props.theme.palette.editColor};
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 41.09px;
     text-align: center;
+    .numbers {
+      font-family: sans-serif;
+    }
     @media (max-width: 768px) {
       font-size: 1rem;
     }

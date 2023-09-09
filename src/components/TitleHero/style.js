@@ -30,6 +30,7 @@ export const StyleTitle = styled.div`
   }
 `;
 export const BtnContact = styled.button`
+font-family: Rawy-Thin,sans-serif;
 padding: 5px 30px;
     border-radius: 8px;
     background: #1f81b0;
