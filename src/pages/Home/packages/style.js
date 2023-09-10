@@ -13,9 +13,9 @@ export const H3 = styled.h3`
 `;
 export const AllCard = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 7%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 10%;
   @media (max-width: 1000px) {

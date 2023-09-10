@@ -20,8 +20,8 @@ const Home = () => {
     <>
       <Hero />
       <US/>
-      <Services/>
       <Ads />
+      <Services/>
       <Supporter />
       <Packages />
       <Steps />

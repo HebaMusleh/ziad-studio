@@ -130,7 +130,9 @@
       "body2": "- Designing identity elements",
       "body3": "- Packaging design",
       "body4": "- Designing a comprehensive visual identity guide",
-      "body5": "- Designing interactive or printable company or restaurant profile"
+      "body5": "- Designing interactive or printable company or restaurant profile",
+      "newPackage":"Company Package",
+      "newPackage2":"Restaurant and Coffee Package"
     }
   }
 }
