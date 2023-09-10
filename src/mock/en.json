@@ -119,12 +119,18 @@
       "work10": "Design Logo and Profile",
       "work10Desc": "",
       "z": "Z",
-      "one":"Step -1-",
-      "two":"Step -2-",
-      "three":"Step -3-",
-      "four":"Step -4-",
-      "five":"Step -5-",
-      "six":"Step -6-"
+      "one": "Step -1-",
+      "two": "Step -2-",
+      "three": "Step -3-",
+      "four": "Step -4-",
+      "five": "Step -5-",
+      "six": "Step -6-",
+      "serviceTitle": "We specialize in branding and design services",
+      "body1": "- Brand name suggestions",
+      "body2": "- Designing identity elements",
+      "body3": "- Packaging design",
+      "body4": "- Designing a comprehensive visual identity guide",
+      "body5": "- Designing interactive or printable company or restaurant profile"
     }
   }
 }

@@ -4,24 +4,26 @@ import { ServicesStyle } from './style'
 import img from '../../../assets/service.svg';
 import rectangle from '../../../assets/rectangle.svg';
 import { Container } from '../../../global/component';
+import { useTranslation } from 'react-i18next';
 
 const Services = () => {
+    const {t} = useTranslation();
     return (
         <ServicesStyle>
             <Container>
                 <div className="content-service">
                 <div className="description">
                     <div className="title">
-                        <h3>نختص بخدمات بناء وتصميم العلامات التجارية :</h3>
+                        <h3>{t('serviceTitle')}</h3>
                         <img src={rectangle} alt="rectangle" />
                     </div>
                     <div className="body">
                         <ul>
-                            <li>- اقتراحات الاسم التجاري</li>
-                            <li>- تصميم عناصر الهويه</li>
-                            <li>- تصميم التعليب والتغليف</li>
-                            <li>- تصميم دليل متكامل للهويه البصريه</li>
-                            <li>- تصميم بروفايل تعريفي للشركات او المطاعم تفاعلي أو للطباعه </li>
+                            <li>{t('body1')}</li>
+                            <li>{t('body2')}</li>
+                            <li>{t('body3')}</li>
+                            <li>{t('body4')}</li>
+                            <li>{t('body5')}</li>
                         </ul>
                     </div>
                 </div>
