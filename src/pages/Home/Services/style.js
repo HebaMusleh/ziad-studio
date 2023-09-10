@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ServicesStyle = styled.div`
   background: ${(props) => props.theme.palette.BgService};
+  color:${(props) => props.theme.palette.primarySecondSection};
   text-align: center;
   padding: 5% 0;
   justify-content: space-between;
@@ -16,7 +17,7 @@ export const ServicesStyle = styled.div`
         height: 100%;
       }
       @media (max-width: 480px) {
-        display:none;
+        display: none;
       }
     }
     .title {
@@ -27,12 +28,18 @@ export const ServicesStyle = styled.div`
         margin: 20px 0;
         padding: 0;
         text-align: start;
+        @media (max-width: 480px) {
+          font-size: 20px;
+        }
       }
     }
     .body {
       text-align: start;
       line-height: 2;
       font-size: 20px;
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
       ul {
         list-style: none;
       }

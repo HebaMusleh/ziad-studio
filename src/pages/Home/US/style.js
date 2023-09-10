@@ -6,7 +6,8 @@ export const USStyle = styled.div`
   overflow: hidden;
   .us-content {
     box-shadow: 0px 4px 50px 0px ${(props) => props.theme.palette.shadow};
-    background: ${(props) => props.theme.palette.background};;
+    background: ${(props) => props.theme.palette.background};
+    color:${(props) => props.theme.palette.primarySecondSection};
     padding: 10px 50px 50px;
     border-radius: 50px;
     overflow: hidden;
