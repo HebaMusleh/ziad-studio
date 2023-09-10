@@ -8,7 +8,7 @@ export const SupporterStyle = styled.div`
     border-radius: 50px;
     overflow: hidden;
   }
-  @keyframes slide {
+  @keyframes slider {
     from {
       transform: translateX(0);
     }
@@ -51,7 +51,7 @@ export const SupporterStyle = styled.div`
   
   .logos-slide {
     display: inline-block;
-    animation: 35s slide infinite linear;
+    animation: 35s slider infinite linear;
     direction:ltr;
   }
   
