@@ -12,6 +12,7 @@ import Footer from '../../components/Footer'
 import ContactModal from '../ContactModal'
 import { useModal } from '../../context/modalContext'
 import US from './US'
+import Services from './Services'
 
 const Home = () => {
   const { isModalOpen, closeModal } = useModal();
@@ -19,6 +20,7 @@ const Home = () => {
     <>
       <Hero />
       <US/>
+      <Services/>
       <Ads />
       <Supporter />
       <Packages />
