@@ -49,6 +49,8 @@ export default function App() {
           <GlobalStyle dir={direction} close={close} />
           <Suspense fallback={<Spinner />}>
             <Header openClick={openClick} theme={theme.theme} />
+  <main style={{minHeight:"50vh"}}>
+  
             <Suspense
               fallback={
                 <FullHeight>
@@ -56,8 +58,10 @@ export default function App() {
                 </FullHeight>
               }
             >
+              
               <Router />
             </Suspense>
+              </main>
             <SideMenu
               close={close}
               closeClick={closeClick}
