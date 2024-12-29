@@ -1,5 +1,5 @@
 # Ziad Studio ✨
-Welcome to Ziad Studio, a stunning personal website showcasing the works of a Saudi visual identity designer. Crafted with creativity and precision, this platform beautifully highlights design projects in an interactive and visually captivating manner.
+Welcome to Ziad Studio, a stunning personal website showcasing the works of a visual identity designer. Crafted with creativity and precision, this platform beautifully highlights design projects in an interactive and visually captivating manner.
 
 ## 🎨 Features
 
@@ -23,10 +23,9 @@ Welcome to Ziad Studio, a stunning personal website showcasing the works of a Sa
 ## 🛠️ Installation
 
 1. **Clone the repo**
-git clone
 
 ```bash
-https://github.com/HebaMusleh/ziad-studio.git
+git clone https://github.com/HebaMusleh/ziad-studio.git
 ```
 2. **Navigate into the project directory**
 ```bash
