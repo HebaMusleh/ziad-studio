@@ -22,21 +22,21 @@ Welcome to Ziad Studio, a stunning personal website showcasing the works of a Sa
 
 ## 🛠️ Installation
 
-1.**Clone the repo**
+1. **Clone the repo**
 git clone
 
 ```bash
 https://github.com/HebaMusleh/ziad-studio.git
 ```
-2.**Navigate into the project directory**
+2. **Navigate into the project directory**
 ```bash
 cd ziad-studio
 ```
-3.**Install dependencies**
+3. **Install dependencies**
 ```bash
 npm install
 ```
-4.**Start the development server**
+4. **Start the development server**
 ```bash
 npm start
 ```
