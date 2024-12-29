@@ -15,10 +15,10 @@ Welcome to Ziad Studio, a stunning personal website showcasing the works of a Sa
 
 ## 🚀 Techniques 
 
-**React JS** : For user interface 
-**Motion** : For animation 
-**Styled components** : For styling and Themes
-**i18next** : For multiple Languages 
+1. **React JS** : For user interface 
+2. **Motion** : For animation 
+3. **Styled components** : For styling and Themes
+4. **i18next** : For multiple Languages 
 
 ## 🛠️ Installation
 
