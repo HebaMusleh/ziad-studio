@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Ziad Studio ✨
+Welcome to Ziad Studio, a stunning personal website showcasing the works of a Saudi visual identity designer. Crafted with creativity and precision, this platform beautifully highlights design projects in an interactive and visually captivating manner.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎨 Features
 
-## Available Scripts
+**Showcase Portfolio**: View the designer's work in a clean, engaging layout.
 
-In the project directory, you can run:
+**Responsive Design**: Optimized for all screen sizes.
 
-### `npm start`
+**Dynamic Interactions**: Engaging animations and transitions bring the portfolio to life.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Multilingual Support**: Available in both Arabic and English.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Theme Support**: Switch between light and dark modes seamlessly.
 
-### `npm test`
+## 🚀 Techniques 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**React JS** : For user interface 
+**Motion** : For animation 
+**Styled components** : For styling and Themes
+**i18next** : For multiple Languages 
 
-### `npm run build`
+## 🛠️ Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.**Clone the repo**
+git clone
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+https://github.com/HebaMusleh/ziad-studio.git
+```
+2.**Navigate into the project directory**
+```bash
+cd ziad-studio
+```
+3.**Install dependencies**
+```bash
+npm install
+```
+4.**Start the development server**
+```bash
+npm start
+```
+## Demo 🚀
+You may view the live version of my site by [clicking here](https://ziad-studio.vercel.app)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact me 🌐
+Feel free to reach out for any inquiries, collaborations, or feedback. You can contact me via the following methods:
+[Email](heba.a.musleh@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/heba-musleh)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I look forward to hearing from you!
