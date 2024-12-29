@@ -1,4 +1,4 @@
-# Ziad Studio ✨
+# Ziad Studio
 Welcome to Ziad Studio, a stunning personal website showcasing the works of a visual identity designer. Crafted with creativity and precision, this platform beautifully highlights design projects in an interactive and visually captivating manner.
 
 ## 🎨 Features
@@ -39,10 +39,10 @@ npm install
 ```bash
 npm start
 ```
-## Demo 🚀
+## 🚀 Demo 
 You may view the live version of my site by [clicking here](https://ziad-studio.vercel.app)
 
-## Contact me 🌐
+## 🌐 Contact me 
 Feel free to reach out for any inquiries, collaborations, or feedback. You can contact me via the following methods:
 [Email](heba.a.musleh@gmail.com)
 [LinkedIn](https://www.linkedin.com/in/heba-musleh)
